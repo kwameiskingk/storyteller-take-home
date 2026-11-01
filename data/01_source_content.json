@@ -1,0 +1,113 @@
+{
+  "client": "Aurora Basketball League",
+  "event": "Championship Finals - Game 3",
+  "fixture": "Harbour City Waves vs Metro Kings",
+  "scheduled_tipoff": "2026-09-11T19:00:00Z",
+  "snapshot_at": "2026-09-03T09:15:00Z",
+  "snapshot_type": "selected_replay_inputs_and_external_source_comparison",
+  "replay_run_id": "pilot_run_2026_09_03_0915",
+  "replay_started_at": "2026-09-03T09:15:00Z",
+  "selection_note": "Approved items were replayed together for this trial, including older Game 2 content. The unapproved external item is comparison material and was excluded from processing.",
+  "items": [
+    {
+      "content_id": "src_001",
+      "published_at": "2026-09-02T21:03:00Z",
+      "source": "Aurora Basketball League Newsroom",
+      "source_type": "official_league",
+      "approved_for_pilot": true,
+      "url": "https://example.com/abl/game-2-recap",
+      "title": "Metro Kings level Finals with 101-98 Game 2 win",
+      "body": "The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1. Malik Grant led the Kings with 28 points and eight rebounds."
+    },
+    {
+      "content_id": "src_002",
+      "published_at": "2026-09-02T21:06:00Z",
+      "source": "ABL Broadcast Partner",
+      "source_type": "approved_broadcaster",
+      "approved_for_pilot": true,
+      "url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
+      "title": "Watch Malik Grant's 28-point performance in Game 2",
+      "body": "Video highlights from Malik Grant's 28-point performance as the Metro Kings won Game 2 101-98 and tied the Finals at one game each."
+    },
+    {
+      "content_id": "src_003",
+      "published_at": "2026-09-03T08:10:00Z",
+      "source": "Harbour City Waves",
+      "source_type": "official_team",
+      "approved_for_pilot": true,
+      "url": "https://example.com/waves/elias-cole-medical-update",
+      "title": "Medical update: Elias Cole questionable for Game 3",
+      "body": "Guard Elias Cole is questionable for Game 3 after sustaining soreness in his left ankle. He will be assessed after the team's final practice and remains a game-time decision."
+    },
+    {
+      "content_id": "src_004",
+      "published_at": "2026-09-03T08:25:00Z",
+      "source": "Aurora Basketball League Newsroom",
+      "source_type": "official_league",
+      "approved_for_pilot": true,
+      "url": "https://example.com/abl/game-3-schedule-update",
+      "title": "Game 3 tipoff moved to 20:00",
+      "body": "Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30."
+    },
+    {
+      "content_id": "src_005",
+      "published_at": "2026-09-03T08:40:00Z",
+      "source": "Aurora Basketball League Stats",
+      "source_type": "official_league",
+      "approved_for_pilot": true,
+      "url": "https://example.com/abl/stats/mensah-12-assists",
+      "title": "Tayo Mensah ties Waves playoff assists record",
+      "body": "Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17."
+    },
+    {
+      "content_id": "src_006",
+      "published_at": "2026-09-03T08:45:00Z",
+      "source": "Metro Kings",
+      "source_type": "official_team",
+      "approved_for_pilot": true,
+      "url": "https://example.com/kings/sponsor-giveaway",
+      "title": "Win a signed Malik Grant jersey with Northbank Insurance",
+      "body": "Supporters who request a Northbank Insurance quote before Friday will enter a draw to win a signed Malik Grant jersey. Terms and conditions apply."
+    },
+    {
+      "content_id": "src_007",
+      "published_at": "2026-09-03T08:52:00Z",
+      "source": "Aurora Basketball League Newsroom",
+      "source_type": "official_league",
+      "approved_for_pilot": true,
+      "url": "https://example.com/abl/game-3-fan-zone",
+      "title": "Game 3 fan zone opens at 17:30",
+      "body": "The Championship Finals fan zone will open outside Harbour Arena at 17:30. It will include player interviews on the main screen, food stalls and activities for younger fans."
+    },
+    {
+      "content_id": "src_008",
+      "published_at": "2026-09-03T09:00:00Z",
+      "source": "Harbour City Waves",
+      "source_type": "official_team",
+      "approved_for_pilot": true,
+      "url": "https://example.com/waves/coach-game-3-availability",
+      "title": "Coach Rivera: lineup decisions will follow final practice",
+      "body": "Waves coach Lena Rivera said no Game 3 lineup decisions had yet been confirmed and that player availability would be reviewed after final practice."
+    },
+    {
+      "content_id": "src_009",
+      "published_at": "2026-09-03T09:04:00Z",
+      "source": "ABL Broadcast Partner",
+      "source_type": "approved_broadcaster",
+      "approved_for_pilot": true,
+      "url": "https://example.com/broadcast/game-3-tactical-preview",
+      "title": "Game 3 preview: how the Waves can slow Malik Grant",
+      "body": "The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2."
+    },
+    {
+      "content_id": "src_010",
+      "published_at": "2026-09-03T07:48:00Z",
+      "source": "CourtsideWire",
+      "source_type": "external_media",
+      "approved_for_pilot": false,
+      "url": "https://example.com/courtsidewire/cole-expected-out",
+      "title": "Sources: Elias Cole expected to miss Game 3",
+      "body": "Two people described as being close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status."
+    }
+  ]
+}

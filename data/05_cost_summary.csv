@@ -1,0 +1,4 @@
+date_utc,period_status,source_items,initial_model_calls,retry_model_calls,total_model_calls,ai_cost_eur,infrastructure_cost_eur,total_cost_eur,forecast_cost_eur
+2026-08-31,complete_day,1120,1300,54,1354,24.40,4.00,28.40,30.00
+2026-09-01,complete_day,1180,1360,63,1423,25.60,4.10,29.70,30.00
+2026-09-02,complete_day,1205,1390,2412,3802,65.60,6.20,71.80,30.00

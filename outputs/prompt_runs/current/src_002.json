@@ -1,0 +1,19 @@
+{
+  "content_id": "src_002",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "player_performance",
+    "reason": "Malik Grant's 28-point effort led the Metro Kings to a 101-98 Game 2 win that tied the Finals 1-1. It's a major player performance in a key Finals result, and the highlight video makes it easy to publish."
+  },
+  "generation": {
+    "category": "Game Highlights",
+    "priority": "high",
+    "headline": "Malik Grant Erupts for 28 as Metro Kings Even the Finals",
+    "summary": "Video highlights show Malik Grant scoring 28 points as the Metro Kings beat their opponent 101-98 in Game 2, tying the Finals at one game each.",
+    "source_url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
+    "why_fans_will_care": "A tight 101-98 Finals win levels the series, and Grant's 28-point night is a key reason. Fans can rewatch the moments that shifted momentum.",
+    "confidence": 0.9
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "content_id": "src_009",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "tactical_preview",
+    "reason": "Finals-connected Game 3 preview analyzing defensive adjustments against Malik Grant after his 28-point Game 2. It's timely and of strong fan interest, with a player-performance angle. It's analysis rather than breaking news, so it's moderate-to-high priority. It comes from a broadcast partner, so check how it will be used or credited."
+  },
+  "generation": {
+    "category": "Game preview / Tactical analysis",
+    "priority": "medium",
+    "headline": "Can the Waves Cool Off Malik Grant in Game 3?",
+    "summary": "After Malik Grant scored 28 points in Game 2, the ABL broadcast team previews defensive adjustments Harbour City may make in Game 3. Specific tactics are not detailed in the supplied item.",
+    "source_url": "https://example.com/broadcast/game-3-tactical-preview",
+    "why_fans_will_care": "Fans get a tactical look at how Harbour City might respond to Grant's strong Game 2, setting up a key storyline and matchup to watch in Game 3.",
+    "confidence": 0.8
+  }
+}

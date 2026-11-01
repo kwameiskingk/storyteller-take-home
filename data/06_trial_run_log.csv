@@ -1,0 +1,37 @@
+timestamp_utc,run_id,source_content_id,stage,operation_id,attempt,event,reference,detail
+2026-09-03T09:15:01Z,pilot_run_2026_09_03_0915,src_001,classify,cls_001,1,completed,true,Finals result
+2026-09-03T09:15:02Z,pilot_run_2026_09_03_0915,src_001,generate,gen_001,1,started,req_a1,
+2026-09-03T09:15:03Z,pilot_run_2026_09_03_0915,src_002,classify,cls_002,1,completed,true,Player performance video
+2026-09-03T09:15:04Z,pilot_run_2026_09_03_0915,src_002,generate,gen_002,1,started,req_b1,
+2026-09-03T09:15:05Z,pilot_run_2026_09_03_0915,src_003,classify,cls_003,1,completed,true,Player availability update
+2026-09-03T09:15:06Z,pilot_run_2026_09_03_0915,src_003,generate,gen_003,1,started,req_c1,
+2026-09-03T09:15:07Z,pilot_run_2026_09_03_0915,src_004,classify,cls_004,1,completed,false,Routine scheduling notice
+2026-09-03T09:15:08Z,pilot_run_2026_09_03_0915,src_005,classify,cls_005,1,completed,true,Player record
+2026-09-03T09:15:09Z,pilot_run_2026_09_03_0915,src_005,generate,gen_005,1,started,req_e1,
+2026-09-03T09:15:10Z,pilot_run_2026_09_03_0915,src_006,classify,cls_006,1,completed,true,Star player fan engagement
+2026-09-03T09:15:11Z,pilot_run_2026_09_03_0915,src_006,generate,gen_006,1,started,req_f1,
+2026-09-03T09:15:12Z,pilot_run_2026_09_03_0915,src_007,classify,cls_007,1,completed,true,Finals fan information
+2026-09-03T09:15:13Z,pilot_run_2026_09_03_0915,src_007,generate,gen_007,1,started,req_g1,
+2026-09-03T09:15:14Z,pilot_run_2026_09_03_0915,src_008,classify,cls_008,1,completed,true,Team availability context
+2026-09-03T09:15:15Z,pilot_run_2026_09_03_0915,src_008,generate,gen_008,1,started,req_h1,
+2026-09-03T09:15:16Z,pilot_run_2026_09_03_0915,src_009,classify,cls_009,1,completed,true,Finals tactical preview
+2026-09-03T09:15:17Z,pilot_run_2026_09_03_0915,src_001,generate,gen_001,1,timeout,req_a1,No result received within 15 seconds
+2026-09-03T09:15:18Z,pilot_run_2026_09_03_0915,src_001,generate,gen_001,2,started,req_a2,
+2026-09-03T09:15:19Z,pilot_run_2026_09_03_0915,src_002,generate,gen_002,1,completed,req_b1,
+2026-09-03T09:15:19Z,pilot_run_2026_09_03_0915,src_002,queue,gen_002,1,written,rec_002,
+2026-09-03T09:15:20Z,pilot_run_2026_09_03_0915,src_003,generate,gen_003,1,validation_failed,req_c1,Response omitted required summary field
+2026-09-03T09:15:21Z,pilot_run_2026_09_03_0915,src_005,generate,gen_005,1,completed,req_e1,
+2026-09-03T09:15:21Z,pilot_run_2026_09_03_0915,src_005,queue,gen_005,1,written,rec_004,
+2026-09-03T09:15:22Z,pilot_run_2026_09_03_0915,src_006,generate,gen_006,1,completed,req_f1,
+2026-09-03T09:15:22Z,pilot_run_2026_09_03_0915,src_006,queue,gen_006,1,written,rec_005,
+2026-09-03T09:15:23Z,pilot_run_2026_09_03_0915,src_001,generate,gen_001,1,completed,req_a1,
+2026-09-03T09:15:23Z,pilot_run_2026_09_03_0915,src_001,queue,gen_001,1,written,rec_001,
+2026-09-03T09:15:24Z,pilot_run_2026_09_03_0915,src_007,generate,gen_007,1,completed,req_g1,
+2026-09-03T09:15:24Z,pilot_run_2026_09_03_0915,src_007,queue,gen_007,1,written,rec_006,
+2026-09-03T09:15:25Z,pilot_run_2026_09_03_0915,src_008,generate,gen_008,1,completed,req_h1,
+2026-09-03T09:15:25Z,pilot_run_2026_09_03_0915,src_008,queue,gen_008,1,written,rec_007,
+2026-09-03T09:15:26Z,pilot_run_2026_09_03_0915,src_009,generate,gen_009,1,started,req_i1,
+2026-09-03T09:15:29Z,pilot_run_2026_09_03_0915,src_001,generate,gen_001,2,completed,req_a2,
+2026-09-03T09:15:29Z,pilot_run_2026_09_03_0915,src_001,queue,gen_001,2,written,rec_003,
+2026-09-03T09:15:33Z,pilot_run_2026_09_03_0915,src_009,generate,gen_009,1,completed,req_i1,
+2026-09-03T09:15:33Z,pilot_run_2026_09_03_0915,src_009,queue,gen_009,1,written,rec_008,

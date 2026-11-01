@@ -1,0 +1,19 @@
+{
+  "content_id": "src_004",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "schedule_update",
+    "reason": "Game 3 tipoff of the Championship Finals moved 30 minutes (19:30 to 20:00) due to broadcast changes. It is timely and directly affects fans attending or watching, so it is worth a short notice or social post. It is a routine logistics update with no player news or results, so it is lower priority."
+  },
+  "generation": {
+    "category": "Schedule Update",
+    "priority": "high",
+    "headline": "Game 3 Tipoff Pushed Back Half an Hour to 20:00",
+    "summary": "Game 3 of the Championship Finals now tips off at 20:00 local time instead of 19:30, due to an updated broadcast schedule. Arena doors still open at 17:30.",
+    "source_url": "https://example.com/abl/game-3-schedule-update",
+    "why_fans_care": "Ticket holders and viewers need the new start time to plan travel and viewing. Doors still open at 17:30, so attendees have a longer window before tipoff.",
+    "confidence": 0.95
+  }
+}

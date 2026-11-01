@@ -1,0 +1,19 @@
+{
+  "content_id": "src_008",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "team_news",
+    "reason": "Game 3 availability and lineup status is timely and of strong fan interest during the Finals. However, it contains no confirmed decisions or player news yet, so it is a low-to-moderate priority holding item. An editor should watch for the post-practice update, which could carry major player availability news."
+  },
+  "generation": {
+    "category": "Team News",
+    "priority": "medium",
+    "headline": "Waves Game 3 Lineup Still Up in the Air as Rivera Awaits Final Practice",
+    "summary": "Waves coach Lena Rivera said no Game 3 lineup decisions have been confirmed. Player availability will be reviewed after the team's final practice.",
+    "source_url": "https://example.com/waves/coach-game-3-availability",
+    "why_fans_care": "Lineup and player availability for Game 3 are unsettled, so fans should watch for updates after the final practice before assuming who will play.",
+    "confidence": 0.9
+  }
+}

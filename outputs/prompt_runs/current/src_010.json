@@ -1,0 +1,19 @@
+{
+  "content_id": "src_010",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "player_availability",
+    "reason": "Unconfirmed report from anonymous sources that star player Elias Cole is expected to miss Finals Game 3. It is timely and of high fan interest, and it affects the Finals. The Waves have not confirmed it, so the editor should treat it as a developing story and verify it before publishing."
+  },
+  "generation": {
+    "category": "Injury/Player Availability",
+    "priority": "medium",
+    "headline": "Elias Cole Reportedly Trending Toward Missing Game 3",
+    "summary": "CourtsideWire reports two people described as close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
+    "source_url": "https://example.com/courtsidewire/cole-expected-out",
+    "why_fans_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3. The report is unconfirmed and based on anonymous sources, so fans should wait for official team word.",
+    "confidence": 0.6
+  }
+}

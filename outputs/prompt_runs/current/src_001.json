@@ -1,0 +1,19 @@
+{
+  "content_id": "src_001",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "game_result",
+    "reason": "Timely Finals Game 2 result: Metro Kings beat the Harbour City Waves 101-98 to level the series at 1-1, with a standout 28-point, eight-rebound performance from Malik Grant. Directly tied to the Finals and of high fan interest."
+  },
+  "generation": {
+    "category": "Game Recap",
+    "priority": "high",
+    "headline": "Metro Kings Edge Waves 101-98 to Even the Finals at 1-1",
+    "summary": "The Metro Kings beat the Harbour City Waves 101-98 in Game 2 of the Championship Finals, levelling the series at 1-1. Malik Grant led the Kings with 28 points and eight rebounds.",
+    "source_url": "https://example.com/abl/game-2-recap",
+    "why_fans_will_care": "The Finals are now a fresh best-of series after a tight three-point result, and Malik Grant's 28-point, eight-rebound performance gives Kings fans a standout storyline heading into the next game.",
+    "confidence": 0.95
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "content_id": "src_010",
+  "variant": "revised",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "player_availability",
+    "time_sensitive": true,
+    "affects_attending_fans": false,
+    "reason": "Two people close to the team \"expect Elias Cole to miss Game 3,\" but \"The Harbour City Waves have not confirmed his status,\" so this is an unconfirmed availability report."
+  },
+  "generation": {
+    "category": "Player availability",
+    "priority": "high",
+    "headline": "Elias Cole expected to miss Game 3, sources say",
+    "summary": "Two people described as being close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
+    "source_url": "https://example.com/courtsidewire/cole-expected-out",
+    "why_recommended": "Player availability report for Game 3. It is unconfirmed: it rests on two sources, and the team has not confirmed his status.",
+    "media_type": "article",
+    "story_key": "elias cole game 3 availability",
+    "operator_checks": [
+      "Headline says 'expected' and 'sources say'; Cole is not confirmed out",
+      "Source: two people described as being close to the team",
+      "Harbour City Waves have not confirmed his status",
+      "Only Game 3 is mentioned; no injury or reason is given in the source",
+      "Published 2026-09-03T07:48:00Z (UTC, per source timestamp)",
+      "Source outlet is CourtsideWire"
+    ]
+  }
+}

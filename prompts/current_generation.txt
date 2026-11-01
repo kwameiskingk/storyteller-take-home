@@ -1,0 +1,5 @@
+Create a useful editorial recommendation from the supplied content.
+
+Return category, priority (high, medium or low), a headline, a summary of no more than 35 words, source URL, why fans will care, and confidence from 0 to 1.
+
+Keep the headline engaging and the summary factual. Use only the supplied item. Do not invent facts. If the information is uncertain, preserve that uncertainty.

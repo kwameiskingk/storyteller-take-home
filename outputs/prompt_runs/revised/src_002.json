@@ -1,0 +1,29 @@
+{
+  "content_id": "src_002",
+  "variant": "revised",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "game_result",
+    "time_sensitive": false,
+    "affects_attending_fans": false,
+    "reason": "Reports that \"the Metro Kings won Game 2 101-98 and tied the Finals at one game each\" with Malik Grant scoring 28 points."
+  },
+  "generation": {
+    "category": "Finals highlights",
+    "priority": "high",
+    "headline": "Malik Grant scores 28 as Metro Kings win Game 2",
+    "summary": "Video highlights of Malik Grant's 28-point performance as the Metro Kings won Game 2 101-98 and tied the Finals at one game each.",
+    "source_url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
+    "why_recommended": "Reports the Game 2 result (Metro Kings 101-98) and the Finals tied at one game each, with video highlights of Malik Grant's 28 points.",
+    "media_type": "video",
+    "story_key": "game 2 result metro kings",
+    "operator_checks": [
+      "Malik Grant scored 28 points",
+      "Metro Kings won Game 2 101-98",
+      "Finals tied at one game each",
+      "Item is video highlights from ABL Broadcast Partner",
+      "Source URL includes utm_source=abl tracking parameter"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "run_id": "pilot_run_2026_09_03_0915",
+  "run_started_at": "2026-09-03T09:15:00Z",
+  "generated_at": "2026-09-03T09:16:00Z",
+  "queue_stage": "before_operator_review",
+  "recommendations": [
+    {
+      "recommendation_id": "rec_001",
+      "source_content_ids": ["src_001"],
+      "priority": "high",
+      "category": "game_result",
+      "headline": "Grant powers Metro Kings to Game 2 victory",
+      "summary": "Malik Grant scored 28 points as the Metro Kings beat the Harbour City Waves 101-98 and levelled the Championship Finals at 1-1.",
+      "source_urls": ["https://example.com/abl/game-2-recap"],
+      "why_recommended": "Finals result and leading-player performance",
+      "model_confidence": 0.97,
+      "workflow_attempt": 1
+    },
+    {
+      "recommendation_id": "rec_002",
+      "source_content_ids": ["src_002"],
+      "priority": "high",
+      "category": "game_result",
+      "headline": "Malik Grant's 28 points level the Finals",
+      "summary": "Watch Malik Grant score 28 points as the Metro Kings win Game 2 101-98 and tie the series at one game each.",
+      "source_urls": ["https://example.com/broadcast/grant-game-2-highlights?utm_source=abl"],
+      "why_recommended": "Finals result and leading-player performance",
+      "model_confidence": 0.96,
+      "workflow_attempt": 1
+    },
+    {
+      "recommendation_id": "rec_003",
+      "source_content_ids": ["src_001"],
+      "priority": "high",
+      "category": "game_result",
+      "headline": "Grant powers Metro Kings to Game 2 victory",
+      "summary": "Malik Grant scored 28 points as the Metro Kings beat the Harbour City Waves 101-98 and levelled the Championship Finals at 1-1.",
+      "source_urls": ["https://example.com/abl/game-2-recap"],
+      "why_recommended": "Finals result and leading-player performance",
+      "model_confidence": 0.97,
+      "workflow_attempt": 2
+    },
+    {
+      "recommendation_id": "rec_004",
+      "source_content_ids": ["src_005"],
+      "priority": "high",
+      "category": "player_record",
+      "headline": "Mensah sets new league playoff assists record",
+      "summary": "Tayo Mensah broke the Aurora Basketball League playoff record with 12 assists in Game 2.",
+      "source_urls": ["https://example.com/abl/stats/mensah-12-assists"],
+      "why_recommended": "Record-breaking player performance",
+      "model_confidence": 0.94,
+      "workflow_attempt": 1
+    },
+    {
+      "recommendation_id": "rec_005",
+      "source_content_ids": ["src_006"],
+      "priority": "high",
+      "category": "player_news",
+      "headline": "Fans can win Malik Grant's signed jersey",
+      "summary": "Metro Kings supporters can enter a competition to win a signed Malik Grant jersey before Game 3.",
+      "source_urls": ["https://example.com/kings/sponsor-giveaway"],
+      "why_recommended": "High-profile player and strong fan interest",
+      "model_confidence": 0.91,
+      "workflow_attempt": 1
+    },
+    {
+      "recommendation_id": "rec_006",
+      "source_content_ids": ["src_007"],
+      "priority": "medium",
+      "category": "event_information",
+      "headline": "Game 3 fan zone opens at 17:30",
+      "summary": "Supporters can visit the Championship Finals fan zone outside Harbour Arena from 17:30 before Game 3.",
+      "source_urls": ["https://example.com/abl/game-3-fan-zone"],
+      "why_recommended": "Useful information for attending supporters",
+      "model_confidence": 0.92,
+      "workflow_attempt": 1
+    },
+    {
+      "recommendation_id": "rec_007",
+      "source_content_ids": ["src_008"],
+      "priority": "medium",
+      "category": "team_news",
+      "headline": "Waves to decide Game 3 lineup after final practice",
+      "summary": "Coach Lena Rivera says no Game 3 lineup decisions are confirmed and player availability will be reviewed after final practice.",
+      "source_urls": ["https://example.com/waves/coach-game-3-availability"],
+      "why_recommended": "Potential lineup development before Game 3",
+      "model_confidence": 0.89,
+      "workflow_attempt": 1
+    },
+    {
+      "recommendation_id": "rec_008",
+      "source_content_ids": ["src_009"],
+      "priority": "medium",
+      "category": "game_preview",
+      "headline": "How the Waves could slow Malik Grant in Game 3",
+      "summary": "The broadcast team examines the defensive changes Harbour City could make after Grant's 28-point Game 2.",
+      "source_urls": ["https://example.com/broadcast/game-3-tactical-preview"],
+      "why_recommended": "Relevant tactical analysis before Game 3",
+      "model_confidence": 0.90,
+      "workflow_attempt": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+content_id,published_at,source,approved,title,classified_relevant,classify_reason,generate_events,cards,card_count,outcome
+src_001,2026-09-02T21:03:00Z,Aurora Basketball League Newsroom,True,Metro Kings level Finals with 101-98 Game 2 win,true,Finals result,a1:timeout:15s a1:completed:21s a2:completed:11s,"rec_001,rec_003",2,"relevant, card written"
+src_002,2026-09-02T21:06:00Z,ABL Broadcast Partner,True,Watch Malik Grant's 28-point performance in Game 2,true,Player performance video,a1:completed:15s,rec_002,1,"relevant, card written"
+src_003,2026-09-03T08:10:00Z,Harbour City Waves,True,Medical update: Elias Cole questionable for Game 3,true,Player availability update,a1:validation_failed:14s,,0,"relevant, LOST (no card)"
+src_004,2026-09-03T08:25:00Z,Aurora Basketball League Newsroom,True,Game 3 tipoff moved to 20:00,false,Routine scheduling notice,,,0,classified not relevant
+src_005,2026-09-03T08:40:00Z,Aurora Basketball League Stats,True,Tayo Mensah ties Waves playoff assists record,true,Player record,a1:completed:12s,rec_004,1,"relevant, card written"
+src_006,2026-09-03T08:45:00Z,Metro Kings,True,Win a signed Malik Grant jersey with Northbank Insurance,true,Star player fan engagement,a1:completed:11s,rec_005,1,"relevant, card written"
+src_007,2026-09-03T08:52:00Z,Aurora Basketball League Newsroom,True,Game 3 fan zone opens at 17:30,true,Finals fan information,a1:completed:11s,rec_006,1,"relevant, card written"
+src_008,2026-09-03T09:00:00Z,Harbour City Waves,True,Coach Rivera: lineup decisions will follow final practice,true,Team availability context,a1:completed:10s,rec_007,1,"relevant, card written"
+src_009,2026-09-03T09:04:00Z,ABL Broadcast Partner,True,Game 3 preview: how the Waves can slow Malik Grant,true,Finals tactical preview,a1:completed:7s,rec_008,1,"relevant, card written"
+src_010,2026-09-03T07:48:00Z,CourtsideWire,False,Sources: Elias Cole expected to miss Game 3,,,,,0,"not approved, not processed"

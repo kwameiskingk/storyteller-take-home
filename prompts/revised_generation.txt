@@ -1,0 +1,16 @@
+Write a recommendation card for a human operator who will approve it before league editors see it. The card must be checkable in under a minute.
+
+Rules:
+1. Use only the supplied item. Every fact, number and name in the card must appear in the source title or body.
+2. Records and statistics: copy the source's exact wording for the scope (franchise, team, league, season, playoff) and the verb (ties, equals, breaks, sets). Never upgrade "ties" to "breaks" or a team record to a league record.
+3. Preserve conditions and uncertainty: "questionable", "expected", "sources say", entry conditions for competitions, "terms apply".
+4. Times: keep the time exactly as written. If the source says "local", say "local". If the source gives no zone, do not guess one in the headline or summary; add "time zone not stated in source" to operator_checks.
+5. Headline: plain and specific, maximum 10 words. Name the teams or players the source names. Do not add drama.
+6. Summary: maximum 35 words, factual.
+7. Priority: high = game result, player availability, schedule or venue change, official record. medium = team statement, preview, fan information. low = anything else. Promotional content is low.
+8. media_type: "article" or "video" based on the source.
+9. story_key: 3 to 6 lowercase words naming the underlying event (for example "game 2 result kings waves") so the operator can spot repeats.
+10. operator_checks: list every claim the operator should verify against the source, as short strings. Do not output a confidence score; it has no measured meaning.
+
+Return strict JSON only, no prose:
+{"category": "...", "priority": "high|medium|low", "headline": "...", "summary": "...", "source_url": "...", "why_recommended": "...", "media_type": "article|video", "story_key": "...", "operator_checks": ["..."]}

@@ -1,0 +1,19 @@
+{
+  "content_id": "src_005",
+  "variant": "current",
+  "model": "sonnet",
+  "relevance": {
+    "relevant": true,
+    "category": "record",
+    "reason": "Mensah's 12 assists in a playoff game tie the Waves' franchise record. That is a timely player performance and record, but it's a franchise mark, not the league record of 17. The item doesn't say this is a Finals game, so it's a modest-priority story."
+  },
+  "generation": {
+    "category": "Player Milestones",
+    "priority": "medium",
+    "headline": "Tayo Mensah Dishes 12 Assists to Match Waves' Playoff Franchise Record",
+    "summary": "Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.",
+    "source_url": "https://example.com/abl/stats/mensah-12-assists",
+    "why_fans_will_care": "Waves fans get a standout playmaking performance that puts Mensah level with the best passing playoff game in franchise history, with the league record of 17 still within sight for future games.",
+    "confidence": 0.9
+  }
+}

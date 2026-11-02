@@ -1,12 +1,13 @@
 # Aurora Basketball League content service: Game 3 delivery recommendation
 
 Take-home submission for the Delivery Lead, AI-Enabled Products role at Storyteller.
-Candidate: Kwame [surname]. Scenario clock: Thursday 3 September 2026, 12:00 UTC.
+Candidate: Kwame Mbugua. Scenario clock: Thursday 3 September 2026, 12:00 UTC.
 
-This README is the main document. Everything it refers to is in the folders below, written as the documents I would actually send to each person.
+This README is the main document. The same content is laid out as a navigable delivery brief in `brief/index.html` (open it from a clone of this repository). Everything either one refers to is in the folders below, written as the documents I would actually send to each person.
 
 | Folder | What is in it |
 |---|---|
+| `brief/` | `index.html`, the delivery brief: this document with section navigation and links to every file |
 | `data/` | The evidence pack, unchanged |
 | `checks/` | `reconcile.py` joins sources, log and queue and writes the findings; `numbers.py` computes every figure quoted in prose; `test_reconcile.py` holds hand-counted expectations |
 | `prompts/` | Current and revised AI instructions, the runner that tests them live, the comparison builder |
@@ -152,7 +153,7 @@ Full chronological log in `ai_log/ai_use_log.md`. Summary:
 
 ## 7. Time, assumptions, and what I left unfinished
 
-**Time spent:** approximately [X] hours, over Sunday 1 November and Monday 2 November 2026.
+**Time spent:** about three and a half hours of my own time across two sittings on 1 and 2 November 2026, with Claude Code working alongside throughout.
 
 **Assumptions:** 20 percent of cards need slow review. EUR per call is a flat average because the CSV has no token counts. Priya sends client messages. The Claude Code CLI stands in for whichever model production uses. Four of nine sample items as the live-lane share.
 

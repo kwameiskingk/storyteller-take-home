@@ -3,7 +3,7 @@
 Take-home submission for the Delivery Lead, AI-Enabled Products role at Storyteller.
 Candidate: Kwame Mbugua. Scenario clock: Thursday 3 September 2026, 12:00 UTC.
 
-This README is the main document. The same content is laid out as a navigable delivery brief in `brief/index.html` (open it from a clone of this repository). Everything either one refers to is in the folders below, written as the documents I would actually send to each person.
+This README is the main document. **For the most readable version, open `brief/index.html` in a browser** (download or clone the repository first; GitHub does not render HTML files). It carries the same content with section navigation and links to every file. Everything either one refers to is in the folders below, written as the documents I would actually send to each person.
 
 | Folder | What is in it |
 |---|---|
@@ -121,7 +121,7 @@ python3 -I prompts/run_prompts.py data/01_source_content.json outputs/prompt_run
 python3 -I prompts/compare_runs.py data/01_source_content.json data/02_trial_recommendations.json outputs/prompt_runs outputs/prompt_before_after.md
 ```
 
-Step 4 needs a logged-in Claude Code CLI. The outputs it produced are committed in `outputs/prompt_runs/` and the comparison in `outputs/prompt_before_after.md`, so the result can be inspected without running it.
+Step 4 needs either a logged-in Claude Code CLI (default) or an Anthropic API key (`--backend api --model <exact model id>`). Each saved output records the exact model id and run time. The runs used here are committed in `outputs/prompt_runs/` and the comparison in `outputs/prompt_before_after.md`, so the result can be inspected without running anything.
 
 **What it shows.**
 - The reconciliation derives the duplicate, the lost item, the rejected item, the latency and the cost pattern from the raw files, with the rows quoted.
@@ -142,14 +142,14 @@ In `ops/client_update_thursday_1500.md`, with the reasoning for what it does and
 
 ## 6. How I used AI and how I checked it
 
-Full chronological log in `ai_log/ai_use_log.md`. Summary:
+Full chronological log in `ai_log/ai_use_log.md`, with the representative prompt and output.
 
-- **Claude Code did the heavy lifting.** Reading the pack, writing the scripts, tests, prompts and first drafts of every document. I directed, questioned, re-read, and decided.
-- **Checked by construction.** Every finding cites a row. The tests encode hand counts written before the script ran. Every figure in prose is computed by `checks/numbers.py`.
-- **Checked by two independent AI reviews.** A cold read of the pack with no access to our conclusions, then a simulated hiring panel grading the first full draft. The panel found a remit violation in the client update, an impossible gate, unobservable stop conditions, two factual errors and eight contradictions. All are fixed in this version. The log records what each found, what we accepted, and what we did not.
-- **Changed.** The client update, rewritten to precede Lewis's decision rather than pre-empt it. The gate, rebuilt around Friday's rerun and Monday's session. Stop conditions, rebuilt around what can be observed. Prompt rule 4, moved timezone notes out of headlines.
-- **Rejected.** The AI's first framing of the duplicate as a prompt problem, disproven by the log. A hypothesis from the first AI review that the client's complaint referred to earlier output, which contradicts the pack and which I had wrongly adopted. The AI's capacity model, which said 50 cards an hour, in favour of Sam's observed 30 to 40.
-- **Limitations.** The prompt test proves instructions, not production. Outputs are non-deterministic. The story key is not a deduplication key. The AI stated "8x" where the figure is 5x, and listed a pack fact as an assumption; both were caught by the second review and the numbers script.
+**My tool of choice was Claude Code.** It read the pack alongside me, wrote the scripts and tests, drafted the revised instructions, and produced the first draft of every document here. I read the pack myself, set the questions, and required it to prove each finding from the data rather than from its reading. I had every number computed by a script because language models misread numbers. I had the pack scanned for hidden text. I commissioned two separate AI review sessions with no access to our conclusions: a cold adversarial read of the pack, then a simulated hiring panel grading the finished draft. I decided what to accept, change and reject from each. The recommendation, the scope, the second-approver ask and the CourtsideWire position are my decisions.
+
+- **Checked.** Every finding cites a row. Tests encode hand counts written before the script ran. Every figure in prose comes from `checks/numbers.py`. The panel found a remit violation in the client update, an impossible gate, unobservable stop conditions, two factual errors and eight contradictions; all are fixed here and listed in the log.
+- **Changed.** The client update, rewritten so it precedes Lewis's decision rather than pre-empting it. The Monday gate, rebuilt around Friday's rerun and Monday's session. Stop conditions, rebuilt around what can be observed. The revised instruction's time-zone rule, moved out of headlines.
+- **Rejected.** The AI's first framing of the duplicate as a prompt problem; the log shows a retry bug. A reviewer's hypothesis that the client's complaint referred to earlier output, which contradicts the pack and which I had wrongly accepted before the panel caught it. The AI's capacity model of 50 cards an hour, in favour of Sam's observed 30 to 40.
+- **Limitations.** The prompt test proves the instructions, not production. Outputs vary between runs; each saved run records the exact model id and time. The story key is not a deduplication key. The AI wrote 8x where the figure is 5x and 45 percent where it is 44, and listed a pack fact as an assumption; the numbers script and the second review caught all three.
 
 ## 7. Time, assumptions, and what I left unfinished
 

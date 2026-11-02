@@ -1,30 +1,35 @@
 {
   "content_id": "src_008",
   "variant": "revised",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:22:23Z",
   "relevance": {
     "relevant": true,
-    "category": "player_availability",
+    "category": "team_statement",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "Coach Rivera \"said no Game 3 lineup decisions had yet been confirmed and that player availability would be reviewed after final practice,\" signalling pending lineup/availability news."
+    "reason": "Coach Rivera said \"no Game 3 lineup decisions had yet been confirmed and that player availability would be reviewed after final practice,\" a team statement on selection with an update pending."
   },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"team_statement\", \"time_sensitive\": true, \"affects_attending_fans\": false, \"reason\": \"Coach Rivera said \\\"no Game 3 lineup decisions had yet been confirmed and that player availability would be reviewed after final practice,\\\" a team statement on selection with an update pending.\"}",
   "generation": {
     "category": "Team news",
-    "priority": "medium",
-    "headline": "Waves coach: Game 3 lineup decisions not yet confirmed",
+    "priority": "high",
+    "headline": "Waves coach Rivera: no Game 3 lineup decisions confirmed yet",
     "summary": "Waves coach Lena Rivera said no Game 3 lineup decisions had yet been confirmed. Player availability would be reviewed after final practice.",
     "source_url": "https://example.com/waves/coach-game-3-availability",
-    "why_recommended": "Team statement from Harbour City Waves on Game 3 lineup and player availability. No availability is confirmed, so it is rated medium, not high. The source says decisions follow final practice.",
+    "why_recommended": "Coach statement on Game 3 player availability; availability news is high priority, and the decision is still pending.",
     "media_type": "article",
     "story_key": "game 3 lineup availability waves",
     "operator_checks": [
-      "Coach is named as Lena Rivera of the Waves",
+      "Lena Rivera is named as Waves coach",
       "No Game 3 lineup decisions had yet been confirmed",
-      "Player availability would be reviewed after final practice",
-      "The statement names no individual players and gives no final practice time",
-      "Published 2026-09-03T09:00:00Z (UTC)",
-      "Source is Harbour City Waves"
+      "Player availability to be reviewed after final practice",
+      "No specific players named as available or unavailable",
+      "No time or time zone stated for final practice or decisions",
+      "Source is Harbour City Waves; published_at 2026-09-03T09:00:00Z; may be outdated"
     ]
-  }
+  },
+  "generation_raw": "{\"category\": \"Team news\", \"priority\": \"high\", \"headline\": \"Waves coach Rivera: no Game 3 lineup decisions confirmed yet\", \"summary\": \"Waves coach Lena Rivera said no Game 3 lineup decisions had yet been confirmed. Player availability would be reviewed after final practice.\", \"source_url\": \"https://example.com/waves/coach-game-3-availability\", \"why_recommended\": \"Coach statement on Game 3 player availability; availability news is high priority, and the decision is still pending.\", \"media_type\": \"article\", \"story_key\": \"game 3 lineup availability waves\", \"operator_checks\": [\"Lena Rivera is named as Waves coach\", \"No Game 3 lineup decisions had yet been confirmed\", \"Player availability to be reviewed after final practice\", \"No specific players named as available or unavailable\", \"No time or time zone stated for final practice or decisions\", \"Source is Harbour City Waves; published_at 2026-09-03T09:00:00Z; may be outdated\"]}"
 }

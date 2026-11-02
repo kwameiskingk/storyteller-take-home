@@ -1,29 +1,34 @@
 {
   "content_id": "src_001",
   "variant": "revised",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:50Z",
   "relevance": {
     "relevant": true,
     "category": "game_result",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1."
+    "reason": "The source reports \"The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1.\""
   },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"game_result\", \"time_sensitive\": true, \"affects_attending_fans\": false, \"reason\": \"The source reports \\\"The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1.\\\"\"}",
   "generation": {
-    "category": "Game result",
+    "category": "Basketball",
     "priority": "high",
-    "headline": "Metro Kings beat Waves 101-98 to level Finals",
+    "headline": "Metro Kings beat Harbour City Waves 101-98 in Game 2",
     "summary": "The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1. Malik Grant led the Kings with 28 points and eight rebounds.",
     "source_url": "https://example.com/abl/game-2-recap",
-    "why_recommended": "Official game result that changes the Championship Finals series score to 1-1.",
+    "why_recommended": "Game result from the Championship Finals, sourced from the Aurora Basketball League Newsroom.",
     "media_type": "article",
     "story_key": "game 2 result kings waves",
     "operator_checks": [
-      "Score is Metro Kings 101, Harbour City Waves 98",
-      "Series is level at 1-1 in the Championship Finals",
+      "Score is 101-98 in favour of Metro Kings over Harbour City Waves",
+      "Championship Finals now level at 1-1",
       "Malik Grant scored 28 points and had eight rebounds",
-      "Source title calls it the Game 2 win",
-      "Source is Aurora Basketball League Newsroom, published 2026-09-02T21:03:00Z"
+      "Game is Game 2 per the source title",
+      "No game time or time zone in source body; published_at is 2026-09-02T21:03:00Z"
     ]
-  }
+  },
+  "generation_raw": "{\"category\": \"Basketball\", \"priority\": \"high\", \"headline\": \"Metro Kings beat Harbour City Waves 101-98 in Game 2\", \"summary\": \"The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1. Malik Grant led the Kings with 28 points and eight rebounds.\", \"source_url\": \"https://example.com/abl/game-2-recap\", \"why_recommended\": \"Game result from the Championship Finals, sourced from the Aurora Basketball League Newsroom.\", \"media_type\": \"article\", \"story_key\": \"game 2 result kings waves\", \"operator_checks\": [\"Score is 101-98 in favour of Metro Kings over Harbour City Waves\", \"Championship Finals now level at 1-1\", \"Malik Grant scored 28 points and had eight rebounds\", \"Game is Game 2 per the source title\", \"No game time or time zone in source body; published_at is 2026-09-02T21:03:00Z\"]}"
 }

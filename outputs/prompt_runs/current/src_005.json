@@ -1,19 +1,14 @@
 {
   "content_id": "src_005",
   "variant": "current",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:29Z",
   "relevance": {
-    "relevant": true,
-    "category": "record",
-    "reason": "Mensah's 12 assists in a playoff game tie the Waves' franchise record. That is a timely player performance and record, but it's a franchise mark, not the league record of 17. The item doesn't say this is a Finals game, so it's a modest-priority story."
+    "relevant": false,
+    "category": "player_performance_record",
+    "reason": "Mensah only tied a franchise playoff assists mark, which is well short of the league record of 17. The item doesn't say whether Game 2 was in the Finals. It was published 2026-09-03, about two months before today (2026-11-02), so it's no longer timely. It's a minor stat note, not a content opportunity."
   },
-  "generation": {
-    "category": "Player Milestones",
-    "priority": "medium",
-    "headline": "Tayo Mensah Dishes 12 Assists to Match Waves' Playoff Franchise Record",
-    "summary": "Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.",
-    "source_url": "https://example.com/abl/stats/mensah-12-assists",
-    "why_fans_will_care": "Waves fans get a standout playmaking performance that puts Mensah level with the best passing playoff game in franchise history, with the league record of 17 still within sight for future games.",
-    "confidence": 0.9
-  }
+  "relevance_raw": "{\"relevant\": false, \"category\": \"player_performance_record\", \"reason\": \"Mensah only tied a franchise playoff assists mark, which is well short of the league record of 17. The item doesn't say whether Game 2 was in the Finals. It was published 2026-09-03, about two months before today (2026-11-02), so it's no longer timely. It's a minor stat note, not a content opportunity.\"}"
 }

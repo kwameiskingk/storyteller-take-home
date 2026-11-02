@@ -1,29 +1,35 @@
 {
   "content_id": "src_009",
   "variant": "revised",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:22:33Z",
   "relevance": {
     "relevant": true,
     "category": "preview_analysis",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "The approved broadcaster item states \"The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2,\" which is a Game 3 tactical preview."
+    "reason": "Approved broadcaster preview: \"The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\""
   },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"preview_analysis\", \"time_sensitive\": true, \"affects_attending_fans\": false, \"reason\": \"Approved broadcaster preview: \\\"The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\\\"\"}",
   "generation": {
-    "category": "Game preview",
+    "category": "Basketball preview",
     "priority": "medium",
     "headline": "Game 3 preview: how the Waves can slow Malik Grant",
-    "summary": "The broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.",
+    "summary": "Broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.",
     "source_url": "https://example.com/broadcast/game-3-tactical-preview",
-    "why_recommended": "Preview from ABL Broadcast Partner on possible defensive adjustments for Game 3 after Malik Grant's 28-point Game 2.",
+    "why_recommended": "Game 3 preview from ABL Broadcast Partner covering likely defensive adjustments against Malik Grant, who scored 28 points in Game 2.",
     "media_type": "article",
     "story_key": "game 3 preview waves grant",
     "operator_checks": [
-      "Malik Grant scored 28 points in Game 2",
-      "Adjustments are described as ones Harbour City 'may make', not confirmed",
-      "Title names the Waves and body names Harbour City; the source does not say they are the same team",
-      "Source does not say whether this is an article or a video; 'article' is assumed",
-      "Source is a broadcast partner preview, so it is not a game result or official record"
+      "Source says Malik Grant scored 28 points in Game 2",
+      "Source says Harbour City 'may' make defensive adjustments; this is a preview, not confirmed",
+      "Headline names the Waves while the body names Harbour City; confirm they are the same team",
+      "Source does not state the sport; category 'Basketball preview' is inferred, confirm or change",
+      "Source does not say whether it is an article or video; media_type 'article' is assumed from the text body, confirm",
+      "Published time 2026-09-03T09:04:00Z; no game time given in source"
     ]
-  }
+  },
+  "generation_raw": "{\"category\": \"Basketball preview\", \"priority\": \"medium\", \"headline\": \"Game 3 preview: how the Waves can slow Malik Grant\", \"summary\": \"Broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\", \"source_url\": \"https://example.com/broadcast/game-3-tactical-preview\", \"why_recommended\": \"Game 3 preview from ABL Broadcast Partner covering likely defensive adjustments against Malik Grant, who scored 28 points in Game 2.\", \"media_type\": \"article\", \"story_key\": \"game 3 preview waves grant\", \"operator_checks\": [\"Source says Malik Grant scored 28 points in Game 2\", \"Source says Harbour City 'may' make defensive adjustments; this is a preview, not confirmed\", \"Headline names the Waves while the body names Harbour City; confirm they are the same team\", \"Source does not state the sport; category 'Basketball preview' is inferred, confirm or change\", \"Source does not say whether it is an article or video; media_type 'article' is assumed from the text body, confirm\", \"Published time 2026-09-03T09:04:00Z; no game time given in source\"]}"
 }

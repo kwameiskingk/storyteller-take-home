@@ -1,10 +1,14 @@
 {
   "content_id": "src_007",
   "variant": "current",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:48Z",
   "relevance": {
     "relevant": false,
-    "category": "event logistics / promotional",
-    "reason": "A routine fan zone opening-time notice for Game 3. It is tied to the Finals, but it has no news value: no player news, result or record. The only player content is interviews on a screen. It is low priority for an editor, and at most it belongs in a fan-info roundup."
-  }
+    "category": "promotional/event logistics",
+    "reason": "Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major player news, result or record, so it is low priority for an editor. It might suit a brief matchday-info mention at most."
+  },
+  "relevance_raw": "{\"relevant\": false, \"category\": \"promotional/event logistics\", \"reason\": \"Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major player news, result or record, so it is low priority for an editor. It might suit a brief matchday-info mention at most.\"}"
 }

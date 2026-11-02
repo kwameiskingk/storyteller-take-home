@@ -1,29 +1,35 @@
 {
   "content_id": "src_004",
   "variant": "revised",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:22:09Z",
   "relevance": {
     "relevant": true,
     "category": "schedule_change",
     "time_sensitive": true,
     "affects_attending_fans": true,
-    "reason": "\"Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.\""
+    "reason": "Source states \"Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.\""
   },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"schedule_change\", \"time_sensitive\": true, \"affects_attending_fans\": true, \"reason\": \"Source states \\\"Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.\\\"\"}",
   "generation": {
     "category": "Schedule change",
     "priority": "high",
-    "headline": "Game 3 tipoff moved to 20:00 local",
-    "summary": "Game 3 of the Championship Finals tipoff moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.",
+    "headline": "Game 3 of Championship Finals tipoff moved to 20:00 local",
+    "summary": "Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.",
     "source_url": "https://example.com/abl/game-3-schedule-update",
-    "why_recommended": "Official schedule change for a Championship Finals game that affects attendees and viewers.",
+    "why_recommended": "Official schedule change to a Championship Finals game start time, relevant to fans attending and watching.",
     "media_type": "article",
     "story_key": "game 3 tipoff time change",
     "operator_checks": [
-      "Game 3 of the Championship Finals",
       "Tipoff moved from 19:30 to 20:00 local time",
+      "Game 3 of the Championship Finals",
       "Reason: updated broadcast schedule",
-      "Arena doors still open at 17:30 (zone not stated)",
-      "Source: Aurora Basketball League Newsroom, published 2026-09-03T08:25:00Z"
+      "Arena doors still open at 17:30",
+      "Time zone not stated in source; source says only 'local time'",
+      "Source is Aurora Basketball League Newsroom, published 2026-09-03T08:25:00Z"
     ]
-  }
+  },
+  "generation_raw": "{\"category\": \"Schedule change\", \"priority\": \"high\", \"headline\": \"Game 3 of Championship Finals tipoff moved to 20:00 local\", \"summary\": \"Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.\", \"source_url\": \"https://example.com/abl/game-3-schedule-update\", \"why_recommended\": \"Official schedule change to a Championship Finals game start time, relevant to fans attending and watching.\", \"media_type\": \"article\", \"story_key\": \"game 3 tipoff time change\", \"operator_checks\": [\"Tipoff moved from 19:30 to 20:00 local time\", \"Game 3 of the Championship Finals\", \"Reason: updated broadcast schedule\", \"Arena doors still open at 17:30\", \"Time zone not stated in source; source says only 'local time'\", \"Source is Aurora Basketball League Newsroom, published 2026-09-03T08:25:00Z\"]}"
 }

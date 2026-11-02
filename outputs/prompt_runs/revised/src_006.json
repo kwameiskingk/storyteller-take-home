@@ -1,12 +1,16 @@
 {
   "content_id": "src_006",
   "variant": "revised",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:22:10Z",
   "relevance": {
     "relevant": false,
     "category": "promotional",
     "time_sensitive": false,
     "affects_attending_fans": false,
     "reason": "Sponsor giveaway: \"Supporters who request a Northbank Insurance quote before Friday will enter a draw to win a signed Malik Grant jersey.\""
-  }
+  },
+  "relevance_raw": "{\"relevant\": false, \"category\": \"promotional\", \"time_sensitive\": false, \"affects_attending_fans\": false, \"reason\": \"Sponsor giveaway: \\\"Supporters who request a Northbank Insurance quote before Friday will enter a draw to win a signed Malik Grant jersey.\\\"\"}"
 }

@@ -1,19 +1,24 @@
 {
   "content_id": "src_010",
   "variant": "current",
-  "model": "sonnet",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:49Z",
   "relevance": {
     "relevant": true,
     "category": "player_availability",
-    "reason": "Unconfirmed report from anonymous sources that star player Elias Cole is expected to miss Finals Game 3. It is timely and of high fan interest, and it affects the Finals. The Waves have not confirmed it, so the editor should treat it as a developing story and verify it before publishing."
+    "reason": "Unconfirmed report from anonymous sources that Elias Cole is expected to miss Game 3 of the Finals. Player availability news is timely and high-interest for fans. Because the Waves have not confirmed it, an editor should frame it as unverified and watch for an official injury report."
   },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_availability\", \"reason\": \"Unconfirmed report from anonymous sources that Elias Cole is expected to miss Game 3 of the Finals. Player availability news is timely and high-interest for fans. Because the Waves have not confirmed it, an editor should frame it as unverified and watch for an official injury report.\"}",
   "generation": {
-    "category": "Injury/Player Availability",
+    "category": "Injury/Availability",
     "priority": "medium",
-    "headline": "Elias Cole Reportedly Trending Toward Missing Game 3",
-    "summary": "CourtsideWire reports two people described as close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
+    "headline": "Report: Elias Cole Likely Sidelined for Game 3",
+    "summary": "CourtsideWire, citing two people described as close to the team, reports Elias Cole is expected to miss Game 3. The Harbour City Waves have not confirmed his status.",
     "source_url": "https://example.com/courtsidewire/cole-expected-out",
-    "why_fans_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3. The report is unconfirmed and based on anonymous sources, so fans should wait for official team word.",
+    "why_fans_will_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3, but the report is unconfirmed, so fans should watch for official team word.",
     "confidence": 0.6
-  }
+  },
+  "generation_raw": "{\"category\":\"Injury/Availability\",\"priority\":\"medium\",\"headline\":\"Report: Elias Cole Likely Sidelined for Game 3\",\"summary\":\"CourtsideWire, citing two people described as close to the team, reports Elias Cole is expected to miss Game 3. The Harbour City Waves have not confirmed his status.\",\"source_url\":\"https://example.com/courtsidewire/cole-expected-out\",\"why_fans_will_care\":\"Cole's possible absence could affect the Waves' lineup and outlook for Game 3, but the report is unconfirmed, so fans should watch for official team word.\",\"confidence\":0.6}"
 }

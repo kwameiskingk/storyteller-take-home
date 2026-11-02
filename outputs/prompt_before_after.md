@@ -4,16 +4,16 @@ Run with `prompts/run_prompts.py` through the Claude Code CLI (model alias `sonn
 
 | item | pilot | current prompt (today) | revised prompt (today) |
 |---|---|---|---|
-| src_001 *Metro Kings level Finals with 101-98 Game 2 w* | high / game_result<br>*Grant powers Metro Kings to Game 2 victory* | high / Game Recap<br>*Metro Kings Edge Waves 101-98 to Even the Finals at 1-1*<br>no unsupported claims | high / Game result<br>*Metro Kings beat Waves 101-98 to level Finals*<br>no unsupported claims |
-| src_002 *Watch Malik Grant's 28-point performance in G* | high / game_result<br>*Malik Grant's 28 points level the Finals* | high / Game Highlights<br>*Malik Grant Erupts for 28 as Metro Kings Even the Finals*<br>no unsupported claims | high / Finals highlights<br>*Malik Grant scores 28 as Metro Kings win Game 2*<br>no unsupported claims |
-| src_003 *Medical update: Elias Cole questionable for G* | **no card** | high / Injury Report<br>*Elias Cole Questionable for Game 3 With Ankle Soreness*<br>no unsupported claims | high / Player availability<br>*Elias Cole questionable for Game 3 with ankle soreness*<br>no unsupported claims |
-| src_004 *Game 3 tipoff moved to 20:00* | **no card** | high / Schedule Update<br>*Game 3 Tipoff Pushed Back Half an Hour to 20:00*<br>no unsupported claims | high / Schedule change<br>*Game 3 tipoff moved to 20:00 local*<br>no unsupported claims |
-| src_005 *Tayo Mensah ties Waves playoff assists record* | high / player_record<br>*Mensah sets new league playoff assists record* | medium / Player Milestones<br>*Tayo Mensah Dishes 12 Assists to Match Waves' Playoff Franchise Record*<br>no unsupported claims | high / Player records<br>*Mensah ties Waves franchise playoff assists record with 12*<br>no unsupported claims |
-| src_006 *Win a signed Malik Grant jersey with Northban* | high / player_news<br>*Fans can win Malik Grant's signed jersey* | not relevant: promotional<br>Sponsor giveaway tied to an insurance quote request. It is promotional, has no news value, | not relevant: promotional<br>Sponsor giveaway: "Supporters who request a Northbank Insurance quote before Friday will e |
-| src_007 *Game 3 fan zone opens at 17:30* | medium / event_information<br>*Game 3 fan zone opens at 17:30* | not relevant: event logistics / promotional<br>A routine fan zone opening-time notice for Game 3. It is tied to the Finals, but it has no | medium / Fan information<br>*Game 3 fan zone opens at 17:30 outside Harbour Arena*<br>no unsupported claims |
-| src_008 *Coach Rivera: lineup decisions will follow fi* | medium / team_news<br>*Waves to decide Game 3 lineup after final practice* | medium / Team News<br>*Waves Game 3 Lineup Still Up in the Air as Rivera Awaits Final Practice*<br>no unsupported claims | medium / Team news<br>*Waves coach: Game 3 lineup decisions not yet confirmed*<br>no unsupported claims |
-| src_009 *Game 3 preview: how the Waves can slow Malik * | medium / game_preview<br>*How the Waves could slow Malik Grant in Game 3* | medium / Game preview / Tactical analysis<br>*Can the Waves Cool Off Malik Grant in Game 3?*<br>no unsupported claims | medium / Game preview<br>*Game 3 preview: how the Waves can slow Malik Grant*<br>no unsupported claims |
-| src_010 *Sources: Elias Cole expected to miss Game 3* | not run (unapproved) | medium / Injury/Player Availability<br>*Elias Cole Reportedly Trending Toward Missing Game 3*<br>no unsupported claims | high / Player availability<br>*Elias Cole expected to miss Game 3, sources say*<br>no unsupported claims |
+| src_001 *Metro Kings level Finals with 101-98 Game 2 w* | high / game_result<br>*Grant powers Metro Kings to Game 2 victory* | medium / Match Result<br>*Metro Kings Edge Waves 101-98 to Even the Finals at 1-1*<br>no unsupported claims | high / Basketball<br>*Metro Kings beat Harbour City Waves 101-98 in Game 2*<br>no unsupported claims |
+| src_002 *Watch Malik Grant's 28-point performance in G* | high / game_result<br>*Malik Grant's 28 points level the Finals* | high / Game Highlights<br>*Malik Grant Drops 28 as Metro Kings Even the Finals With a 101-98 Thriller*<br>no unsupported claims | high / Game result<br>*Metro Kings beat opponent 101-98 in Game 2; Grant scores 28*<br>no unsupported claims |
+| src_003 *Medical update: Elias Cole questionable for G* | **no card** | high / Injury Update<br>*Elias Cole's Ankle Puts Game 3 Status in Doubt for the Waves*<br>no unsupported claims | high / Player availability<br>*Elias Cole questionable for Game 3 with left ankle soreness*<br>no unsupported claims |
+| src_004 *Game 3 tipoff moved to 20:00* | **no card** | high / Schedule Update<br>*Game 3 Tipoff Pushed Back 30 Minutes to 8 PM*<br>**flags:** numbers not in source ['8'] | high / Schedule change<br>*Game 3 of Championship Finals tipoff moved to 20:00 local*<br>no unsupported claims |
+| src_005 *Tayo Mensah ties Waves playoff assists record* | high / player_record<br>*Mensah sets new league playoff assists record* | not relevant: player_performance_record<br>Mensah only tied a franchise playoff assists mark, which is well short of the league recor | high / Basketball<br>*Tayo Mensah ties Waves playoff assists record with 12*<br>no unsupported claims |
+| src_006 *Win a signed Malik Grant jersey with Northban* | high / player_news<br>*Fans can win Malik Grant's signed jersey* | not relevant: promotional<br>Sponsor giveaway for a signed jersey tied to an insurance quote request. It's a promotiona | not relevant: promotional<br>Sponsor giveaway: "Supporters who request a Northbank Insurance quote before Friday will e |
+| src_007 *Game 3 fan zone opens at 17:30* | medium / event_information<br>*Game 3 fan zone opens at 17:30* | not relevant: promotional/event logistics<br>Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major p | medium / Fan information<br>*Game 3 fan zone opens at 17:30 outside Harbour Arena*<br>no unsupported claims |
+| src_008 *Coach Rivera: lineup decisions will follow fi* | medium / team_news<br>*Waves to decide Game 3 lineup after final practice* | medium / Team News<br>*Waves Game 3 Lineup Still Up in the Air After Coach Rivera's Update*<br>no unsupported claims | high / Team news<br>*Waves coach Rivera: no Game 3 lineup decisions confirmed yet*<br>no unsupported claims |
+| src_009 *Game 3 preview: how the Waves can slow Malik * | medium / game_preview<br>*How the Waves could slow Malik Grant in Game 3* | medium / Game Preview / Tactical Analysis<br>*Can the Waves Cool Off Malik Grant? Game 3 Tactical Preview*<br>no unsupported claims | medium / Basketball preview<br>*Game 3 preview: how the Waves can slow Malik Grant*<br>no unsupported claims |
+| src_010 *Sources: Elias Cole expected to miss Game 3* | not run (unapproved) | medium / Injury/Availability<br>*Report: Elias Cole Likely Sidelined for Game 3*<br>no unsupported claims | high / Player availability<br>*Sources: Elias Cole expected to miss Game 3*<br>no unsupported claims |
 
 ## Full outputs with checks
 
@@ -26,16 +26,16 @@ Source: *Metro Kings level Finals with 101-98 Game 2 win* — The Metro Kings be
   "relevance": {
     "relevant": true,
     "category": "game_result",
-    "reason": "Timely Finals Game 2 result: Metro Kings beat the Harbour City Waves 101-98 to level the series at 1-1, with a standout 28-point, eight-rebound performance from Malik Grant. Directly tied to the Finals and of high fan interest."
+    "reason": "Timely Finals Game 2 result: the Metro Kings beat the Harbour City Waves 101-98 to level the series at 1-1, with a strong performance from Malik Grant (28 points, 8 rebounds). Fans following the Finals will want this."
   },
   "generation": {
-    "category": "Game Recap",
-    "priority": "high",
+    "category": "Match Result",
+    "priority": "medium",
     "headline": "Metro Kings Edge Waves 101-98 to Even the Finals at 1-1",
-    "summary": "The Metro Kings beat the Harbour City Waves 101-98 in Game 2 of the Championship Finals, levelling the series at 1-1. Malik Grant led the Kings with 28 points and eight rebounds.",
+    "summary": "The Metro Kings beat the Harbour City Waves 101-98 in Game 2 to level the Championship Finals at 1-1. Malik Grant led the Kings with 28 points and eight rebounds.",
     "source_url": "https://example.com/abl/game-2-recap",
-    "why_fans_will_care": "The Finals are now a fresh best-of series after a tight three-point result, and Malik Grant's 28-point, eight-rebound performance gives Kings fans a standout storyline heading into the next game.",
-    "confidence": 0.95
+    "why_fans_will_care": "The Finals are now a fresh best-of series, with the Kings answering back after what appears to be a Game 1 loss. Grant's 28-point, eight-rebound showing and the three-point margin point to a tight, tense contest.",
+    "confidence": 0.85
   }
 }
 ```
@@ -53,23 +53,23 @@ Source: *Metro Kings level Finals with 101-98 Game 2 win* — The Metro Kings be
     "category": "game_result",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1."
+    "reason": "The source reports \"The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1.\""
   },
   "generation": {
-    "category": "Game result",
+    "category": "Basketball",
     "priority": "high",
-    "headline": "Metro Kings beat Waves 101-98 to level Finals",
+    "headline": "Metro Kings beat Harbour City Waves 101-98 in Game 2",
     "summary": "The Metro Kings beat the Harbour City Waves 101-98 to level the Championship Finals at 1-1. Malik Grant led the Kings with 28 points and eight rebounds.",
     "source_url": "https://example.com/abl/game-2-recap",
-    "why_recommended": "Official game result that changes the Championship Finals series score to 1-1.",
+    "why_recommended": "Game result from the Championship Finals, sourced from the Aurora Basketball League Newsroom.",
     "media_type": "article",
     "story_key": "game 2 result kings waves",
     "operator_checks": [
-      "Score is Metro Kings 101, Harbour City Waves 98",
-      "Series is level at 1-1 in the Championship Finals",
+      "Score is 101-98 in favour of Metro Kings over Harbour City Waves",
+      "Championship Finals now level at 1-1",
       "Malik Grant scored 28 points and had eight rebounds",
-      "Source title calls it the Game 2 win",
-      "Source is Aurora Basketball League Newsroom, published 2026-09-02T21:03:00Z"
+      "Game is Game 2 per the source title",
+      "No game time or time zone in source body; published_at is 2026-09-02T21:03:00Z"
     ]
   }
 }
@@ -86,15 +86,16 @@ Source: *Watch Malik Grant's 28-point performance in Game 2* — Video highlight
   "relevance": {
     "relevant": true,
     "category": "player_performance",
-    "reason": "Malik Grant's 28-point effort led the Metro Kings to a 101-98 Game 2 win that tied the Finals 1-1. It's a major player performance in a key Finals result, and the highlight video makes it easy to publish."
+    "reason": "Highlights of Malik Grant's 28-point Game 2 performance, which helped the Metro Kings win 101-98 and tie the Finals 1-1. It combines a standout individual performance, a key result and direct Finals relevance, and it is video content that is easy to publish. Its timeliness is limited: the item is dated 2026-09-02, which is two months before today's date."
   },
   "generation": {
+    "content_id": "src_002",
     "category": "Game Highlights",
     "priority": "high",
-    "headline": "Malik Grant Erupts for 28 as Metro Kings Even the Finals",
+    "headline": "Malik Grant Drops 28 as Metro Kings Even the Finals With a 101-98 Thriller",
     "summary": "Video highlights show Malik Grant scoring 28 points as the Metro Kings beat their opponent 101-98 in Game 2, tying the Finals at one game each.",
-    "source_url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
-    "why_fans_will_care": "A tight 101-98 Finals win levels the series, and Grant's 28-point night is a key reason. Fans can rewatch the moments that shifted momentum.",
+    "source_url": "https://example.com/broadcast/grant-game-2-highlights",
+    "why_fans_care": "A three-point win levelled the Finals at 1-1, and the highlights let fans relive Grant's 28-point performance that made it happen.",
     "confidence": 0.9
   }
 }
@@ -113,23 +114,24 @@ Source: *Watch Malik Grant's 28-point performance in Game 2* — Video highlight
     "category": "game_result",
     "time_sensitive": false,
     "affects_attending_fans": false,
-    "reason": "Reports that \"the Metro Kings won Game 2 101-98 and tied the Finals at one game each\" with Malik Grant scoring 28 points."
+    "reason": "The item reports that \"the Metro Kings won Game 2 101-98 and tied the Finals at one game each,\" which is a game result, even though it is framed as video highlights."
   },
   "generation": {
-    "category": "Finals highlights",
+    "category": "Game result",
     "priority": "high",
-    "headline": "Malik Grant scores 28 as Metro Kings win Game 2",
+    "headline": "Metro Kings beat opponent 101-98 in Game 2; Grant scores 28",
     "summary": "Video highlights of Malik Grant's 28-point performance as the Metro Kings won Game 2 101-98 and tied the Finals at one game each.",
     "source_url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
-    "why_recommended": "Reports the Game 2 result (Metro Kings 101-98) and the Finals tied at one game each, with video highlights of Malik Grant's 28 points.",
+    "why_recommended": "Reports a Finals game result: Metro Kings won Game 2 101-98 and tied the series at one game each, with Malik Grant scoring 28 points.",
     "media_type": "video",
-    "story_key": "game 2 result metro kings",
+    "story_key": "game 2 result metro kings finals",
     "operator_checks": [
-      "Malik Grant scored 28 points",
       "Metro Kings won Game 2 101-98",
+      "Malik Grant scored 28 points",
       "Finals tied at one game each",
+      "Source does not name the opponent",
       "Item is video highlights from ABL Broadcast Partner",
-      "Source URL includes utm_source=abl tracking parameter"
+      "Published 2026-09-02T21:06:00Z; no time zone claim made beyond the source's Z suffix"
     ]
   }
 }
@@ -145,16 +147,16 @@ Source: *Medical update: Elias Cole questionable for Game 3* — Guard Elias Col
 {
   "relevance": {
     "relevant": true,
-    "category": "player_injury_news",
-    "reason": "Injury status of guard Elias Cole for Finals Game 3 is timely, high-interest player news that directly affects the game and fan expectations; it's a game-time decision, so it's worth surfacing and updating after the final practice assessment."
+    "category": "injury_update",
+    "reason": "Questionable status for guard Elias Cole ahead of Game 3 is timely, high-interest Finals news that affects the matchup and fan expectations. The game-time decision means it should be surfaced now, with a follow-up once he is assessed after the final practice."
   },
   "generation": {
-    "category": "Injury Report",
+    "category": "Injury Update",
     "priority": "high",
-    "headline": "Elias Cole Questionable for Game 3 With Ankle Soreness",
-    "summary": "Harbour City Waves guard Elias Cole is questionable for Game 3 with left ankle soreness. He will be assessed after the team's final practice and is a game-time decision.",
+    "headline": "Elias Cole's Ankle Puts Game 3 Status in Doubt for the Waves",
+    "summary": "Harbour City Waves guard Elias Cole is questionable for Game 3 with left ankle soreness. He'll be assessed after the team's final practice and is a game-time decision.",
     "source_url": "https://example.com/waves/elias-cole-medical-update",
-    "why_fans_care": "Cole's availability could affect the Waves' lineup and game plan for Game 3, and the final call may not come until game time, so fans should watch for updates.",
+    "why_fans_care": "Cole's availability could affect the Waves' lineup and game plan for Game 3, and his status won't be settled until after the final practice, possibly not until game time.",
     "confidence": 0.9
   }
 }
@@ -178,21 +180,20 @@ Source: *Medical update: Elias Cole questionable for Game 3* — Guard Elias Col
   "generation": {
     "category": "Player availability",
     "priority": "high",
-    "headline": "Elias Cole questionable for Game 3 with ankle soreness",
+    "headline": "Elias Cole questionable for Game 3 with left ankle soreness",
     "summary": "Guard Elias Cole is questionable for Game 3 after sustaining soreness in his left ankle. He will be assessed after the team's final practice and remains a game-time decision.",
     "source_url": "https://example.com/waves/elias-cole-medical-update",
-    "why_recommended": "Player availability update for Game 3 from Harbour City Waves, which is a high-priority category. His status is uncertain (questionable, game-time decision).",
+    "why_recommended": "Official team medical update on a player's availability for Game 3, with the status still undecided pending assessment after the final practice.",
     "media_type": "article",
     "story_key": "elias cole game 3 availability",
     "operator_checks": [
-      "Elias Cole is listed as a guard",
-      "Status is 'questionable', not ruled out or confirmed to play",
-      "Game 3 is the game named",
-      "Cause is soreness in his left ankle",
-      "He will be assessed after the team's final practice",
-      "He remains a game-time decision",
-      "Source is Harbour City Waves",
-      "Published 2026-09-03T08:10:00Z (UTC)"
+      "Cole is listed as questionable, not out",
+      "Injury is soreness in his left ankle",
+      "Assessment follows the team's final practice",
+      "Cole remains a game-time decision",
+      "Source is Harbour City Waves; published_at 2026-09-03T08:10:00Z",
+      "Source names no opponent, game date or kickoff time",
+      "Source names no time zone for the assessment or game"
     ]
   }
 }
@@ -208,22 +209,22 @@ Source: *Game 3 tipoff moved to 20:00* — Tipoff for Game 3 of the Championship
 {
   "relevance": {
     "relevant": true,
-    "category": "schedule_update",
-    "reason": "Game 3 tipoff of the Championship Finals moved 30 minutes (19:30 to 20:00) due to broadcast changes. It is timely and directly affects fans attending or watching, so it is worth a short notice or social post. It is a routine logistics update with no player news or results, so it is lower priority."
+    "category": "schedule_change",
+    "reason": "Game 3 tipoff of the Championship Finals moved from 19:30 to 20:00 local time. Fans attending or watching need this timely logistical update, so it's worth a brief service item. It's routine and not a major news story, so priority is low to moderate."
   },
   "generation": {
     "category": "Schedule Update",
     "priority": "high",
-    "headline": "Game 3 Tipoff Pushed Back Half an Hour to 20:00",
+    "headline": "Game 3 Tipoff Pushed Back 30 Minutes to 8 PM",
     "summary": "Game 3 of the Championship Finals now tips off at 20:00 local time instead of 19:30, due to an updated broadcast schedule. Arena doors still open at 17:30.",
     "source_url": "https://example.com/abl/game-3-schedule-update",
-    "why_fans_care": "Ticket holders and viewers need the new start time to plan travel and viewing. Doors still open at 17:30, so attendees have a longer window before tipoff.",
+    "why_fans_will_care": "Fans attending or watching need the new start time to plan travel and viewing. Doors still open at 17:30, so ticket holders will have a longer wait before tipoff.",
     "confidence": 0.95
   }
 }
 ```
 
-**Automatic claim check:** clean
+**Automatic claim check:** numbers not in source ['8']
 
 ### src_004 · revised
 
@@ -236,49 +237,25 @@ Source: *Game 3 tipoff moved to 20:00* — Tipoff for Game 3 of the Championship
     "category": "schedule_change",
     "time_sensitive": true,
     "affects_attending_fans": true,
-    "reason": "\"Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.\""
+    "reason": "Source states \"Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.\""
   },
   "generation": {
     "category": "Schedule change",
     "priority": "high",
-    "headline": "Game 3 tipoff moved to 20:00 local",
-    "summary": "Game 3 of the Championship Finals tipoff moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.",
+    "headline": "Game 3 of Championship Finals tipoff moved to 20:00 local",
+    "summary": "Tipoff for Game 3 of the Championship Finals has moved from 19:30 to 20:00 local time because of an updated broadcast schedule. Arena doors will still open at 17:30.",
     "source_url": "https://example.com/abl/game-3-schedule-update",
-    "why_recommended": "Official schedule change for a Championship Finals game that affects attendees and viewers.",
+    "why_recommended": "Official schedule change to a Championship Finals game start time, relevant to fans attending and watching.",
     "media_type": "article",
     "story_key": "game 3 tipoff time change",
     "operator_checks": [
-      "Game 3 of the Championship Finals",
       "Tipoff moved from 19:30 to 20:00 local time",
+      "Game 3 of the Championship Finals",
       "Reason: updated broadcast schedule",
-      "Arena doors still open at 17:30 (zone not stated)",
-      "Source: Aurora Basketball League Newsroom, published 2026-09-03T08:25:00Z"
+      "Arena doors still open at 17:30",
+      "Time zone not stated in source; source says only 'local time'",
+      "Source is Aurora Basketball League Newsroom, published 2026-09-03T08:25:00Z"
     ]
-  }
-}
-```
-
-**Automatic claim check:** clean
-
-### src_005 · current
-
-Source: *Tayo Mensah ties Waves playoff assists record* — Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.
-
-```json
-{
-  "relevance": {
-    "relevant": true,
-    "category": "record",
-    "reason": "Mensah's 12 assists in a playoff game tie the Waves' franchise record. That is a timely player performance and record, but it's a franchise mark, not the league record of 17. The item doesn't say this is a Finals game, so it's a modest-priority story."
-  },
-  "generation": {
-    "category": "Player Milestones",
-    "priority": "medium",
-    "headline": "Tayo Mensah Dishes 12 Assists to Match Waves' Playoff Franchise Record",
-    "summary": "Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.",
-    "source_url": "https://example.com/abl/stats/mensah-12-assists",
-    "why_fans_will_care": "Waves fans get a standout playmaking performance that puts Mensah level with the best passing playoff game in franchise history, with the league record of 17 still within sight for future games.",
-    "confidence": 0.9
   }
 }
 ```
@@ -299,21 +276,20 @@ Source: *Tayo Mensah ties Waves playoff assists record* — Tayo Mensah recorded
     "reason": "Official stats source states \"Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.\""
   },
   "generation": {
-    "category": "Player records",
+    "category": "Basketball",
     "priority": "high",
-    "headline": "Mensah ties Waves franchise playoff assists record with 12",
+    "headline": "Tayo Mensah ties Waves playoff assists record with 12",
     "summary": "Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.",
     "source_url": "https://example.com/abl/stats/mensah-12-assists",
-    "why_recommended": "Reports a tied franchise playoff record from Aurora Basketball League Stats, which falls under the official record category (high priority).",
+    "why_recommended": "Official stat report of a franchise playoff record being tied, which falls under the high-priority record category.",
     "media_type": "article",
-    "story_key": "mensah waves playoff assists record",
+    "story_key": "mensah 12 assists game 2 waves",
     "operator_checks": [
-      "Tayo Mensah recorded 12 assists",
-      "The assists came in Game 2",
-      "The record is tied, not broken",
-      "The record is the Harbour City Waves' franchise record, not a league record",
-      "The record covers assists in a playoff game",
-      "The Aurora Basketball League playoff record is 17"
+      "Mensah recorded 12 assists in Game 2",
+      "Record is tied, not broken",
+      "Record scope is Harbour City Waves franchise record for assists in a playoff game",
+      "Aurora Basketball League playoff record is 17, so this is not a league record",
+      "Source is Aurora Basketball League Stats"
     ]
   }
 }
@@ -332,7 +308,7 @@ Source: *Game 3 fan zone opens at 17:30* — The Championship Finals fan zone wi
     "category": "fan_information",
     "time_sensitive": true,
     "affects_attending_fans": true,
-    "reason": "Fan logistics update: \"The Championship Finals fan zone will open outside Harbour Arena at 17:30\" with interviews, food stalls and youth activities."
+    "reason": "The source states \"The Championship Finals fan zone will open outside Harbour Arena at 17:30,\" which is fan-logistics information for attending fans."
   },
   "generation": {
     "category": "Fan information",
@@ -340,18 +316,16 @@ Source: *Game 3 fan zone opens at 17:30* — The Championship Finals fan zone wi
     "headline": "Game 3 fan zone opens at 17:30 outside Harbour Arena",
     "summary": "The Championship Finals fan zone opens outside Harbour Arena at 17:30. It will include player interviews on the main screen, food stalls and activities for younger fans.",
     "source_url": "https://example.com/abl/game-3-fan-zone",
-    "why_recommended": "Newsroom fan information about the Game 3 fan zone opening time and activities at Harbour Arena, useful for fans attending the Championship Finals.",
+    "why_recommended": "Fan information from the Aurora Basketball League Newsroom giving the opening time and location of the Game 3 fan zone for the Championship Finals.",
     "media_type": "article",
     "story_key": "game 3 fan zone harbour arena",
     "operator_checks": [
-      "Opening time is 17:30 as written in source",
+      "Opening time is 17:30 as written in the source",
       "Time zone not stated in source",
-      "Fan zone is outside Harbour Arena",
+      "Location is outside Harbour Arena",
       "Fan zone is for the Championship Finals",
-      "Includes player interviews on the main screen",
-      "Includes food stalls",
-      "Includes activities for younger fans",
-      "Title refers to Game 3; body does not mention Game 3 or a date"
+      "Includes player interviews on the main screen, food stalls and activities for younger fans",
+      "Source title refers to Game 3"
     ]
   }
 }
@@ -368,15 +342,15 @@ Source: *Coach Rivera: lineup decisions will follow final practice* — Waves co
   "relevance": {
     "relevant": true,
     "category": "team_news",
-    "reason": "Game 3 availability and lineup status is timely and of strong fan interest during the Finals. However, it contains no confirmed decisions or player news yet, so it is a low-to-moderate priority holding item. An editor should watch for the post-practice update, which could carry major player availability news."
+    "reason": "Game 3 coach update from the Waves ahead of a Finals game. The item confirms no lineup decisions yet and says player availability will be reviewed after final practice. Fans care about availability, and an editor could follow up once the lineup is set. It has no hard news yet, so it is moderate priority at best."
   },
   "generation": {
     "category": "Team News",
     "priority": "medium",
-    "headline": "Waves Game 3 Lineup Still Up in the Air as Rivera Awaits Final Practice",
-    "summary": "Waves coach Lena Rivera said no Game 3 lineup decisions have been confirmed. Player availability will be reviewed after the team's final practice.",
+    "headline": "Waves Game 3 Lineup Still Up in the Air After Coach Rivera's Update",
+    "summary": "Coach Lena Rivera said no Game 3 lineup decisions have been confirmed. Player availability will be reviewed after the team's final practice.",
     "source_url": "https://example.com/waves/coach-game-3-availability",
-    "why_fans_care": "Lineup and player availability for Game 3 are unsettled, so fans should watch for updates after the final practice before assuming who will play.",
+    "why_fans_care": "Fans hoping to know who will play in Game 3 must wait: no lineup is confirmed, and availability will only be reviewed after final practice. The item gives no details on specific players or injuries.",
     "confidence": 0.9
   }
 }
@@ -392,27 +366,27 @@ Source: *Coach Rivera: lineup decisions will follow final practice* — Waves co
 {
   "relevance": {
     "relevant": true,
-    "category": "player_availability",
+    "category": "team_statement",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "Coach Rivera \"said no Game 3 lineup decisions had yet been confirmed and that player availability would be reviewed after final practice,\" signalling pending lineup/availability news."
+    "reason": "Coach Rivera said \"no Game 3 lineup decisions had yet been confirmed and that player availability would be reviewed after final practice,\" a team statement on selection with an update pending."
   },
   "generation": {
     "category": "Team news",
-    "priority": "medium",
-    "headline": "Waves coach: Game 3 lineup decisions not yet confirmed",
+    "priority": "high",
+    "headline": "Waves coach Rivera: no Game 3 lineup decisions confirmed yet",
     "summary": "Waves coach Lena Rivera said no Game 3 lineup decisions had yet been confirmed. Player availability would be reviewed after final practice.",
     "source_url": "https://example.com/waves/coach-game-3-availability",
-    "why_recommended": "Team statement from Harbour City Waves on Game 3 lineup and player availability. No availability is confirmed, so it is rated medium, not high. The source says decisions follow final practice.",
+    "why_recommended": "Coach statement on Game 3 player availability; availability news is high priority, and the decision is still pending.",
     "media_type": "article",
     "story_key": "game 3 lineup availability waves",
     "operator_checks": [
-      "Coach is named as Lena Rivera of the Waves",
+      "Lena Rivera is named as Waves coach",
       "No Game 3 lineup decisions had yet been confirmed",
-      "Player availability would be reviewed after final practice",
-      "The statement names no individual players and gives no final practice time",
-      "Published 2026-09-03T09:00:00Z (UTC)",
-      "Source is Harbour City Waves"
+      "Player availability to be reviewed after final practice",
+      "No specific players named as available or unavailable",
+      "No time or time zone stated for final practice or decisions",
+      "Source is Harbour City Waves; published_at 2026-09-03T09:00:00Z; may be outdated"
     ]
   }
 }
@@ -428,17 +402,17 @@ Source: *Game 3 preview: how the Waves can slow Malik Grant* — The broadcast t
 {
   "relevance": {
     "relevant": true,
-    "category": "tactical_preview",
-    "reason": "Finals-connected Game 3 preview analyzing defensive adjustments against Malik Grant after his 28-point Game 2. It's timely and of strong fan interest, with a player-performance angle. It's analysis rather than breaking news, so it's moderate-to-high priority. It comes from a broadcast partner, so check how it will be used or credited."
+    "category": "tactical analysis",
+    "reason": "Timely Game 3 preview tied to the Finals, focusing on star player Malik Grant's 28-point Game 2 and the defensive adjustments Harbour City may make. It's of strong fan interest, though it's analysis rather than breaking news, so priority is moderate."
   },
   "generation": {
-    "category": "Game preview / Tactical analysis",
+    "category": "Game Preview / Tactical Analysis",
     "priority": "medium",
-    "headline": "Can the Waves Cool Off Malik Grant in Game 3?",
-    "summary": "After Malik Grant scored 28 points in Game 2, the ABL broadcast team previews defensive adjustments Harbour City may make in Game 3. Specific tactics are not detailed in the supplied item.",
+    "headline": "Can the Waves Cool Off Malik Grant? Game 3 Tactical Preview",
+    "summary": "Broadcast partner's team reviews defensive adjustments Harbour City may make in Game 3 after Malik Grant scored 28 points in Game 2. Specific tactics are not detailed in the supplied item.",
     "source_url": "https://example.com/broadcast/game-3-tactical-preview",
-    "why_fans_will_care": "Fans get a tactical look at how Harbour City might respond to Grant's strong Game 2, setting up a key storyline and matchup to watch in Game 3.",
-    "confidence": 0.8
+    "why_fans_care": "Fans following the series get a look at the key matchup and how Harbour City might respond to Grant's Game 2 scoring ahead of Game 3.",
+    "confidence": 0.7
   }
 }
 ```
@@ -456,23 +430,24 @@ Source: *Game 3 preview: how the Waves can slow Malik Grant* — The broadcast t
     "category": "preview_analysis",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "The approved broadcaster item states \"The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2,\" which is a Game 3 tactical preview."
+    "reason": "Approved broadcaster preview: \"The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\""
   },
   "generation": {
-    "category": "Game preview",
+    "category": "Basketball preview",
     "priority": "medium",
     "headline": "Game 3 preview: how the Waves can slow Malik Grant",
-    "summary": "The broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.",
+    "summary": "Broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.",
     "source_url": "https://example.com/broadcast/game-3-tactical-preview",
-    "why_recommended": "Preview from ABL Broadcast Partner on possible defensive adjustments for Game 3 after Malik Grant's 28-point Game 2.",
+    "why_recommended": "Game 3 preview from ABL Broadcast Partner covering likely defensive adjustments against Malik Grant, who scored 28 points in Game 2.",
     "media_type": "article",
     "story_key": "game 3 preview waves grant",
     "operator_checks": [
-      "Malik Grant scored 28 points in Game 2",
-      "Adjustments are described as ones Harbour City 'may make', not confirmed",
-      "Title names the Waves and body names Harbour City; the source does not say they are the same team",
-      "Source does not say whether this is an article or a video; 'article' is assumed",
-      "Source is a broadcast partner preview, so it is not a game result or official record"
+      "Source says Malik Grant scored 28 points in Game 2",
+      "Source says Harbour City 'may' make defensive adjustments; this is a preview, not confirmed",
+      "Headline names the Waves while the body names Harbour City; confirm they are the same team",
+      "Source does not state the sport; category 'Basketball preview' is inferred, confirm or change",
+      "Source does not say whether it is an article or video; media_type 'article' is assumed from the text body, confirm",
+      "Published time 2026-09-03T09:04:00Z; no game time given in source"
     ]
   }
 }
@@ -489,15 +464,15 @@ Source: *Sources: Elias Cole expected to miss Game 3* — Two people described a
   "relevance": {
     "relevant": true,
     "category": "player_availability",
-    "reason": "Unconfirmed report from anonymous sources that star player Elias Cole is expected to miss Finals Game 3. It is timely and of high fan interest, and it affects the Finals. The Waves have not confirmed it, so the editor should treat it as a developing story and verify it before publishing."
+    "reason": "Unconfirmed report from anonymous sources that Elias Cole is expected to miss Game 3 of the Finals. Player availability news is timely and high-interest for fans. Because the Waves have not confirmed it, an editor should frame it as unverified and watch for an official injury report."
   },
   "generation": {
-    "category": "Injury/Player Availability",
+    "category": "Injury/Availability",
     "priority": "medium",
-    "headline": "Elias Cole Reportedly Trending Toward Missing Game 3",
-    "summary": "CourtsideWire reports two people described as close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
+    "headline": "Report: Elias Cole Likely Sidelined for Game 3",
+    "summary": "CourtsideWire, citing two people described as close to the team, reports Elias Cole is expected to miss Game 3. The Harbour City Waves have not confirmed his status.",
     "source_url": "https://example.com/courtsidewire/cole-expected-out",
-    "why_fans_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3. The report is unconfirmed and based on anonymous sources, so fans should wait for official team word.",
+    "why_fans_will_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3, but the report is unconfirmed, so fans should watch for official team word.",
     "confidence": 0.6
   }
 }
@@ -516,24 +491,23 @@ Source: *Sources: Elias Cole expected to miss Game 3* — Two people described a
     "category": "player_availability",
     "time_sensitive": true,
     "affects_attending_fans": false,
-    "reason": "Two people close to the team \"expect Elias Cole to miss Game 3,\" but \"The Harbour City Waves have not confirmed his status,\" so this is an unconfirmed availability report."
+    "reason": "Report says \"Two people described as being close to the team expect Elias Cole to miss Game 3,\" but \"The Harbour City Waves have not confirmed his status,\" so this is unconfirmed."
   },
   "generation": {
     "category": "Player availability",
     "priority": "high",
-    "headline": "Elias Cole expected to miss Game 3, sources say",
-    "summary": "Two people described as being close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
+    "headline": "Sources: Elias Cole expected to miss Game 3",
+    "summary": "Two people described as close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
     "source_url": "https://example.com/courtsidewire/cole-expected-out",
-    "why_recommended": "Player availability report for Game 3. It is unconfirmed: it rests on two sources, and the team has not confirmed his status.",
+    "why_recommended": "Player availability report for Game 3 from CourtsideWire, based on unnamed sources and not confirmed by the Harbour City Waves.",
     "media_type": "article",
     "story_key": "elias cole game 3 availability",
     "operator_checks": [
-      "Headline says 'expected' and 'sources say'; Cole is not confirmed out",
-      "Source: two people described as being close to the team",
+      "Elias Cole is reported as 'expected' to miss Game 3, not confirmed out",
+      "Attribution is 'two people described as being close to the team' (unnamed sources)",
       "Harbour City Waves have not confirmed his status",
-      "Only Game 3 is mentioned; no injury or reason is given in the source",
-      "Published 2026-09-03T07:48:00Z (UTC, per source timestamp)",
-      "Source outlet is CourtsideWire"
+      "Source is CourtsideWire, published 2026-09-03T07:48:00Z",
+      "Source does not state a reason for the absence"
     ]
   }
 }

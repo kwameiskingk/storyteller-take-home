@@ -1,0 +1,45 @@
+STORYTELLER TAKE-HOME: DELIVERY LEAD, AI-ENABLED PRODUCTS
+Candidate: Kwame Mbugua
+Scenario: Aurora Basketball League, Game 3 on Friday 11 September 2026
+
+READ IN THIS ORDER
+
+1. brief/index.html
+   The delivery brief. Open it in any browser. It has the recommendation,
+   the evidence, the plan, the client update, the AI-use account and links
+   to every file below. Fifteen to twenty minutes.
+
+2. README.md
+   The same content as the brief in plain text, for reading on GitHub,
+   which does not render HTML.
+
+3. ops/
+   One document per person in the scenario:
+   client_update_thursday_1500.md   note to Priya and the message for Jordan
+   marta_friday_list.md             ranked engineering list for Marta's four hours
+   lewis_decision_note.md           one page, six decisions, for Lewis at 10:00 Friday
+   amira_event_allowance.md         cost note and allowance for Amira
+   operator_review_checklist.md     Sam's one-page checklist
+   decision_log_template.csv        the log Sam fills in
+   event_runbook.md                 hour-by-hour plan for game night
+   plan_and_raci.md                 deadlines, day-by-day plan, RACI
+
+4. ai_log/ai_use_log.md
+   Chronological account of how AI was used and checked.
+
+TO RUN THE DEMONSTRATION (Python 3.9 or later, no dependencies)
+
+   python3 -I checks/reconcile.py data outputs
+   python3 -I checks/numbers.py
+   python3 -I checks/test_reconcile.py
+   python3 -I prompts/compare_runs.py
+
+   Full steps and what each shows: README.md section 4.
+
+WHAT THE OTHER FOLDERS HOLD
+
+   data/        the evidence pack as supplied, unchanged
+   data_extra/  four test cases written by the candidate, labelled as such
+   checks/      the scripts and tests
+   prompts/     current and revised AI instructions, and the runner
+   outputs/     everything the scripts produce, including saved prompt runs

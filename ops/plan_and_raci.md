@@ -12,20 +12,20 @@ Scenario clock: it is Thursday 3 September, 12:00 UTC. The Delivery Lead has abo
 | Fri 4 Sep 09:00 to 13:00 | Marta | Only engineering window before the event |
 | Mon 7 Sep | Client via Priya | Final go / reduced / no-go, so Wednesday training and the manual fallback can be planned |
 | Wed 9 Sep 13:00 | Client | Editor training |
-| Fri 11 Sep 17:00 to 23:00 | Everyone | Event window (doors 16:30 UTC, tipoff 19:00 UTC) |
+| Fri 11 Sep 17:00 to 23:00 | Everyone | Event window (doors and fan zone 17:30 venue time, tipoff 19:00 UTC = 20:00 venue time) |
 
 ## Day by day
 **Thu 3 Sep, afternoon (this submission is the output).** Reconcile the evidence. Draft the client update for Priya by 15:00. Send Marta the prioritised list. Send Lewis a heads-up that the recommendation will be reduced scope with the decisions he owns. Send Amira the cost analysis and proposed allowance. Ask Priya which cards the client actually received.
 
-**Fri 4 Sep.** 09:00 Marta starts on items 1 and 2. 10:00 recommendation to Lewis, agree scope and the Monday decision date with Priya. Amira and Lewis review the allowance. 13:00 Marta's window closes: record what shipped. Afternoon: rerun the ten-item replay through whatever Marta deployed; label results. Give Sam the checklist and decision log, arrange export access.
+**Fri 4 Sep.** 09:00 Marta starts on items 1 and 2. 10:00 decision note to Lewis and Priya (`ops/lewis_decision_note.md`); they agree scope and the Monday date. Amira and Lewis review the allowance (`ops/amira_event_allowance.md`). Before 13:00: ask Marta to rerun the ten-item replay through what she deployed, since only Engineering can run the production path; I reconcile the output she exports. 13:00 window closes: record what shipped. Afternoon: give Sam the checklist and decision log, confirm export access.
 
-**Mon 7 Sep.** Sam's hour: supervised review of the day's queue with the checklist and log, measuring time per card and the slow share (replaces my 20 percent assumption). Delivery Lead: reconciliation of Monday's queue against sources. Decision confirmed to the client via Priya by end of day.
+**Mon 7 Sep.** Sam's hour: first logged review session with the checklist, measuring time per card and the slow share (replaces my 20 percent assumption). Delivery Lead: reconcile Friday's replay rerun and Monday's queue against sources. Acceptance criteria 1 to 4 checked. Decision confirmed to the client via Priya by end of day.
 
-**Tue 8 Sep.** Sam's hour: second logged session. Delivery Lead: build a 20-card labelled set from Monday and Tuesday output (own labels, marked as such). Count duplicates, unsupported claims, missed items. If any fabricated fact or more than one duplicate: trigger the pre-launch kill criterion and tell Lewis and Priya.
+**Tue 8 Sep.** Sam's hour: second logged session. Delivery Lead: build a 20-card labelled set from Monday and Tuesday output (own labels, marked as such). Count duplicates, unsupported claims, missed items. This is the second checkpoint: a fabricated fact or more than one duplicate withdraws the launch, and the client hears Tuesday evening, before Wednesday's training.
 
 **Wed 9 Sep.** 13:00 client training, with Priya. Show the editors the reduced-scope lane, what a card looks like, how to report a bad card. Sam's hour: logged review.
 
-**Thu 10 Sep.** Prompt and configuration freeze by 12:00. Dry run of the runbook with Sam for 30 minutes. Pre-write the stop message. Confirm the other two client workstreams have cover arrangements for Friday afternoon and evening (I move my own commitments, nobody else's).
+**Thu 10 Sep.** Prompt and configuration freeze by 12:00. Dry run of the runbook with Sam inside Sam's hour. Pre-write the stop message. Other two client workstreams: their Friday items are moved to Thursday or the following Monday by me, and both clients are told on Monday 7 Sep that Friday afternoon is blocked. No backfill is assumed.
 
 **Fri 11 Sep.** Runbook.
 
@@ -38,9 +38,11 @@ R = does the work, A = owns the decision, C = consulted, I = informed.
 |---|---|---|---|---|---|---|
 | Launch recommendation and evidence | R/A | C | C | I | I | I |
 | Change external launch scope or date | R (recommends) | | | A | A | I |
-| Idempotent queue write, validation retry | A (priority) | R | | I | | |
+| Idempotent queue write, validation retry | C (sets priority, supplies evidence) | R/A | | I | | |
 | Operator checklist, decision log | R/A | | C | I | | |
 | Export access for Sam | R (requests) | A | I | | | |
+| Rerun the replay through the deployed pipeline | C (reconciles the export) | R/A | | I | | |
+| Second approver after 18:30 on event day | R (asks) | | | A | A | |
 | Revised prompts (test outside production) | R/A | C | | C | | |
 | Deploy prompts to production | R (asks) | R (deploys) | | A | | |
 | Promotional policy, highlights-as-card rule | R (proposes) | | C | A | C | |

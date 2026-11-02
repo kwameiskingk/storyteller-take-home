@@ -40,8 +40,9 @@ def test_unapproved_item_not_processed():
 
 def test_mensah_record_claim_is_unsupported():
     rec = next(r for r in recs if r["recommendation_id"] == "rec_004")
-    body = (by_id["src_005"]["title"] + " " + src[4]["body"]).lower()
-    assert "tying" in body and "league record" not in body.replace("league playoff record", "")
+    item = next(i for i in src if i["content_id"] == "src_005")
+    body = (item["title"] + " " + item["body"]).lower()
+    assert "tying" in body and "franchise record" in body
     assert "broke" in rec["summary"].lower() and "sets new" in rec["headline"].lower()
 
 
@@ -66,6 +67,18 @@ def test_latency_hand_counts():
 def test_courtsidewire_lead_time():
     a = R.ts("2026-09-03T07:48:00Z"); b = R.ts("2026-09-03T08:10:00Z")
     assert (b - a).total_seconds() == 22 * 60
+
+
+def test_volume_and_capacity_hand_counts():
+    # high lane in the sample: src_001 result, src_003 availability, src_004 schedule, src_005 record = 4 of 9 approved
+    approved = [i for i in src if i["approved_for_pilot"]]
+    assert len(approved) == 9 and round(4 / 9 * 100) == 44
+    # peak 80 cards x 4/9 = 35.6; event hourly items 1500/6=250 vs normal (1120+1180+1205)/3/24 = 48.7 -> 5.1x
+    assert round(80 * 4 / 9, 1) == 35.6
+    assert round(250 / ((1120 + 1180 + 1205) / 3 / 24), 1) == 5.1
+    # calendar
+    import datetime as dt
+    assert dt.date(2026, 9, 3).strftime("%A") == "Thursday" and dt.date(2026, 9, 11).strftime("%A") == "Friday"
 
 
 def test_canonical_url_strips_tracking():

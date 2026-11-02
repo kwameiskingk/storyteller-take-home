@@ -90,7 +90,7 @@ Queue: Game 2 result x3 = high, sponsor promo = high; coach lineup comment = med
 - src_008: a1:completed:10s
 - src_009: a1:completed:7s
 
-Observed 7 to 21 seconds against a 15-second timeout; one request completed at exactly 15s. Timeouts are structural at this latency, not intermittent. Any slowdown at event volume (about 8x the normal hourly item rate) will push a large share into retries.
+Observed 7 to 21 seconds against a 15-second timeout; one request completed at exactly 15s. Normal days show 4 to 5 percent retries, so timeouts are intermittent as Marta said, but the margin is thin: any slowdown at event volume (about 5x the normal hourly item rate) pushes a large share into retries.
 
 ## 7. 2 September cost spike is a retry storm, and retries are billed
 
@@ -102,7 +102,7 @@ Observed 7 to 21 seconds against a 15-second timeout; one request completed at e
 | 2026-09-01 | 1180 | 1360 | 63 | 0.046 | 0.0180 | 25.60 | 29.70 | 0.99x | 180 |
 | 2026-09-02 | 1205 | 1390 | 2412 | 1.735 | 0.0173 | 65.60 | 71.80 | 2.39x | 185 |
 
-Items rose 2%, initial calls rose 2%, retry calls rose from 63 to 2,412 (retries per initial call 0.04, 0.05, then 1.74). Cost per call is flat at about EUR 0.018, so cost tracks call count: retries are billed at full price. Infrastructure cost rose 51%, consistent with extra queue writes (duplicates).
+Items rose 2%, initial calls rose 2%, retry calls rose from 63 to 2,412 (retries per initial call 0.04, 0.05, then 1.74). Cost per call is flat at about EUR 0.018, so cost tracks call count: retries are billed at full price. Infrastructure cost rose 51%; extra queue writes are a plausible cause but the CSV cannot show it.
 
 Implied generations per day (initial calls minus items) = 180, 180, 185, matching the 'around 180 recommendations per day' figure in 07. The files are internally consistent.
 
@@ -110,7 +110,7 @@ Implied generations per day (initial calls minus items) = 180, 180, 185, matchin
 - normal retry rate: EUR 32 AI cost for the six-hour window, infrastructure extra
 - 2 Sep retry rate: EUR 84 AI cost for the six-hour window, infrastructure extra
 
-The CSV has no token counts, so per-call cost is an average. Treat the projection as a planning range, not a quote. Hypothesis (not provable from the pack): if late responses were written to the queue during the 2 Sep storm, that day's queue holds hundreds of duplicates nobody has reviewed.
+The CSV has no token counts, so per-call cost is an average. Treat the projection as a planning range, not a quote. Hypothesis (not provable from the pack): if late responses were written to the queue during the 2 Sep storm, that day's queue holds many duplicates nobody has reviewed.
 
 ## 8. Review capacity cannot meet forecast volume, and operator cover ends before tipoff
 
@@ -141,8 +141,8 @@ CourtsideWire was 22 minutes ahead, as the client said. It rests on two anonymou
 - Cards carry venue-local times (17:30, 20:00) with no timezone while everything else is UTC.
 - The recommendation prompt asks for 'source URL' and 'why fans will care'; the output has `source_urls` and `why_recommended`. The prompt in 04 is not literally what runs, or a wrapper reshapes it.
 
-## 11. The client saw unreviewed drafts
+## 11. The client saw drafts marked before operator review
 
-*Status: proven from the README, cause unknown*
+*Status: proven from the README; how the selection was made is unknown*
 
-README: a human operator must approve before the client sees a card. README also: the trial output is 'before operator review' and 'the client was sent a selection from this trial'. Either the gate was bypassed or a hand-picked selection went out without recorded decisions. Jordan's message arrived 16 minutes after the replay finished, already with a stats-team check, so the complaint may refer to earlier pilot output that the replay reproduces. Ask Priya which cards the client actually received.
+README: a human operator must approve before the client sees a card. README also: the trial output is 'before operator review' and 'the client was sent a selection from this trial for feedback'. So a selection went to the client from an unreviewed queue, and no record exists of who chose it or why. Jordan replied 16 minutes after the replay finished with a stats-team check already done, which is fast but possible for a short selection. Ask Priya which cards were sent, so each can be traced.

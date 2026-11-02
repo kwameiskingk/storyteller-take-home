@@ -170,7 +170,7 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
             lat_lines.append(f"- {r['content_id']}: {r['generate_events']}")
     F.append(("Generation latency sits on the 15-second timeout", "proven",
               "\n".join(lat_lines) + "\n\nObserved 7 to 21 seconds against a 15-second timeout; one request completed at exactly 15s. "
-              "Timeouts are structural at this latency, not intermittent. Any slowdown at event volume (about 8x the normal hourly item rate) will push a large share into retries."))
+              "Normal days show 4 to 5 percent retries, so timeouts are intermittent as Marta said, but the margin is thin: any slowdown at event volume (about 5x the normal hourly item rate) pushes a large share into retries."))
 
     # 7 cost
     cost_lines = ["| date | items | initial calls | retry calls | retries per initial | EUR per call | AI EUR | total EUR | vs forecast | implied generations |", "|---|---|---|---|---|---|---|---|---|---|"]
@@ -192,12 +192,12 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
     F.append(("2 September cost spike is a retry storm, and retries are billed", "proven (projection is an estimate)",
               "\n".join(cost_lines) +
               f"\n\nItems rose 2%, initial calls rose 2%, retry calls rose from 63 to 2,412 (retries per initial call 0.04, 0.05, then 1.74). "
-              f"Cost per call is flat at about EUR 0.018, so cost tracks call count: retries are billed at full price. Infrastructure cost rose 51%, consistent with extra queue writes (duplicates).\n\n"
+              f"Cost per call is flat at about EUR 0.018, so cost tracks call count: retries are billed at full price. Infrastructure cost rose 51%; extra queue writes are a plausible cause but the CSV cannot show it.\n\n"
               f"Implied generations per day (initial calls minus items) = 180, 180, 185, matching the 'around 180 recommendations per day' figure in 07. The files are internally consistent.\n\n"
               f"**Event projection** ({EVENT_ITEMS} items + {EVENT_RECS} generations = {ev_calls} initial calls, EUR {eur_call:.4f} per call):\n"
               + "\n".join(f"- {k}: EUR {v:.0f} AI cost for the six-hour window, infrastructure extra" for k, v in proj.items()) +
               "\n\nThe CSV has no token counts, so per-call cost is an average. Treat the projection as a planning range, not a quote. "
-              "Hypothesis (not provable from the pack): if late responses were written to the queue during the 2 Sep storm, that day's queue holds hundreds of duplicates nobody has reviewed."))
+              "Hypothesis (not provable from the pack): if late responses were written to the queue during the 2 Sep storm, that day's queue holds many duplicates nobody has reviewed."))
 
     # 8 capacity
     def minutes(n):
@@ -230,10 +230,10 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
               "- The recommendation prompt asks for 'source URL' and 'why fans will care'; the output has `source_urls` and `why_recommended`. The prompt in 04 is not literally what runs, or a wrapper reshapes it."))
 
     # 11 governance
-    F.append(("The client saw unreviewed drafts", "proven from the README, cause unknown",
-              "README: a human operator must approve before the client sees a card. README also: the trial output is 'before operator review' and 'the client was sent a selection from this trial'. "
-              "Either the gate was bypassed or a hand-picked selection went out without recorded decisions. Jordan's message arrived 16 minutes after the replay finished, already with a stats-team check, "
-              "so the complaint may refer to earlier pilot output that the replay reproduces. Ask Priya which cards the client actually received."))
+    F.append(("The client saw drafts marked before operator review", "proven from the README; how the selection was made is unknown",
+              "README: a human operator must approve before the client sees a card. README also: the trial output is 'before operator review' and 'the client was sent a selection from this trial for feedback'. "
+              "So a selection went to the client from an unreviewed queue, and no record exists of who chose it or why. Jordan replied 16 minutes after the replay finished with a stats-team check already done, "
+              "which is fast but possible for a short selection. Ask Priya which cards were sent, so each can be traced."))
     return F
 
 

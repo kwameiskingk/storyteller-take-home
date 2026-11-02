@@ -2,21 +2,21 @@
 
 | Time | Who | What |
 |---|---|---|
-| 16:15 | Delivery Lead | Confirm feed polling, queue empty of stale cards, decision log open, Priya and Lewis reachable. Confirm the prompt has not changed since Thursday freeze. |
-| 16:30 | Delivery Lead | Cover begins (doors and fan zone open 16:30 UTC, before the planned window). |
-| 16:45 | Delivery Lead + Sam | 15-minute pre-game check: run checklist on whatever is in the queue, agree the story keys already covered. |
-| 17:00 to 18:30 | Sam (reviewer), Delivery Lead (second reviewer and escalation) | Review per checklist. Delivery Lead runs the reconciliation export every 15 minutes and watches retry counts. |
-| 18:30 | Sam hands over | Sam leaves. Delivery Lead is the sole reviewer from here. Volume must already be cut to what one person clears in 10 minutes. |
+| 17:00 | Delivery Lead | Cover begins, as agreed in the capacity plan. Confirm feed polling, queue state, decision log open, Priya and Lewis reachable, prompt unchanged since Thursday freeze. Note: the fan zone and doors open at 17:30 venue time, which is 16:30 UTC if the venue is UTC+1 as the pack implies; cards about them will be in the queue when cover starts, so they are reviewed first. |
+| 17:00 to 17:15 | Delivery Lead + Sam | Pre-game check inside Sam's agreed window: run the checklist on the queue, agree the story keys already covered. |
+| 17:15 to 18:30 | Sam (approver), Delivery Lead (second approver, reconciliation every 15 minutes, escalation) | Review per checklist. |
+| 18:30 | Sam hands over | Sam leaves. From here the Delivery Lead is the only approver unless Lewis and Priya have found a second (decision note, item 5). Live lane is high priority only. |
 | 19:00 | Tipoff | High-priority lane only (results, availability, schedule and venue changes, official records). Medium lane held unless the queue is empty. |
 | ~21:00 | Final result | Expect the peak: result, highlights, reactions. Approve the result card first, mark the story key, reject repeats. |
 | 21:00 to 23:00 | Delivery Lead | Post-game. Continue reconciliation. At 22:45 export decision log and reconciliation output. |
 | 23:00 | Delivery Lead | Close. Message Priya with counts: cards received, approved, edited, rejected, missed items found by reconciliation, any client-facing error. |
 
 ## Stop conditions (pause the client feed, tell Priya to inform the editors to use manual monitoring)
-- A card with a factual error reached the client.
-- Queue dwell above 10 minutes for 30 consecutive minutes.
-- No reviewer online.
-- Retries per initial call above 0.25 for 30 minutes, or AI spend above EUR 25 in any hour (Finance trigger).
+Each one names how it is observed, because there is no live telemetry and no engineer on duty.
+- A card with a factual error reached the client. Observed by: client report, or the approver finding an error in a card already approved.
+- Cards are waiting more than 10 minutes before approval for 30 consecutive minutes. Observed by: the decision log timestamps against card generated_at.
+- No approver online. Observed by: the approver.
+- Two duplicate cards from the same source in the queue, or, if Marta's 15-minute export ships, retries per initial call above 0.25 over 30 minutes. Observed by: the queue, or the reconciliation script on the export. This is the cost trigger agreed with Finance; spend itself cannot be seen live.
 
 ## Pre-written message if we stop (Priya sends)
 "We have paused the recommendation feed for the rest of tonight because [reason]. Your editors should continue with the usual monitoring of official feeds. Nothing already approved needs to be withdrawn [or: please disregard card X]. I will send a full account tomorrow morning."

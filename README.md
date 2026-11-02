@@ -159,7 +159,7 @@ Full chronological log in `ai_log/ai_use_log.md`, with the representative prompt
 
 ## 7. Time, assumptions, and what I left unfinished
 
-**Time spent.** About three and a half hours of my own focused time across two sittings on 1 and 2 November 2026. Claude Code sessions ran for roughly six hours of wall-clock time over the two days, including unattended prompt runs and the review sessions.
+**Time spent.** About three and a half hours of my own focused time across two sittings on 1 and 2 November 2026. Claude Code sessions ran for roughly four and a half hours of wall-clock time over the two days, including unattended prompt runs and the review sessions.
 
 **Assumptions.** Sam's 30 to 40 cards an hour holds with the checklist. Cost per call is a flat average because the CSV has no token counts. Priya sends client messages. The Claude Code CLI with claude-sonnet-5-5 stands in for whichever model production uses. Four of nine sample items as the live-lane share. The venue is UTC+1, inferred from one pair of times.
 

@@ -114,15 +114,16 @@ The CSV has no token counts, so per-call cost is an average. Treat the projectio
 
 ## 8. Review capacity cannot meet forecast volume, and operator cover ends before tipoff
 
-*Status: proven arithmetic on an assumed slow share*
+*Status: arithmetic on indicative figures from the pack*
 
-- Full window, 240 cards: 288 review minutes needed
-- Peak hour, 80 cards: 96 review minutes needed, 60 available per reviewer
-- Peak hour at half volume, 40 cards: 48 minutes
-- Available: Sam 90 min (17:00 to 18:30 UTC), Delivery Lead the full window but also running the event
-- Assumption: 20% of cards are slow reviews. The pack gives no measured share.
+- Full window, 240 cards: 360 to 480 review minutes at 30 to 40 cards an hour
+- Peak hour, 80 cards: 120 to 160 review minutes, 60 available per approver
+- Live lane only (4 of 9 sample items), about 36 cards: 53 to 71 minutes
+- Single-approver mode (3 of 9), about 27 cards: 40 to 53 minutes
+- Available: Sam 90 min (17:00 to 18:30 UTC), Delivery Lead the full window but also reconciling and escalating
+- The pack's per-card timings (45 to 60 s quick, 2 to 3 min hard) with an assumed 20% slow share would give about 50 cards an hour; Sam's stated rate is lower and is the one used.
 
-Sam leaves at 18:30 UTC. Tipoff is 19:00 UTC. Approval is mandatory before the client sees a card. Without a second operator the feed is dead for lineups, the game, the result and post-game. The Delivery Lead is the de facto second operator all night. If the venue is UTC+1, as the pack's 19:00 UTC = 20:00 local implies, doors and the fan zone (17:30 local) open at 16:30 UTC, before the planning window.
+Sam leaves at 18:30 UTC. Tipoff is 19:00 UTC. Approval is mandatory before the client sees a card. Without a second approver the feed depends on one person for lineups, the game, the result and post-game. If the venue is UTC+1, as the pack's 19:00 UTC = 20:00 local implies, doors and the fan zone (17:30 local) open at 16:30 UTC, before the planning window.
 
 ## 9. CourtsideWire: earlier by 22 minutes, weaker, and different
 

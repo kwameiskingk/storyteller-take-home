@@ -199,18 +199,19 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
               "\n\nThe CSV has no token counts, so per-call cost is an average. Treat the projection as a planning range, not a quote. "
               "Hypothesis (not provable from the pack): if late responses were written to the queue during the 2 Sep storm, that day's queue holds many duplicates nobody has reviewed."))
 
-    # 8 capacity
-    def minutes(n):
-        return n * ((1 - SLOW_SHARE) * QUICK_SEC + SLOW_SHARE * SLOW_SEC) / 60
-    cap_lines = [f"- Full window, {EVENT_RECS} cards: {minutes(EVENT_RECS):.0f} review minutes needed",
-                 f"- Peak hour, {PEAK_RECS_PER_HOUR} cards: {minutes(PEAK_RECS_PER_HOUR):.0f} review minutes needed, 60 available per reviewer",
-                 f"- Peak hour at half volume, {PEAK_RECS_PER_HOUR//2} cards: {minutes(PEAK_RECS_PER_HOUR//2):.0f} minutes",
-                 f"- Available: Sam {SAM_EVENT_MINUTES} min (17:00 to 18:30 UTC), Delivery Lead the full window but also running the event",
-                 f"- Assumption: {SLOW_SHARE:.0%} of cards are slow reviews. The pack gives no measured share."]
-    F.append(("Review capacity cannot meet forecast volume, and operator cover ends before tipoff", "proven arithmetic on an assumed slow share",
+    # 8 capacity, on Sam's stated rate (07: about 30 to 40 cards in a one-hour session, indicative)
+    lo, hi = 3600 / 40, 3600 / 30   # seconds per card
+    rng = lambda n: f"{n*lo/60:.0f} to {n*hi/60:.0f}"
+    cap_lines = [f"- Full window, {EVENT_RECS} cards: {rng(EVENT_RECS)} review minutes at 30 to 40 cards an hour",
+                 f"- Peak hour, {PEAK_RECS_PER_HOUR} cards: {rng(PEAK_RECS_PER_HOUR)} review minutes, 60 available per approver",
+                 f"- Live lane only (4 of 9 sample items), about {PEAK_RECS_PER_HOUR*4/9:.0f} cards: {rng(PEAK_RECS_PER_HOUR*4/9)} minutes",
+                 f"- Single-approver mode (3 of 9), about {PEAK_RECS_PER_HOUR*3/9:.0f} cards: {rng(PEAK_RECS_PER_HOUR*3/9)} minutes",
+                 f"- Available: Sam {SAM_EVENT_MINUTES} min (17:00 to 18:30 UTC), Delivery Lead the full window but also reconciling and escalating",
+                 f"- The pack's per-card timings (45 to 60 s quick, 2 to 3 min hard) with an assumed {SLOW_SHARE:.0%} slow share would give about 50 cards an hour; Sam's stated rate is lower and is the one used."]
+    F.append(("Review capacity cannot meet forecast volume, and operator cover ends before tipoff", "arithmetic on indicative figures from the pack",
               "\n".join(cap_lines) +
-              "\n\nSam leaves at 18:30 UTC. Tipoff is 19:00 UTC. Approval is mandatory before the client sees a card. Without a second operator the feed is dead for lineups, the game, the result and post-game. "
-              "The Delivery Lead is the de facto second operator all night. If the venue is UTC+1, as the pack's 19:00 UTC = 20:00 local implies, doors and the fan zone (17:30 local) open at 16:30 UTC, before the planning window."))
+              "\n\nSam leaves at 18:30 UTC. Tipoff is 19:00 UTC. Approval is mandatory before the client sees a card. Without a second approver the feed depends on one person for lineups, the game, the result and post-game. "
+              "If the venue is UTC+1, as the pack's 19:00 UTC = 20:00 local implies, doors and the fan zone (17:30 local) open at 16:30 UTC, before the planning window."))
 
     # 9 CourtsideWire
     a, b = by_id["src_010"], by_id["src_003"]

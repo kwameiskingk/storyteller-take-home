@@ -1,0 +1,24 @@
+{
+  "content_id": "cand_002",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:34:41Z",
+  "relevance": {
+    "relevant": true,
+    "category": "player_injury_news",
+    "reason": "Breaking (7 minutes old) injury news: guard Elias Cole is out of Game 3 of the Finals with an ankle sprain and will be reassessed before Game 4. This directly affects the series and the Finals storyline, and fans will want to know about it right away. The source is the team's own account, so it is credible."
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_injury_news\", \"reason\": \"Breaking (7 minutes old) injury news: guard Elias Cole is out of Game 3 of the Finals with an ankle sprain and will be reassessed before Game 4. This directly affects the series and the Finals storyline, and fans will want to know about it right away. The source is the team's own account, so it is credible.\"}",
+  "generation": {
+    "category": "Injury Update",
+    "priority": "high",
+    "headline": "Waves Without Elias Cole for Game 3 as Ankle Sprain Sidelines Guard",
+    "summary": "Harbour City Waves guard Elias Cole is out for Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4, according to the team.",
+    "source_url": "https://example.com/waves/cole-ruled-out",
+    "why_fans_will_care": "Cole's absence changes the Waves' Game 3 backcourt, and his status for Game 4 remains uncertain pending reassessment, so fans should watch for further updates.",
+    "confidence": 0.9
+  },
+  "generation_raw": "{\"category\":\"Injury Update\",\"priority\":\"high\",\"headline\":\"Waves Without Elias Cole for Game 3 as Ankle Sprain Sidelines Guard\",\"summary\":\"Harbour City Waves guard Elias Cole is out for Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4, according to the team.\",\"source_url\":\"https://example.com/waves/cole-ruled-out\",\"why_fans_will_care\":\"Cole's absence changes the Waves' Game 3 backcourt, and his status for Game 4 remains uncertain pending reassessment, so fans should watch for further updates.\",\"confidence\":0.9}"
+}

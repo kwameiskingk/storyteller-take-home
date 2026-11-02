@@ -1,0 +1,24 @@
+{
+  "content_id": "src_003",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:28Z",
+  "relevance": {
+    "relevant": true,
+    "category": "injury_update",
+    "reason": "Questionable status for guard Elias Cole ahead of Game 3 is timely, high-interest Finals news that affects the matchup and fan expectations. The game-time decision means it should be surfaced now, with a follow-up once he is assessed after the final practice."
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"injury_update\", \"reason\": \"Questionable status for guard Elias Cole ahead of Game 3 is timely, high-interest Finals news that affects the matchup and fan expectations. The game-time decision means it should be surfaced now, with a follow-up once he is assessed after the final practice.\"}",
+  "generation": {
+    "category": "Injury Update",
+    "priority": "high",
+    "headline": "Elias Cole's Ankle Puts Game 3 Status in Doubt for the Waves",
+    "summary": "Harbour City Waves guard Elias Cole is questionable for Game 3 with left ankle soreness. He'll be assessed after the team's final practice and is a game-time decision.",
+    "source_url": "https://example.com/waves/elias-cole-medical-update",
+    "why_fans_care": "Cole's availability could affect the Waves' lineup and game plan for Game 3, and his status won't be settled until after the final practice, possibly not until game time.",
+    "confidence": 0.9
+  },
+  "generation_raw": "```json\n{\n  \"category\": \"Injury Update\",\n  \"priority\": \"high\",\n  \"headline\": \"Elias Cole's Ankle Puts Game 3 Status in Doubt for the Waves\",\n  \"summary\": \"Harbour City Waves guard Elias Cole is questionable for Game 3 with left ankle soreness. He'll be assessed after the team's final practice and is a game-time decision.\",\n  \"source_url\": \"https://example.com/waves/elias-cole-medical-update\",\n  \"why_fans_care\": \"Cole's availability could affect the Waves' lineup and game plan for Game 3, and his status won't be settled until after the final practice, possibly not until game time.\",\n  \"confidence\": 0.9\n}\n```"
+}

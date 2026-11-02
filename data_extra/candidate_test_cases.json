@@ -1,0 +1,49 @@
+{
+  "note": "Test cases written by the candidate (Kwame Mbugua), not part of the supplied pack. Each targets a failure seen or suspected in the pilot. Labelled as candidate-authored per the pack README.",
+  "items": [
+    {
+      "content_id": "cand_001",
+      "published_at": "2026-09-03T09:05:00Z",
+      "source": "Aurora Basketball League Stats",
+      "source_type": "official_league",
+      "approved_for_pilot": true,
+      "url": "https://example.com/abl/stats/grant-playoff-record",
+      "title": "Malik Grant sets Aurora Basketball League playoff scoring record",
+      "body": "Malik Grant's 28 points in Game 2 took his playoff total to 412, a new Aurora Basketball League record for points in a single postseason. The previous record was 409.",
+      "expect": "A genuine league record. The card should say league record and 'sets' or 'new', and keep the numbers 412 and 409."
+    },
+    {
+      "content_id": "cand_002",
+      "published_at": "2026-09-03T09:08:00Z",
+      "source": "Harbour City Waves",
+      "source_type": "official_team",
+      "approved_for_pilot": true,
+      "url": "https://example.com/waves/cole-ruled-out",
+      "title": "Elias Cole ruled out of Game 3",
+      "body": "Guard Elias Cole has been ruled out of Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4.",
+      "expect": "Player availability, confirmed. High priority. The card must say 'ruled out', not 'questionable' or 'expected'."
+    },
+    {
+      "content_id": "cand_003",
+      "published_at": "2026-09-03T09:10:00Z",
+      "source": "Aurora Basketball League Newsroom",
+      "source_type": "official_league",
+      "approved_for_pilot": true,
+      "url": "https://example.com/abl/game-3-entry-change",
+      "title": "Game 3: north entrance closed, fans to use east and south gates",
+      "body": "Because of works on the plaza, the north entrance to Harbour Arena will be closed for Game 3. Ticket holders should use the east and south gates. Doors still open at 17:30 local time.",
+      "expect": "A change affecting attending fans. Should be relevant and high, with 'local time' preserved."
+    },
+    {
+      "content_id": "cand_004",
+      "published_at": "2026-09-03T09:12:00Z",
+      "source": "Metro Kings",
+      "source_type": "official_team",
+      "approved_for_pilot": true,
+      "url": "https://example.com/kings/grant-award-northbank",
+      "title": "Malik Grant named Northbank Insurance Player of Game 2",
+      "body": "Malik Grant has been named Northbank Insurance Player of the Game for Game 2 after scoring 28 points. Fans can vote for the Game 3 award on the Kings app.",
+      "expect": "A sponsored item that contains a small piece of news (an award). Edge case for the promotional rule: the relevance step should say what it decided and why; either outcome is defensible if the reason is clear."
+    }
+  ]
+}

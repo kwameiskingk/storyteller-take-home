@@ -4,32 +4,33 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:22:23Z",
+  "run_at_utc": "2026-11-02T08:34:13Z",
   "relevance": {
     "relevant": true,
     "category": "fan_information",
     "time_sensitive": true,
     "affects_attending_fans": true,
-    "reason": "The source states \"The Championship Finals fan zone will open outside Harbour Arena at 17:30,\" which is fan-logistics information for attending fans."
+    "reason": "The newsroom states \"The Championship Finals fan zone will open outside Harbour Arena at 17:30,\" which is about 8 hours after the current time (09:15Z) and directly affects fans attending Game 3."
   },
-  "relevance_raw": "{\"relevant\": true, \"category\": \"fan_information\", \"time_sensitive\": true, \"affects_attending_fans\": true, \"reason\": \"The source states \\\"The Championship Finals fan zone will open outside Harbour Arena at 17:30,\\\" which is fan-logistics information for attending fans.\"}",
+  "relevance_raw": "{\"relevant\": true, \"category\": \"fan_information\", \"time_sensitive\": true, \"affects_attending_fans\": true, \"reason\": \"The newsroom states \\\"The Championship Finals fan zone will open outside Harbour Arena at 17:30,\\\" which is about 8 hours after the current time (09:15Z) and directly affects fans attending Game 3.\"}",
   "generation": {
     "category": "Fan information",
     "priority": "medium",
-    "headline": "Game 3 fan zone opens at 17:30 outside Harbour Arena",
-    "summary": "The Championship Finals fan zone opens outside Harbour Arena at 17:30. It will include player interviews on the main screen, food stalls and activities for younger fans.",
+    "headline": "Championship Finals Game 3 fan zone opens at 17:30",
+    "summary": "The Championship Finals fan zone outside Harbour Arena opens at 17:30. It will include player interviews on the main screen, food stalls and activities for younger fans.",
     "source_url": "https://example.com/abl/game-3-fan-zone",
-    "why_recommended": "Fan information from the Aurora Basketball League Newsroom giving the opening time and location of the Game 3 fan zone for the Championship Finals.",
+    "why_recommended": "Routine fan information from the Aurora Basketball League Newsroom: opening time and programme of the Game 3 fan zone outside Harbour Arena.",
     "media_type": "article",
     "story_key": "game 3 fan zone harbour arena",
     "operator_checks": [
-      "Opening time is 17:30 as written in the source",
+      "Opening time is 17:30",
       "Time zone not stated in source",
       "Location is outside Harbour Arena",
-      "Fan zone is for the Championship Finals",
-      "Includes player interviews on the main screen, food stalls and activities for younger fans",
-      "Source title refers to Game 3"
+      "Fan zone is for the Championship Finals, Game 3 (from title)",
+      "Programme: player interviews on the main screen, food stalls, activities for younger fans",
+      "Source does not give the Game 3 tipoff time or date",
+      "Source is the Aurora Basketball League Newsroom, published 2026-09-03T08:52:00Z"
     ]
   },
-  "generation_raw": "{\"category\": \"Fan information\", \"priority\": \"medium\", \"headline\": \"Game 3 fan zone opens at 17:30 outside Harbour Arena\", \"summary\": \"The Championship Finals fan zone opens outside Harbour Arena at 17:30. It will include player interviews on the main screen, food stalls and activities for younger fans.\", \"source_url\": \"https://example.com/abl/game-3-fan-zone\", \"why_recommended\": \"Fan information from the Aurora Basketball League Newsroom giving the opening time and location of the Game 3 fan zone for the Championship Finals.\", \"media_type\": \"article\", \"story_key\": \"game 3 fan zone harbour arena\", \"operator_checks\": [\"Opening time is 17:30 as written in the source\", \"Time zone not stated in source\", \"Location is outside Harbour Arena\", \"Fan zone is for the Championship Finals\", \"Includes player interviews on the main screen, food stalls and activities for younger fans\", \"Source title refers to Game 3\"]}"
+  "generation_raw": "{\"category\": \"Fan information\", \"priority\": \"medium\", \"headline\": \"Championship Finals Game 3 fan zone opens at 17:30\", \"summary\": \"The Championship Finals fan zone outside Harbour Arena opens at 17:30. It will include player interviews on the main screen, food stalls and activities for younger fans.\", \"source_url\": \"https://example.com/abl/game-3-fan-zone\", \"why_recommended\": \"Routine fan information from the Aurora Basketball League Newsroom: opening time and programme of the Game 3 fan zone outside Harbour Arena.\", \"media_type\": \"article\", \"story_key\": \"game 3 fan zone harbour arena\", \"operator_checks\": [\"Opening time is 17:30\", \"Time zone not stated in source\", \"Location is outside Harbour Arena\", \"Fan zone is for the Championship Finals, Game 3 (from title)\", \"Programme: player interviews on the main screen, food stalls, activities for younger fans\", \"Source does not give the Game 3 tipoff time or date\", \"Source is the Aurora Basketball League Newsroom, published 2026-09-03T08:52:00Z\"]}"
 }

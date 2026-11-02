@@ -4,22 +4,21 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:21:28Z",
+  "run_at_utc": "2026-11-02T08:31:06Z",
   "relevance": {
     "relevant": true,
     "category": "player_performance",
-    "reason": "Highlights of Malik Grant's 28-point Game 2 performance, which helped the Metro Kings win 101-98 and tie the Finals 1-1. It combines a standout individual performance, a key result and direct Finals relevance, and it is video content that is easy to publish. Its timeliness is limited: the item is dated 2026-09-02, which is two months before today's date."
+    "reason": "Malik Grant scored 28 points in a Finals Game 2 win (101-98) that tied the series 1-1. The item is a highlights video published about 12 hours before the current time, so it is timely. It combines a standout individual performance, a close result and a series-tying moment, which should interest fans."
   },
-  "relevance_raw": "{\"relevant\": true, \"category\": \"player_performance\", \"reason\": \"Highlights of Malik Grant's 28-point Game 2 performance, which helped the Metro Kings win 101-98 and tie the Finals 1-1. It combines a standout individual performance, a key result and direct Finals relevance, and it is video content that is easy to publish. Its timeliness is limited: the item is dated 2026-09-02, which is two months before today's date.\"}",
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_performance\", \"reason\": \"Malik Grant scored 28 points in a Finals Game 2 win (101-98) that tied the series 1-1. The item is a highlights video published about 12 hours before the current time, so it is timely. It combines a standout individual performance, a close result and a series-tying moment, which should interest fans.\"}",
   "generation": {
-    "content_id": "src_002",
     "category": "Game Highlights",
     "priority": "high",
-    "headline": "Malik Grant Drops 28 as Metro Kings Even the Finals With a 101-98 Thriller",
-    "summary": "Video highlights show Malik Grant scoring 28 points as the Metro Kings beat their opponent 101-98 in Game 2, tying the Finals at one game each.",
-    "source_url": "https://example.com/broadcast/grant-game-2-highlights",
-    "why_fans_care": "A three-point win levelled the Finals at 1-1, and the highlights let fans relive Grant's 28-point performance that made it happen.",
+    "headline": "Malik Grant Drops 28 as Metro Kings Even the Finals",
+    "summary": "Video highlights show Malik Grant scoring 28 points as the Metro Kings won Game 2, 101-98, tying the Finals at one game each.",
+    "source_url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
+    "why_fans_care": "The Finals are now level at 1-1 after a three-point Metro Kings win, and Grant's 28-point game was central to it. Fans can rewatch the key moments in the highlights.",
     "confidence": 0.9
   },
-  "generation_raw": "```json\n{\n  \"content_id\": \"src_002\",\n  \"category\": \"Game Highlights\",\n  \"priority\": \"high\",\n  \"headline\": \"Malik Grant Drops 28 as Metro Kings Even the Finals With a 101-98 Thriller\",\n  \"summary\": \"Video highlights show Malik Grant scoring 28 points as the Metro Kings beat their opponent 101-98 in Game 2, tying the Finals at one game each.\",\n  \"source_url\": \"https://example.com/broadcast/grant-game-2-highlights\",\n  \"why_fans_care\": \"A three-point win levelled the Finals at 1-1, and the highlights let fans relive Grant's 28-point performance that made it happen.\",\n  \"confidence\": 0.9\n}\n```"
+  "generation_raw": "{\"category\":\"Game Highlights\",\"priority\":\"high\",\"headline\":\"Malik Grant Drops 28 as Metro Kings Even the Finals\",\"summary\":\"Video highlights show Malik Grant scoring 28 points as the Metro Kings won Game 2, 101-98, tying the Finals at one game each.\",\"source_url\":\"https://example.com/broadcast/grant-game-2-highlights?utm_source=abl\",\"why_fans_care\":\"The Finals are now level at 1-1 after a three-point Metro Kings win, and Grant's 28-point game was central to it. Fans can rewatch the key moments in the highlights.\",\"confidence\":0.9}"
 }

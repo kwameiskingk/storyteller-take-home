@@ -4,21 +4,21 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:21:28Z",
+  "run_at_utc": "2026-11-02T08:31:07Z",
   "relevance": {
     "relevant": true,
-    "category": "injury_update",
-    "reason": "Questionable status for guard Elias Cole ahead of Game 3 is timely, high-interest Finals news that affects the matchup and fan expectations. The game-time decision means it should be surfaced now, with a follow-up once he is assessed after the final practice."
+    "category": "injury_news",
+    "reason": "Fresh (about an hour old) injury update on guard Elias Cole's availability for Game 3 of the Finals. His status is a game-time decision, so it is timely and of high interest to fans. Editors will want to follow up after the final practice assessment."
   },
-  "relevance_raw": "{\"relevant\": true, \"category\": \"injury_update\", \"reason\": \"Questionable status for guard Elias Cole ahead of Game 3 is timely, high-interest Finals news that affects the matchup and fan expectations. The game-time decision means it should be surfaced now, with a follow-up once he is assessed after the final practice.\"}",
+  "relevance_raw": "{\"relevant\": true, \"category\": \"injury_news\", \"reason\": \"Fresh (about an hour old) injury update on guard Elias Cole's availability for Game 3 of the Finals. His status is a game-time decision, so it is timely and of high interest to fans. Editors will want to follow up after the final practice assessment.\"}",
   "generation": {
-    "category": "Injury Update",
+    "category": "Injury Report",
     "priority": "high",
-    "headline": "Elias Cole's Ankle Puts Game 3 Status in Doubt for the Waves",
-    "summary": "Harbour City Waves guard Elias Cole is questionable for Game 3 with left ankle soreness. He'll be assessed after the team's final practice and is a game-time decision.",
+    "headline": "Elias Cole's Ankle Puts His Game 3 Status in Doubt",
+    "summary": "Guard Elias Cole is questionable for Game 3 with left ankle soreness. The Harbour City Waves will assess him after the final practice, and he remains a game-time decision.",
     "source_url": "https://example.com/waves/elias-cole-medical-update",
-    "why_fans_care": "Cole's availability could affect the Waves' lineup and game plan for Game 3, and his status won't be settled until after the final practice, possibly not until game time.",
+    "why_fans_will_care": "Cole's availability could affect the Waves' lineup in Game 3, and his status won't be settled until after the final practice or possibly game time, so fans should watch for updates.",
     "confidence": 0.9
   },
-  "generation_raw": "```json\n{\n  \"category\": \"Injury Update\",\n  \"priority\": \"high\",\n  \"headline\": \"Elias Cole's Ankle Puts Game 3 Status in Doubt for the Waves\",\n  \"summary\": \"Harbour City Waves guard Elias Cole is questionable for Game 3 with left ankle soreness. He'll be assessed after the team's final practice and is a game-time decision.\",\n  \"source_url\": \"https://example.com/waves/elias-cole-medical-update\",\n  \"why_fans_care\": \"Cole's availability could affect the Waves' lineup and game plan for Game 3, and his status won't be settled until after the final practice, possibly not until game time.\",\n  \"confidence\": 0.9\n}\n```"
+  "generation_raw": "```json\n{\n  \"category\": \"Injury Report\",\n  \"priority\": \"high\",\n  \"headline\": \"Elias Cole's Ankle Puts His Game 3 Status in Doubt\",\n  \"summary\": \"Guard Elias Cole is questionable for Game 3 with left ankle soreness. The Harbour City Waves will assess him after the final practice, and he remains a game-time decision.\",\n  \"source_url\": \"https://example.com/waves/elias-cole-medical-update\",\n  \"why_fans_will_care\": \"Cole's availability could affect the Waves' lineup in Game 3, and his status won't be settled until after the final practice or possibly game time, so fans should watch for updates.\",\n  \"confidence\": 0.9\n}\n```"
 }

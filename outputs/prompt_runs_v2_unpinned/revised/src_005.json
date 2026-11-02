@@ -1,0 +1,34 @@
+{
+  "content_id": "src_005",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:22:09Z",
+  "relevance": {
+    "relevant": true,
+    "category": "record_or_stat",
+    "time_sensitive": false,
+    "affects_attending_fans": false,
+    "reason": "Official stats source states \"Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.\""
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"record_or_stat\", \"time_sensitive\": false, \"affects_attending_fans\": false, \"reason\": \"Official stats source states \\\"Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.\\\"\"}",
+  "generation": {
+    "category": "Basketball",
+    "priority": "high",
+    "headline": "Tayo Mensah ties Waves playoff assists record with 12",
+    "summary": "Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.",
+    "source_url": "https://example.com/abl/stats/mensah-12-assists",
+    "why_recommended": "Official stat report of a franchise playoff record being tied, which falls under the high-priority record category.",
+    "media_type": "article",
+    "story_key": "mensah 12 assists game 2 waves",
+    "operator_checks": [
+      "Mensah recorded 12 assists in Game 2",
+      "Record is tied, not broken",
+      "Record scope is Harbour City Waves franchise record for assists in a playoff game",
+      "Aurora Basketball League playoff record is 17, so this is not a league record",
+      "Source is Aurora Basketball League Stats"
+    ]
+  },
+  "generation_raw": "{\"category\": \"Basketball\", \"priority\": \"high\", \"headline\": \"Tayo Mensah ties Waves playoff assists record with 12\", \"summary\": \"Tayo Mensah recorded 12 assists in Game 2, tying the Harbour City Waves' franchise record for assists in a playoff game. The Aurora Basketball League playoff record is 17.\", \"source_url\": \"https://example.com/abl/stats/mensah-12-assists\", \"why_recommended\": \"Official stat report of a franchise playoff record being tied, which falls under the high-priority record category.\", \"media_type\": \"article\", \"story_key\": \"mensah 12 assists game 2 waves\", \"operator_checks\": [\"Mensah recorded 12 assists in Game 2\", \"Record is tied, not broken\", \"Record scope is Harbour City Waves franchise record for assists in a playoff game\", \"Aurora Basketball League playoff record is 17, so this is not a league record\", \"Source is Aurora Basketball League Stats\"]}"
+}

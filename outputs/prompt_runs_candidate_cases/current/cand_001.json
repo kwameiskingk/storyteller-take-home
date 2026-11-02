@@ -1,0 +1,24 @@
+{
+  "content_id": "cand_001",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:34:39Z",
+  "relevance": {
+    "relevant": true,
+    "category": "record",
+    "reason": "Malik Grant broke the ABL single-postseason scoring record (412 points, previous record 409) with 28 points in Game 2. The item was published 10 minutes ago, so it is very timely. A record-setting performance from a star player is high-interest for fans. The item doesn't say whether Game 2 was in the Finals, so the editor should confirm the Finals link."
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"record\", \"reason\": \"Malik Grant broke the ABL single-postseason scoring record (412 points, previous record 409) with 28 points in Game 2. The item was published 10 minutes ago, so it is very timely. A record-setting performance from a star player is high-interest for fans. The item doesn't say whether Game 2 was in the Finals, so the editor should confirm the Finals link.\"}",
+  "generation": {
+    "category": "Records & Milestones",
+    "priority": "high",
+    "headline": "Malik Grant Rewrites the ABL Playoff Scoring Book",
+    "summary": "Malik Grant scored 28 points in Game 2, lifting his postseason total to 412 and breaking the Aurora Basketball League single-postseason scoring record of 409, according to Aurora Basketball League Stats.",
+    "source_url": "https://example.com/abl/stats/grant-playoff-record",
+    "why_fans_will_care": "A new single-postseason scoring record is a landmark achievement and a timely talking point. It was set only minutes before this recommendation. The record stands at 412, three points above the old mark of 409. The item doesn't say whether Grant's team is still playing, so the total may keep rising.",
+    "confidence": 0.85
+  },
+  "generation_raw": "{\n  \"category\": \"Records & Milestones\",\n  \"priority\": \"high\",\n  \"headline\": \"Malik Grant Rewrites the ABL Playoff Scoring Book\",\n  \"summary\": \"Malik Grant scored 28 points in Game 2, lifting his postseason total to 412 and breaking the Aurora Basketball League single-postseason scoring record of 409, according to Aurora Basketball League Stats.\",\n  \"source_url\": \"https://example.com/abl/stats/grant-playoff-record\",\n  \"why_fans_will_care\": \"A new single-postseason scoring record is a landmark achievement and a timely talking point. It was set only minutes before this recommendation. The record stands at 412, three points above the old mark of 409. The item doesn't say whether Grant's team is still playing, so the total may keep rising.\",\n  \"confidence\": 0.85\n}"
+}

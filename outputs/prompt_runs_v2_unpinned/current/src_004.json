@@ -1,0 +1,24 @@
+{
+  "content_id": "src_004",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:28Z",
+  "relevance": {
+    "relevant": true,
+    "category": "schedule_change",
+    "reason": "Game 3 tipoff of the Championship Finals moved from 19:30 to 20:00 local time. Fans attending or watching need this timely logistical update, so it's worth a brief service item. It's routine and not a major news story, so priority is low to moderate."
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"schedule_change\", \"reason\": \"Game 3 tipoff of the Championship Finals moved from 19:30 to 20:00 local time. Fans attending or watching need this timely logistical update, so it's worth a brief service item. It's routine and not a major news story, so priority is low to moderate.\"}",
+  "generation": {
+    "category": "Schedule Update",
+    "priority": "high",
+    "headline": "Game 3 Tipoff Pushed Back 30 Minutes to 8 PM",
+    "summary": "Game 3 of the Championship Finals now tips off at 20:00 local time instead of 19:30, due to an updated broadcast schedule. Arena doors still open at 17:30.",
+    "source_url": "https://example.com/abl/game-3-schedule-update",
+    "why_fans_will_care": "Fans attending or watching need the new start time to plan travel and viewing. Doors still open at 17:30, so ticket holders will have a longer wait before tipoff.",
+    "confidence": 0.95
+  },
+  "generation_raw": "```json\n{\n  \"category\": \"Schedule Update\",\n  \"priority\": \"high\",\n  \"headline\": \"Game 3 Tipoff Pushed Back 30 Minutes to 8 PM\",\n  \"summary\": \"Game 3 of the Championship Finals now tips off at 20:00 local time instead of 19:30, due to an updated broadcast schedule. Arena doors still open at 17:30.\",\n  \"source_url\": \"https://example.com/abl/game-3-schedule-update\",\n  \"why_fans_will_care\": \"Fans attending or watching need the new start time to plan travel and viewing. Doors still open at 17:30, so ticket holders will have a longer wait before tipoff.\",\n  \"confidence\": 0.95\n}\n```"
+}

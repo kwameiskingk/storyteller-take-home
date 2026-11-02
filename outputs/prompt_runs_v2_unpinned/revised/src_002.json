@@ -1,0 +1,35 @@
+{
+  "content_id": "src_002",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:58Z",
+  "relevance": {
+    "relevant": true,
+    "category": "game_result",
+    "time_sensitive": false,
+    "affects_attending_fans": false,
+    "reason": "The item reports that \"the Metro Kings won Game 2 101-98 and tied the Finals at one game each,\" which is a game result, even though it is framed as video highlights."
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"game_result\", \"time_sensitive\": false, \"affects_attending_fans\": false, \"reason\": \"The item reports that \\\"the Metro Kings won Game 2 101-98 and tied the Finals at one game each,\\\" which is a game result, even though it is framed as video highlights.\"}",
+  "generation": {
+    "category": "Game result",
+    "priority": "high",
+    "headline": "Metro Kings beat opponent 101-98 in Game 2; Grant scores 28",
+    "summary": "Video highlights of Malik Grant's 28-point performance as the Metro Kings won Game 2 101-98 and tied the Finals at one game each.",
+    "source_url": "https://example.com/broadcast/grant-game-2-highlights?utm_source=abl",
+    "why_recommended": "Reports a Finals game result: Metro Kings won Game 2 101-98 and tied the series at one game each, with Malik Grant scoring 28 points.",
+    "media_type": "video",
+    "story_key": "game 2 result metro kings finals",
+    "operator_checks": [
+      "Metro Kings won Game 2 101-98",
+      "Malik Grant scored 28 points",
+      "Finals tied at one game each",
+      "Source does not name the opponent",
+      "Item is video highlights from ABL Broadcast Partner",
+      "Published 2026-09-02T21:06:00Z; no time zone claim made beyond the source's Z suffix"
+    ]
+  },
+  "generation_raw": "{\"category\": \"Game result\", \"priority\": \"high\", \"headline\": \"Metro Kings beat opponent 101-98 in Game 2; Grant scores 28\", \"summary\": \"Video highlights of Malik Grant's 28-point performance as the Metro Kings won Game 2 101-98 and tied the Finals at one game each.\", \"source_url\": \"https://example.com/broadcast/grant-game-2-highlights?utm_source=abl\", \"why_recommended\": \"Reports a Finals game result: Metro Kings won Game 2 101-98 and tied the series at one game each, with Malik Grant scoring 28 points.\", \"media_type\": \"video\", \"story_key\": \"game 2 result metro kings finals\", \"operator_checks\": [\"Metro Kings won Game 2 101-98\", \"Malik Grant scored 28 points\", \"Finals tied at one game each\", \"Source does not name the opponent\", \"Item is video highlights from ABL Broadcast Partner\", \"Published 2026-09-02T21:06:00Z; no time zone claim made beyond the source's Z suffix\"]}"
+}

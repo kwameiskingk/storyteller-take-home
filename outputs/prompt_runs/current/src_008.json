@@ -4,21 +4,21 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:21:48Z",
+  "run_at_utc": "2026-11-02T08:31:31Z",
   "relevance": {
     "relevant": true,
-    "category": "team_news",
-    "reason": "Game 3 coach update from the Waves ahead of a Finals game. The item confirms no lineup decisions yet and says player availability will be reviewed after final practice. Fans care about availability, and an editor could follow up once the lineup is set. It has no hard news yet, so it is moderate priority at best."
+    "category": "team news / injury and availability",
+    "reason": "Fresh (15 minutes old) Finals-related update from the Waves coach on Game 3. It confirms no lineup decisions yet and says player availability will be reviewed after final practice. Fans will want to know who plays, so it is worth watching for a follow-up. It is only a status update with no confirmed news, so it is a moderate priority."
   },
-  "relevance_raw": "{\"relevant\": true, \"category\": \"team_news\", \"reason\": \"Game 3 coach update from the Waves ahead of a Finals game. The item confirms no lineup decisions yet and says player availability will be reviewed after final practice. Fans care about availability, and an editor could follow up once the lineup is set. It has no hard news yet, so it is moderate priority at best.\"}",
+  "relevance_raw": "{\"relevant\": true, \"category\": \"team news / injury and availability\", \"reason\": \"Fresh (15 minutes old) Finals-related update from the Waves coach on Game 3. It confirms no lineup decisions yet and says player availability will be reviewed after final practice. Fans will want to know who plays, so it is worth watching for a follow-up. It is only a status update with no confirmed news, so it is a moderate priority.\"}",
   "generation": {
     "category": "Team News",
     "priority": "medium",
-    "headline": "Waves Game 3 Lineup Still Up in the Air After Coach Rivera's Update",
+    "headline": "Waves' Game 3 Lineup Still Up in the Air After Final Practice",
     "summary": "Coach Lena Rivera said no Game 3 lineup decisions have been confirmed. Player availability will be reviewed after the team's final practice.",
     "source_url": "https://example.com/waves/coach-game-3-availability",
-    "why_fans_care": "Fans hoping to know who will play in Game 3 must wait: no lineup is confirmed, and availability will only be reviewed after final practice. The item gives no details on specific players or injuries.",
+    "why_fans_will_care": "Fans want to know who will play in Game 3. No lineup or availability details are confirmed yet, so an update is expected after final practice.",
     "confidence": 0.9
   },
-  "generation_raw": "{\"category\":\"Team News\",\"priority\":\"medium\",\"headline\":\"Waves Game 3 Lineup Still Up in the Air After Coach Rivera's Update\",\"summary\":\"Coach Lena Rivera said no Game 3 lineup decisions have been confirmed. Player availability will be reviewed after the team's final practice.\",\"source_url\":\"https://example.com/waves/coach-game-3-availability\",\"why_fans_care\":\"Fans hoping to know who will play in Game 3 must wait: no lineup is confirmed, and availability will only be reviewed after final practice. The item gives no details on specific players or injuries.\",\"confidence\":0.9}"
+  "generation_raw": "{\"category\":\"Team News\",\"priority\":\"medium\",\"headline\":\"Waves' Game 3 Lineup Still Up in the Air After Final Practice\",\"summary\":\"Coach Lena Rivera said no Game 3 lineup decisions have been confirmed. Player availability will be reviewed after the team's final practice.\",\"source_url\":\"https://example.com/waves/coach-game-3-availability\",\"why_fans_will_care\":\"Fans want to know who will play in Game 3. No lineup or availability details are confirmed yet, so an update is expected after final practice.\",\"confidence\":0.9}"
 }

@@ -131,8 +131,8 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
               "\n\nrec_004 contains two separate errors: a Waves franchise record became a league record, and a **tie** became **broke / sets new**. "
               "The source states the league record is 17. The client caught the first error; nobody has flagged the second. "
               "Confidence 0.94 on the worst card: the confidence field is not an accuracy signal and ranking uses it.\n\n"
-              "rec_005 'before Game 3' vs source 'before Friday' was flagged by the number check. Game 3 is Friday, so a reviewer accepts that paraphrase. "
-              "The dropped insurance-quote condition is a real omission."))
+              "rec_005 'before Game 3' vs source 'before Friday' was flagged by the number check. The item was published on Thursday 3 September, so 'before Friday' most plausibly means 4 September, not Game 3 on the 11th; the flag is right and the card moved the deadline by a week. "
+              "The dropped insurance-quote condition is a second omission."))
 
     # 3 lost items
     lost = [r for r in rows if r["approved"] and r["card_count"] == 0]
@@ -210,7 +210,7 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
     F.append(("Review capacity cannot meet forecast volume, and operator cover ends before tipoff", "proven arithmetic on an assumed slow share",
               "\n".join(cap_lines) +
               "\n\nSam leaves at 18:30 UTC. Tipoff is 19:00 UTC. Approval is mandatory before the client sees a card. Without a second operator the feed is dead for lineups, the game, the result and post-game. "
-              "The Delivery Lead is the de facto second operator all night. The planning window (17:00 UTC) also opens after doors and the fan zone (17:30 local = 16:30 UTC)."))
+              "The Delivery Lead is the de facto second operator all night. If the venue is UTC+1, as the pack's 19:00 UTC = 20:00 local implies, doors and the fan zone (17:30 local) open at 16:30 UTC, before the planning window."))
 
     # 9 CourtsideWire
     a, b = by_id["src_010"], by_id["src_003"]
@@ -230,10 +230,11 @@ def findings(src, recs, log, cost, rows, events, recs_by_src):
               "- The recommendation prompt asks for 'source URL' and 'why fans will care'; the output has `source_urls` and `why_recommended`. The prompt in 04 is not literally what runs, or a wrapper reshapes it."))
 
     # 11 governance
-    F.append(("The client saw drafts marked before operator review", "proven from the README; how the selection was made is unknown",
-              "README: a human operator must approve before the client sees a card. README also: the trial output is 'before operator review' and 'the client was sent a selection from this trial for feedback'. "
-              "So a selection went to the client from an unreviewed queue, and no record exists of who chose it or why. Jordan replied 16 minutes after the replay finished with a stats-team check already done, "
-              "which is fast but possible for a short selection. Ask Priya which cards were sent, so each can be traced."))
+    F.append(("What the client was sent is not recorded, and the pack's two statements about it differ", "pack statements conflict; unresolved",
+              "The pack README says the trial output is 'before operator review' and 'the client was sent a selection from this trial for feedback'. The capacity document says 'Only selected approved cards have been shared with the client'. "
+              "Both can be true if someone approved a selection by hand without logging it, which is consistent with Sam's message that decisions have not been recorded. Either way, no record exists of which cards went or who chose them, "
+              "and Marta has said she has not established whether the timeouts explain what the client saw. Until Priya confirms which cards were sent, the cause of the duplicate the client saw is a strong hypothesis, not a fact: "
+              "if they saw rec_001 and rec_002 rather than rec_001 and rec_003, the repetition is editorial (article plus highlights), not the retry bug."))
     return F
 
 

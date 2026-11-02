@@ -1,0 +1,14 @@
+{
+  "content_id": "src_007",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:48Z",
+  "relevance": {
+    "relevant": false,
+    "category": "promotional/event logistics",
+    "reason": "Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major player news, result or record, so it is low priority for an editor. It might suit a brief matchday-info mention at most."
+  },
+  "relevance_raw": "{\"relevant\": false, \"category\": \"promotional/event logistics\", \"reason\": \"Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major player news, result or record, so it is low priority for an editor. It might suit a brief matchday-info mention at most.\"}"
+}

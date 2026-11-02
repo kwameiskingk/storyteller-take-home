@@ -1,0 +1,16 @@
+{
+  "content_id": "cand_004",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:35:11Z",
+  "relevance": {
+    "relevant": false,
+    "category": "promotional",
+    "time_sensitive": false,
+    "affects_attending_fans": false,
+    "reason": "This is a sponsor-branded award announcement with an engagement prompt (\"named Northbank Insurance Player of the Game... Fans can vote for the Game 3 award on the Kings app\"), and the 28 points from an already-played Game 2 is incidental."
+  },
+  "relevance_raw": "{\"relevant\": false, \"category\": \"promotional\", \"time_sensitive\": false, \"affects_attending_fans\": false, \"reason\": \"This is a sponsor-branded award announcement with an engagement prompt (\\\"named Northbank Insurance Player of the Game... Fans can vote for the Game 3 award on the Kings app\\\"), and the 28 points from an already-played Game 2 is incidental.\"}"
+}

@@ -4,11 +4,21 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:21:48Z",
+  "run_at_utc": "2026-11-02T08:31:30Z",
   "relevance": {
-    "relevant": false,
-    "category": "promotional/event logistics",
-    "reason": "Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major player news, result or record, so it is low priority for an editor. It might suit a brief matchday-info mention at most."
+    "relevant": true,
+    "category": "event_promotion",
+    "reason": "Fan zone opening at 17:30 is a timely, Finals-linked fan-experience item. The source was published about 23 minutes before the current time, and the zone opens later today ahead of Game 3. It has no news, results or records, so it's low priority. It's worth a brief fan-info or social mention, not a lead story."
   },
-  "relevance_raw": "{\"relevant\": false, \"category\": \"promotional/event logistics\", \"reason\": \"Routine fan-zone opening notice for Game 3. It is tied to the Finals but offers no major player news, result or record, so it is low priority for an editor. It might suit a brief matchday-info mention at most.\"}"
+  "relevance_raw": "{\"relevant\": true, \"category\": \"event_promotion\", \"reason\": \"Fan zone opening at 17:30 is a timely, Finals-linked fan-experience item. The source was published about 23 minutes before the current time, and the zone opens later today ahead of Game 3. It has no news, results or records, so it's low priority. It's worth a brief fan-info or social mention, not a lead story.\"}",
+  "generation": {
+    "category": "Event / Fan Experience",
+    "priority": "high",
+    "headline": "Game 3 Fan Zone Opens at 17:30 Outside Harbour Arena",
+    "summary": "The Championship Finals fan zone opens outside Harbour Arena at 17:30, featuring player interviews on the main screen, food stalls and activities for younger fans.",
+    "source_url": "https://example.com/abl/game-3-fan-zone",
+    "why_fans_will_care": "Fans heading to Game 3 can arrive early for player interviews, food and family-friendly activities before the game. The item doesn't say the date or tip-off time, so fans should check the league newsroom for details.",
+    "confidence": 0.85
+  },
+  "generation_raw": "{\"category\":\"Event / Fan Experience\",\"priority\":\"high\",\"headline\":\"Game 3 Fan Zone Opens at 17:30 Outside Harbour Arena\",\"summary\":\"The Championship Finals fan zone opens outside Harbour Arena at 17:30, featuring player interviews on the main screen, food stalls and activities for younger fans.\",\"source_url\":\"https://example.com/abl/game-3-fan-zone\",\"why_fans_will_care\":\"Fans heading to Game 3 can arrive early for player interviews, food and family-friendly activities before the game. The item doesn't say the date or tip-off time, so fans should check the league newsroom for details.\",\"confidence\":0.85}"
 }

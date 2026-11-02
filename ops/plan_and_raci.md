@@ -27,7 +27,7 @@ Scenario clock: it is Thursday 3 September, 12:00 UTC. The Delivery Lead has abo
 
 **Thu 10 Sep.** Prompt and configuration freeze by 12:00. Dry run of the runbook with Sam inside Sam's hour. Pre-write the stop message. Other two client workstreams: their Friday items are moved to Thursday or the following Monday by me, and both clients are told on Monday 7 Sep that Friday afternoon is blocked. No backfill is assumed.
 
-**Fri 11 Sep.** Runbook.
+**Fri 11 Sep.** Runbook. Sam approves 17:10 to 18:30 after a ten-minute joint check. After 18:30, a second approver if confirmed, otherwise single-approver mode (results, availability, schedule and venue changes live; records held).
 
 **Week after.** Monday: reconcile the full event queue, decision log and cost. Tuesday: review with Lewis and Priya, then the client. Decide on CourtsideWire evaluation, promotional policy, confidence field, and whether the second operator need becomes a staffing request. Turn the decision log into the first evaluation set.
 
@@ -42,9 +42,9 @@ R = does the work, A = owns the decision, C = consulted, I = informed.
 | Operator checklist, decision log | R/A | | C | I | | |
 | Export access for Sam | R (requests) | A | I | | | |
 | Rerun the replay through the deployed pipeline | C (reconciles the export) | R/A | | I | | |
-| Second approver after 18:30 on event day | R (asks) | | | A | A | |
+| Second approver after 18:30 on event day, and who is reachable to message the client | R (asks) | | | A | A | |
 | Revised prompts (test outside production) | R/A | C | | C | | |
-| Deploy prompts to production | R (asks) | R (deploys) | | A | | |
+| Deploy revised instructions (needs validator and ranking change) | R (asks) | R/A (deploys) | | A (approves the product change) | | |
 | Promotional policy, highlights-as-card rule | R (proposes) | | C | A | C | |
 | Event allowance and stop trigger | R (proposes) | | | A | | A |
 | Client update and training | R (drafts) | | | C | A | |

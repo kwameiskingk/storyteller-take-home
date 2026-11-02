@@ -1,0 +1,35 @@
+{
+  "content_id": "cand_001",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:34:52Z",
+  "relevance": {
+    "relevant": true,
+    "category": "record_or_stat",
+    "time_sensitive": false,
+    "affects_attending_fans": false,
+    "reason": "Official league stats source states \"Malik Grant's 28 points in Game 2 took his playoff total to 412, a new Aurora Basketball League record... The previous record was 409.\""
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"record_or_stat\", \"time_sensitive\": false, \"affects_attending_fans\": false, \"reason\": \"Official league stats source states \\\"Malik Grant's 28 points in Game 2 took his playoff total to 412, a new Aurora Basketball League record... The previous record was 409.\\\"\"}",
+  "generation": {
+    "category": "League records and statistics",
+    "priority": "high",
+    "headline": "Malik Grant sets Aurora Basketball League playoff scoring record",
+    "summary": "Malik Grant scored 28 points in Game 2, taking his playoff total to 412, a new Aurora Basketball League record for points in a single postseason. The previous record was 409.",
+    "source_url": "https://example.com/abl/stats/grant-playoff-record",
+    "why_recommended": "Official record or statistic from Aurora Basketball League Stats: Grant's 412 postseason points set a new league record, passing the previous 409.",
+    "media_type": "article",
+    "story_key": "grant single postseason points record",
+    "operator_checks": [
+      "Grant scored 28 points in Game 2",
+      "Playoff total is 412 points",
+      "Described as a new Aurora Basketball League record, not a team or franchise record",
+      "Record is for points in a single postseason",
+      "Previous record was 409",
+      "Source is Aurora Basketball League Stats, published 2026-09-03T09:05:00Z"
+    ]
+  },
+  "generation_raw": "{\"category\": \"League records and statistics\", \"priority\": \"high\", \"headline\": \"Malik Grant sets Aurora Basketball League playoff scoring record\", \"summary\": \"Malik Grant scored 28 points in Game 2, taking his playoff total to 412, a new Aurora Basketball League record for points in a single postseason. The previous record was 409.\", \"source_url\": \"https://example.com/abl/stats/grant-playoff-record\", \"why_recommended\": \"Official record or statistic from Aurora Basketball League Stats: Grant's 412 postseason points set a new league record, passing the previous 409.\", \"media_type\": \"article\", \"story_key\": \"grant single postseason points record\", \"operator_checks\": [\"Grant scored 28 points in Game 2\", \"Playoff total is 412 points\", \"Described as a new Aurora Basketball League record, not a team or franchise record\", \"Record is for points in a single postseason\", \"Previous record was 409\", \"Source is Aurora Basketball League Stats, published 2026-09-03T09:05:00Z\"]}"
+}

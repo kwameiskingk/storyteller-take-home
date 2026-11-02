@@ -1,0 +1,24 @@
+{
+  "content_id": "cand_004",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:34:41Z",
+  "relevance": {
+    "relevant": true,
+    "category": "player_performance",
+    "reason": "Published minutes ago, it reports Malik Grant's 28-point Game 2 performance and his Player of the Game award, which is a current Finals storyline. The Game 3 fan-vote prompt is promotional, and the sponsor-branded award is a minor item, so it's worth a brief editor mention rather than a priority slot."
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_performance\", \"reason\": \"Published minutes ago, it reports Malik Grant's 28-point Game 2 performance and his Player of the Game award, which is a current Finals storyline. The Game 3 fan-vote prompt is promotional, and the sponsor-branded award is a minor item, so it's worth a brief editor mention rather than a priority slot.\"}",
+  "generation": {
+    "category": "Player Awards",
+    "priority": "medium",
+    "headline": "Malik Grant's 28-Point Night Earns Northbank Insurance Player of the Game",
+    "summary": "Malik Grant was named Northbank Insurance Player of the Game for Game 2 after scoring 28 points. Fans can vote for the Game 3 award on the Kings app.",
+    "source_url": "https://example.com/kings/grant-award-northbank",
+    "why_fans_will_care": "Fans can celebrate Grant's 28-point Game 2 performance and take part right away by voting for the Game 3 award in the Kings app.",
+    "confidence": 0.9
+  },
+  "generation_raw": "```json\n{\n  \"category\": \"Player Awards\",\n  \"priority\": \"medium\",\n  \"headline\": \"Malik Grant's 28-Point Night Earns Northbank Insurance Player of the Game\",\n  \"summary\": \"Malik Grant was named Northbank Insurance Player of the Game for Game 2 after scoring 28 points. Fans can vote for the Game 3 award on the Kings app.\",\n  \"source_url\": \"https://example.com/kings/grant-award-northbank\",\n  \"why_fans_will_care\": \"Fans can celebrate Grant's 28-point Game 2 performance and take part right away by voting for the Game 3 award in the Kings app.\",\n  \"confidence\": 0.9\n}\n```"
+}

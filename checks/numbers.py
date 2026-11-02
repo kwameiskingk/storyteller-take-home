@@ -20,7 +20,7 @@ out = {}
 for day in range(3, 12):
     out[f"weekday 2026-09-{day:02d}"] = datetime(2026, 9, day).strftime("%A")
 tip = T(src["scheduled_tipoff"]); out["tipoff UTC"] = tip.strftime("%H:%M")
-out["tipoff local (UTC+1 per pack README)"] = (tip + timedelta(hours=1)).strftime("%H:%M")
+out["tipoff local (UTC+1 inferred from pack README: 19:00 UTC = 20:00 local)"] = (tip + timedelta(hours=1)).strftime("%H:%M")
 out["Sam event cover minutes (17:00-18:30)"] = 90
 out["minutes from Sam leaving to tipoff"] = int((tip - tip.replace(hour=18, minute=30)).total_seconds() // 60)
 out["Delivery Lead window minutes (17:00-23:00)"] = 360
@@ -58,22 +58,36 @@ out["event items per hour"] = EVENT_ITEMS / 6
 out["event vs normal hourly rate (x)"] = round((EVENT_ITEMS / 6) / (avg_items_day / 24), 1)
 out["event recs per hour average"] = EVENT_RECS / 6
 out["pilot queue reviewed share % (30-40 of 180)"] = f"{30/180*100:.0f} to {40/180*100:.0f}"
+# --- review capacity, on Sam's stated rate (07: "about 30 to 40 recommendations in a one-hour session", indicative) ---
+SAM_LOW, SAM_HIGH = 30, 40
+sec_per_card = (3600 / SAM_HIGH, 3600 / SAM_LOW)          # 90 to 120 seconds
+out["seconds per card at Sam's stated rate"] = f"{sec_per_card[0]:.0f} to {sec_per_card[1]:.0f}"
+def minutes_range(n): return (round(n * sec_per_card[0] / 60), round(n * sec_per_card[1] / 60))
+out["review minutes: 240 cards, full window"] = "%d to %d" % minutes_range(EVENT_RECS)
+out["review minutes: 80-card peak hour"] = "%d to %d" % minutes_range(PEAK)
+# the pack's per-card timings (45-60s quick, 2-3 min hard) give a faster model; kept only as a sensitivity
 QUICK, SLOW, SLOW_SHARE = 52.5, 150, 0.20
-mins = lambda n: n * ((1 - SLOW_SHARE) * QUICK + SLOW_SHARE * SLOW) / 60
-out["review minutes: 240 cards"] = round(mins(240))
-out["review minutes: 80-card peak hour"] = round(mins(80))
-out["review minutes: 40-card hour"] = round(mins(40))
-out["cards one reviewer clears in 60 min (assumed mix)"] = int(60 / (mins(1)))
-# reduced scope: high lane = result, player availability, schedule/venue change, official record
+model_cards_per_hour = int(3600 / ((1 - SLOW_SHARE) * QUICK + SLOW_SHARE * SLOW))
+out["sensitivity: cards per hour from pack per-card timings with 20% slow share (not used for the plan)"] = model_cards_per_hour
+# reduced scope. Live lane = result article, player availability from team/league, tipoff/doors/venue change, official record.
 approved = [i for i in src["items"] if i["approved_for_pilot"]]
-HIGH = {"src_001", "src_003", "src_004", "src_005"}
+LIVE = {"src_001", "src_003", "src_004", "src_005"}
 out["approved items in sample"] = len(approved)
-out["high-lane items in sample"] = len(HIGH)
-share = len(HIGH) / len(approved)
-out["high-lane share of approved sample %"] = round(share * 100)
-out["peak-hour cards after duplicates removed and high lane only"] = round(PEAK * share, 1)
-out["review minutes for that peak hour"] = round(mins(PEAK * share))
-out["slack minutes in that hour for one reviewer"] = round(60 - mins(PEAK * share))
+out["live-lane items in sample"] = len(LIVE)
+share = len(LIVE) / len(approved)
+out["live-lane share of approved sample %"] = round(share * 100)
+out["peak-hour cards, live lane only"] = round(PEAK * share, 1)
+out["review minutes for that peak hour at Sam's rate"] = "%d to %d" % minutes_range(PEAK * share)
+# single-approver mode after 18:30: results, availability, schedule/venue changes only (no records lane)
+SINGLE = {"src_001", "src_003", "src_004"}
+out["single-approver mode share %"] = round(len(SINGLE) / len(approved) * 100)
+out["single-approver mode peak-hour cards"] = round(PEAK * len(SINGLE) / len(approved), 1)
+out["single-approver mode review minutes"] = "%d to %d" % minutes_range(PEAK * len(SINGLE) / len(approved))
+# sensitivities the reviewers asked for
+out["sensitivity: if highlights video is live too (5 of 9), peak cards"] = round(PEAK * 5 / 9, 1)
+out["sensitivity: 5 of 9 review minutes"] = "%d to %d" % minutes_range(PEAK * 5 / 9)
+out["sensitivity: if fan information is live too (6 of 9), peak cards"] = round(PEAK * 6 / 9, 1)
+out["sensitivity: 6 of 9 review minutes"] = "%d to %d" % minutes_range(PEAK * 6 / 9)
 # latency budget to the client's ~10 minute target
 gen = {}
 for e in log:
@@ -82,9 +96,10 @@ for e in log:
 lat = sorted(int((v["end"] - v["start"]).total_seconds()) for v in gen.values() if "start" in v and "end" in v)
 out["generation latencies observed (s)"] = lat
 out["latency budget: poll interval (s)"] = 300
-out["latency budget: worst generation incl. one timeout+retry (s)"] = 15 + max(lat)
-out["latency budget: review one card (s)"] = QUICK
-out["latency budget: minutes left of 10 for queue dwell"] = round((600 - 300 - (15 + max(lat)) - QUICK) / 60, 1)
+out["latency budget: timeout + retry path observed in log (s)"] = 15 + 11   # gen_001: 15s timeout then 11s retry
+out["latency budget: worst case 15s timeout + slowest observed retry (s)"] = 15 + max(lat)
+out["latency budget: review one card (s), pack quick check"] = 60
+out["latency budget: minutes left of 10 for queue dwell (worst case)"] = round((600 - 300 - (15 + max(lat)) - 60) / 60, 1)
 
 for k, v in out.items(): print(f"{k:60} {v}")
 json.dump(out, open(Path(sys.argv[2]) / "numbers.json", "w") if len(sys.argv) > 2 else sys.stderr, indent=1, default=str) if len(sys.argv) > 2 else None

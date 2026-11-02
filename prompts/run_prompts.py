@@ -5,7 +5,8 @@ Same two-step shape as the pilot (relevance, then card generation). Two routes:
   --backend cli   uses the Claude Code CLI (`claude -p`) with the account already logged in. Default.
   --backend api   uses the Anthropic API with ANTHROPIC_API_KEY (pip install anthropic).
 Each output records the exact model id reported by the route, the run time, and the raw text, so a rerun
-can be compared like for like.
+can be compared like for like. The scenario clock is pinned in every message (SCENARIO_NOW); an earlier version
+omitted it and the model judged timeliness against the real date, which skewed one conclusion.
 
 Usage: python3 -I prompts/run_prompts.py data/01_source_content.json outputs/prompt_runs [--model sonnet]
                                           [--backend cli|api] [--variants current,revised] [--only src_005]
@@ -20,8 +21,13 @@ VARIANTS = {"current": ("current_relevance.txt", "current_generation.txt"),
 ITEM_FIELDS = ("content_id", "title", "body", "source", "published_at", "url")
 
 
+SCENARIO_NOW = "2026-09-03T09:15:00Z"   # the replay clock from 01_source_content.json; pinned so timeliness is judged
+                                        # against the scenario, not against the real date the test is run on
+
+
 def user_message(item):
-    return "Source item:\n" + json.dumps({k: item[k] for k in ITEM_FIELDS}, indent=2) + "\n\nRespond with JSON only."
+    return (f"Current time: {SCENARIO_NOW}. Judge timeliness against this time, not today's date.\n\n"
+            "Source item:\n" + json.dumps({k: item[k] for k in ITEM_FIELDS}, indent=2) + "\n\nRespond with JSON only.")
 
 
 def ask_cli(system_prompt, item, model):

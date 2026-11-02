@@ -7,7 +7,7 @@ Rules:
 4. Times: keep the time exactly as written. If the source says "local", say "local". If the source gives no zone, do not guess one in the headline or summary; add "time zone not stated in source" to operator_checks.
 5. Headline: plain and specific, maximum 10 words. Name the teams or players the source names. Do not add drama.
 6. Summary: maximum 35 words, factual.
-7. Priority: high = game result, player availability, schedule or venue change, official record. medium = team statement, preview, fan information. low = anything else. Promotional content is low.
+7. Priority: high = game result (the article or official statement), player availability update from the team or league, a change to tipoff, doors, venue or travel, an official record or statistic. medium = coach or team statement that confirms no decision yet, preview or analysis, routine fan information such as a fan zone programme, and a video or highlights package of a result that an article has already reported. low = anything else. Promotional content is low.
 8. media_type: "article" or "video" based on the source.
 9. story_key: 3 to 6 lowercase words naming the underlying event (for example "game 2 result kings waves") so the operator can spot repeats.
 10. operator_checks: list every claim the operator should verify against the source, as short strings. Do not output a confidence score; it has no measured meaning.

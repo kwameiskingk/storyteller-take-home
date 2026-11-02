@@ -75,15 +75,16 @@ footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid 
 <header class="hero">
   <div class="meta">Aurora Basketball League · Championship Finals Game 3 · Thursday 3 September 2026, 12:00 UTC</div>
   <h1>Launch at reduced scope, confirm on Monday against stated criteria</h1>
-  <p class="lead">The pilot has real faults, and the evidence shows exactly where each one comes from. Two are engineering changes that fit a four-hour window. The rest are instructions and process that I control as delivery lead. With the client's manual monitoring kept running, a reduced launch risks little and proves the service in the window that matters to Product.</p>
-  <div class="chips"><span class="chip">14 findings, each tied to a file row</span><span class="chip">Runnable reconciliation, numbers and prompt tests</span><span class="chip">A document ready for each person</span></div>
+  <p class="lead">The pilot has real faults, and the evidence shows where each one comes from. Two are engineering changes that Marta can size for her Friday window. The rest are instructions and process that I control as delivery lead. With the client's manual monitoring kept running, a reduced launch risks little and proves the service in the window that matters to Product.</p>
+  <div class="chips"><span class="chip">Every finding tied to a file row, or labelled as an estimate or a hypothesis</span><span class="chip">Runnable reconciliation, numbers and prompt tests</span><span class="chip">A document ready for each person</span></div>
 </header>
 
 <section id="situation">
   <h2>The situation</h2>
   <p class="sub">What the service is, where the pilot stands, and who has asked for what.</p>
   <p>Storyteller is piloting a content opportunity service for the Aurora Basketball League's digital editors. Approved feeds from the league, the teams and a broadcast partner are polled every five minutes. An AI step decides whether each item is relevant; a second step writes a recommendation card with a headline, a summary, a priority and source links. An operator, Sam, approves cards before the client sees them. Two client editors then decide what to publish on the league's app and website. The service does not publish anything itself.</p>
-  <p>The Finals are tied 1-1. Game 3 is on Friday 11 September at 19:00 UTC, eight days from now. The client has planned editor training for Wednesday 9 September. This morning, Jordan Reed, the client's Director of Digital Content, reported that a Game 2 result card appeared more than once in a sample they were sent, and that a card claimed Tayo Mensah had set a league record when he had tied a Waves record. Jordan asked whether they can still count on the service for the Finals, and whether CourtsideWire, an external outlet that was ahead of the official team account on an injury story, could be added.</p>
+  <p>The Finals are tied 1-1. Game 3 is on Friday 11 September at 19:00 UTC, eight days from now. The client has planned editor training for Wednesday 9 September. This morning Jordan Reed, the client's Director of Digital Content, reported that a Game 2 result card appeared more than once in a sample they were sent, and that a card said Tayo Mensah had set a league record when he had tied a Waves record. Jordan asked whether they can still count on the service for the Finals, and whether CourtsideWire, an external outlet that was ahead of the official team account on an injury story, could be added.</p>
+  <p>The pack numbers the ten source items in the morning's replay src_001 to src_010 and the eight cards it produced rec_001 to rec_008. Those labels are used below.</p>
   <h3>Who has asked for what</h3>
   <div class="tbl"><table>
     <tr><th>Who</th><th>Asked for</th><th>By (UTC)</th></tr>
@@ -99,34 +100,35 @@ footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid 
 <section id="recommendation">
   <h2>Recommendation</h2>
   <p class="sub">What I am asking Lewis and Priya to agree at 10:00 on Friday.</p>
-  <p><strong>Launch for Game 3 at reduced scope. Confirm or withdraw to the client on Monday 7 September against the acceptance criteria below. Pause the feed on the night if any stop condition fires.</strong></p>
+  <p><strong>Launch for Game 3 at reduced scope. Confirm or withdraw to the client on Monday 7 September against the acceptance criteria below. Pause on the night if any stop condition fires.</strong></p>
   <div class="lanes" style="margin:18px 0">
-    <div class="lane live"><h4>Live lane, approved during the game</h4><ul><li>Results</li><li>Player availability</li><li>Schedule or venue changes, including anything affecting attending fans</li><li>Official records and statistics</li></ul></div>
-    <div class="lane held"><h4>Held lane, released when the live lane is clear</h4><ul><li>Previews and analysis</li><li>Coach and team statements</li><li>Promotional items: held until Product sets a policy</li></ul></div>
+    <div class="lane live"><h4>Live lane, approved during the game</h4><ul><li>Results (the article or official statement)</li><li>Player availability updates from a team or the league</li><li>Changes to tipoff, doors, venue or travel</li><li>Official records and statistics</li></ul></div>
+    <div class="lane held"><h4>Held lane, released when the live lane is clear</h4><ul><li>Previews and analysis</li><li>Coach or team statements that confirm no decision</li><li>Routine fan information, such as the fan zone programme</li><li>Video or highlights of a result already reported</li><li>Promotional items: held until Product sets a policy</li></ul></div>
   </div>
-  <p>Official league and team feeds plus the approved broadcaster only. No CourtsideWire for this game. Every card is approved by a person before the client sees it. The client's own monitoring of official feeds stays on as the system of record for the event, so nothing depends on the new service alone.</p>
+  <p>Official league and team feeds plus the approved broadcaster only. No CourtsideWire for this game. Every card is approved by a person before the client sees it. The client's own monitoring of official feeds stays on as the system of record for the event. Sam approves from 17:10 to 18:30 UTC. After 18:30, either a second approver confirmed by Lewis and Priya, or single-approver mode: I approve results, availability and schedule or venue changes only, and records join the held lane until after the game.</p>
   <h3>Why not full scope</h3>
-  <p>In the ten-item replay the pilot produced a duplicate card from a retry bug, fabricated a record claim at 0.94 confidence, lost the player availability update without telling anyone, rejected the tipoff change as routine, and ranked a sponsor competition as high-priority player news. That is five faults in nine approved items. At forecast volume, 240 cards in six hours with peaks of 80 an hour, the same rates would put wrong or missing information in front of the editors during the Finals. The operator reviews 30 to 40 cards an hour and leaves thirty minutes before tipoff. Full scope fails on evidence and on arithmetic.</p>
+  <p>In the ten-item replay the pilot produced a duplicate card from a retry fault, fabricated a record claim at 0.94 confidence, lost the player availability update without telling anyone, rejected the tipoff change as routine, and ranked a sponsor competition as high-priority player news. That is five faults in nine approved items. Forecast volume is 240 cards in six hours with peaks of 80 an hour. Sam reviews about 30 to 40 cards an hour and leaves thirty minutes before tipoff. A full launch would put wrong or missing information in front of the editors during the Finals, at a volume nobody can review.</p>
   <h3>Why not withdraw</h3>
-  <p>The causes are specific and each has an owner. The duplicate and the lost item are bounded engineering fixes that Marta can size for Friday. The record claim, the rejected schedule change and the promotion are instruction and process changes, already drafted and tested outside production. The client keeps its safety net. Withdrawing from a fixable problem gives up the one event Product wants to prove the service on, and tells the client we could not recover from two faults in a week.</p>
+  <p>The causes are specific and each has an owner. The duplicate and the lost item are bounded engineering changes that Marta can size for Friday. The record claim, the rejected schedule change and the promotion are instruction and process changes, drafted and tested outside production. The client keeps its safety net. Withdrawing from a fixable problem gives up the one event Product wants to prove the service on, and tells the client we could not recover from two faults in a week.</p>
   <h3>CourtsideWire</h3>
   <p>The client is right that CourtsideWire was ahead: 22 minutes before the Waves' official medical update. The report also rested on "two people described as being close to the team" and said Cole was "expected to miss Game 3", where the team said "questionable, game-time decision". One item cannot show whether a source is reliable, and these two claims differ. Adding the source needs an ingestion change from Marta, a change to what Priya has told the client, and a product decision from Lewis on how an unconfirmed report should look. None of that fits in eight days alongside the fixes above.</p>
-  <p>After Game 3 I would run CourtsideWire in the background for four weeks, invisible to the client, and record two things for every story: how many minutes ahead of an official source it was, and whether an official source later confirmed it, contradicted it, or never addressed it. If the lead is real and contradictions are rare, I would propose a labelled unconfirmed-report lane, designed with Lewis. Those numbers, not opinions, decide it.</p>
+  <p>After Game 3 I would run CourtsideWire in the background for four weeks, invisible to the client, and record two things for every story: how many minutes ahead of an official source it was, and whether an official source later confirmed it, contradicted it, or never addressed it. If the lead is real and contradictions are rare, I would propose a labelled unconfirmed-report lane, designed with Lewis.</p>
 </section>
 
 <section id="volume">
   <h2>Volume and capacity</h2>
   <p class="sub">The question the recommendation stands or falls on. Figures from <code>checks/numbers.py</code>.</p>
-  <div class="stats"><div><b>80</b><span>cards in the forecast peak hour</span></div><div><b>44%</b><span>of approved sample items are live-lane types</span></div><div><b>~36</b><span>live-lane cards per peak hour</span></div><div><b>30 to 40</b><span>cards Sam reviews per hour today</span></div></div>
-  <p>Volume comes down in three layers before it reaches a person. Marta's fix removes duplicates at source: in the trial, one item in nine produced two cards. The revised relevance instruction rejects sponsor promotions and marks them so the approver can see they were seen: another one in nine. The two-lane split then keeps only results, availability, schedule and venue changes and official records live during the game. Four of the nine approved sample items are live-lane types. Applied to the forecast peak, about 36 cards an hour reach the approver.</p>
-  <p>That is the limit of one person at Sam's observed rate, with no slack for a hard case. My own model of review time, built from the pack's 45 to 60 seconds for a quick check and two to three minutes for a hard one, gave about 50 cards an hour. Sam's measured rate is lower, so the measured rate is what the plan uses. Three consequences follow.</p>
+  <div class="stats"><div><b>80</b><span>cards in the forecast peak hour</span></div><div><b>44%</b><span>of approved sample items are live-lane types</span></div><div><b>~36</b><span>live-lane cards per peak hour</span></div><div><b>53 to 71</b><span>minutes to review them at Sam's rate</span></div></div>
+  <p>Volume comes down in three layers before it reaches a person. Marta's fix removes duplicates at source: in the trial, one item in nine produced two cards. The revised relevance instruction rejects sponsor promotions and marks them so the approver can see they were seen. The two-lane split then keeps only results, availability, schedule and venue changes and official records live during the game. Four of the nine approved sample items are live-lane types. Applied to the forecast peak, about 36 cards an hour reach the approver.</p>
+  <p>Sam's stated rate is 30 to 40 cards an hour, which is 90 to 120 seconds a card. Thirty-six cards therefore need 53 to 71 minutes of a 60-minute hour. One approver is at the limit at best and over it at worst. If the highlights video were live as well, the share becomes five of nine and the peak needs 67 to 89 minutes; add routine fan information and it is 80 to 107. That is why both are held. Single-approver mode, results, availability and schedule or venue changes only, is three of nine: about 27 cards and 40 to 53 minutes.</p>
+  <p>These shares come from a ten-item sample that the pack says is not representative, and Sam's rate is described as indicative. Monday's logged session replaces both with measured figures before the client is told anything. Three consequences follow now.</p>
   <ol>
-    <li>A second approver from 18:30 UTC is an explicit ask of Lewis and Priya, not an assumption. Sam's agreed cover ends at 18:30; tipoff is 19:00. Without a second approver, from tipoff through the result and the post-game peak the feed depends on one person who is also reconciling exports and handling escalations.</li>
-    <li>Queue dwell is a stop condition, not a hope.</li>
-    <li>Monday's logged session replaces the 44 percent sample figure with a measured one before the client is told anything.</li>
+    <li>A second approver from 18:30 UTC is an explicit ask of Lewis and Priya. Sam's agreed cover ends at 18:30; tipoff is 19:00. Without a second approver, from tipoff through the result and the post-game peak the feed depends on one person who is also reconciling exports and handling escalations, so single-approver mode narrows what is live.</li>
+    <li>Queue dwell is a stop condition rather than an aspiration.</li>
+    <li>If Monday's measured live-lane share is well above 44 percent and no second approver exists, the recommendation becomes withdraw.</li>
   </ol>
   <h3>The ten-minute target</h3>
-  <p>The client wants developments surfaced within about ten minutes of appearing in an approved source. The feed polls every five minutes, so up to five minutes are gone before anything happens. Generation took 7 to 21 seconds in the replay, about 36 seconds with one timeout and retry. A straightforward review is about a minute. That leaves roughly three and a half minutes for a card to wait in the queue. Achievable for one approver who does nothing else. Not achievable if that person is also reconciling and escalating through the result peak.</p>
+  <p>The client wants developments surfaced within about ten minutes of appearing in an approved source. The feed polls every five minutes, so up to five minutes are gone before anything happens. Generation took 7 to 21 seconds in the replay; the one timeout-and-retry path took 26 seconds, and 36 seconds is the worst case from the observed figures. A straightforward review is about a minute. That leaves roughly three and a half minutes for a card to wait in the queue. Achievable for one approver who does nothing else. Harder for one person who is also reconciling and escalating through the result peak, which is the single-approver case.</p>
 </section>
 
 <section id="criteria">
@@ -135,24 +137,25 @@ footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid 
   <div class="card"><h3 style="margin-top:0">Before confirming to the client on Monday 7 September</h3>
   <ol>
     <li>Marta's items 1 and 2 deployed by 13:00 UTC Friday: no card written from a superseded request, and a retry or a visible failure on validation errors.</li>
-    <li>The ten-item replay rerun through the deployed pipeline shows one card for src_001 and a card or a visible failure for src_003.</li>
+    <li>The ten-item replay rerun by Marta through the deployed pipeline shows one card for src_001 and a card or a visible failure for src_003.</li>
     <li>Sam has source export access and has completed one logged session with the checklist on Monday.</li>
     <li>No fabricated fact in Monday's logged session.</li>
+    <li>Either a second approver is confirmed for 18:30 to 23:00, or single-approver mode is agreed and the client is told that records and context cards arrive after the game.</li>
   </ol>
   <p class="small">Tuesday's 20-card labelled set is a second checkpoint. A fabricated fact or more than one duplicate withdraws the launch, and the client hears on Tuesday evening, still before Wednesday's training.</p></div>
   <div class="card"><h3 style="margin-top:0">On the night, each with how it is observed</h3>
-  <p class="small">There is no live telemetry and no engineer on duty, so a stop condition nobody can see is decoration. Each of these names its observer.</p>
+  <p class="small">Delivery cannot stop live processing and no engineer is on duty. "Pause" means approvers approve nothing further, so no new card reaches the client, and Priya or someone she names tells the editors to rely on manual monitoring. There is no live telemetry, so each condition names its observer.</p>
   <ul>
     <li>A factual error reaches the client. Observed by client report or by the approver.</li>
-    <li>Cards wait more than ten minutes for 30 consecutive minutes. Observed from decision log timestamps against card generation times.</li>
+    <li>Cards wait more than ten minutes for 30 consecutive minutes. Observed from the decision log, which records the card's generation time and the decision time.</li>
     <li>No approver online.</li>
-    <li>Two duplicate cards from one source in the queue, or retries per call above 0.25 over 30 minutes if Marta's 15-minute export ships. This is Finance's trigger, because spend itself cannot be seen live.</li>
+    <li>Two duplicate cards from one source in the queue, or retries per call above 0.25 over 30 minutes if Marta's 15-minute export carries attempt counts. This is the trigger proposed to Finance, because spend itself cannot be seen live.</li>
   </ul>
-  <p class="small">Any one of these pauses the feed. Priya sends a pre-written message and the editors continue with manual monitoring. The message is in the runbook.</p></div>
+  <p class="small">Any one of these pauses the feed. The message Priya sends is pre-written in the runbook.</p></div>
   <h3>What would change the recommendation</h3>
   <ul>
-    <li><strong>To full scope:</strong> a clean 20-card set, Monday's session showing the slow-review share well under the assumed 20 percent, and Lewis releasing the held lane.</li>
-    <li><strong>To withdraw:</strong> Marta ships item 1 only. The client will not keep manual monitoring. Monday's session shows Sam under 30 cards an hour with the checklist. Or no second approver and a measured live-lane share well above 44 percent.</li>
+    <li><strong>To full scope:</strong> a clean 20-card set, Monday's session showing the live-lane share at or below the sample figure with Sam at or above 40 cards an hour, and Lewis releasing the held lane.</li>
+    <li><strong>To withdraw:</strong> Marta ships item 1 only, because validation failures would still silently lose availability updates, the category the client cares most about. The client will not keep manual monitoring. Monday's session shows Sam under 30 cards an hour with the checklist. Or no second approver and a measured live-lane share well above 44 percent.</li>
   </ul>
 </section>
 
@@ -165,23 +168,24 @@ footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid 
     <tr><td>Mensah card turned a tied franchise record into a broken league record. Two errors, confidence 0.94</td><td><span class="status proven">proven</span></td><td>rec_004 vs src_005</td></tr>
     <tr><td>Elias Cole availability update lost on a validation failure, never retried, invisible to the operator</td><td><span class="status proven">proven</span></td><td>log row gen_003</td></tr>
     <tr><td>Tipoff change classified as a routine notice, no card</td><td><span class="status proven">proven</span></td><td>log row cls_004</td></tr>
-    <tr><td>Sponsor competition ranked high as player news, entry condition dropped from the card</td><td><span class="status proven">proven</span></td><td>rec_005 vs src_006</td></tr>
+    <tr><td>Sponsor competition ranked high as player news; the card dropped the insurance-quote condition and moved "before Friday" to "before Game 3"</td><td><span class="status proven">proven</span></td><td>rec_005 vs src_006</td></tr>
     <tr><td>Generation latency 7 to 21 seconds against a 15-second timeout</td><td><span class="status proven">proven</span></td><td>log timestamps</td></tr>
     <tr><td>2 September: retries per call 0.04, 0.05, then 1.74 with flat cost per call, so retries are billed</td><td><span class="status proven">proven</span></td><td>cost CSV</td></tr>
     <tr><td>Event AI cost EUR 32 to 84 for the window, depending on retry rate</td><td><span class="status estimate">estimate</span></td><td>cost CSV, Product estimate</td></tr>
-    <tr><td>240 cards need about 288 review minutes at an assumed 20 percent slow share</td><td><span class="status estimate">estimate</span></td><td>capacity document</td></tr>
+    <tr><td>240 cards need 360 to 480 review minutes at Sam's stated rate</td><td><span class="status estimate">estimate</span></td><td>capacity document</td></tr>
     <tr><td>Sam leaves 30 minutes before tipoff</td><td><span class="status proven">proven</span></td><td>capacity document</td></tr>
     <tr><td>CourtsideWire 22 minutes earlier, anonymous sourcing, "miss" where the team said "questionable"</td><td><span class="status proven">proven</span></td><td>src_010 vs src_003</td></tr>
-    <tr><td>The client received a selection from a queue marked before operator review; who selected it is unrecorded</td><td><span class="status proven">proven</span></td><td>pack README</td></tr>
     <tr><td>Event hourly item rate about 5x a normal day</td><td><span class="status proven">proven</span></td><td>cost CSV, Product estimate</td></tr>
+    <tr><td>What the client was sent is unrecorded, and the pack's two statements about it differ</td><td><span class="status estimate">pack conflict</span></td><td>pack README vs capacity document</td></tr>
     <tr><td>The 2 September queue holds many unreviewed duplicates from the retry storm</td><td><span class="status hyp">hypothesis</span></td><td>no 2 Sep queue data in the pack</td></tr>
   </table></div>
   <h3>What the findings mean</h3>
-  <p><strong>The duplicate is a plumbing fault, not a writing fault.</strong> The request for the Game 2 recap was declared timed out at 15 seconds and a retry started one second later. Six seconds after that the original response arrived and was written to the queue. Six seconds after that the retry arrived and was written too. Both attempts share one operation id, so a key for preventing this already exists; it is not enforced at the point of writing. A prompt change cannot fix this. It is Marta's item 1, and it is the same mechanism that drove the cost spike.</p>
-  <p><strong>The record claim shows the confidence score is not a safety signal.</strong> The source says Mensah tied the Waves' franchise record and that the league record is 17. The card says he set a new league record and broke it. Two errors, 0.94 confidence. The correct coach statement scored 0.89. The ranking logic uses this number. The revised card format replaces it with a list of claims for the approver to check, and ranking falls back to recency and category priority. That is a product change, so it is Lewis's decision 4.</p>
-  <p><strong>The two silent losses are the most dangerous.</strong> The Cole injury update failed validation and was never retried. The tipoff change was classified "routine" and dropped. Neither reached the queue, so Sam could not have seen either, and there is no routine comparison of sources against the queue. An approver reviewing cards alone would have approved a clean-looking set while the two most useful items of the morning were missing. The reconciliation script in this pack is the first such comparison.</p>
-  <p><strong>The cost spike was retries, not volume.</strong> Items rose 2 percent on 2 September. Retry calls rose from 63 to 2,412. Cost per call stayed flat at about EUR 0.018, so retries are billed in full. At least 804 of 1,390 operations retried at least once. Generation latency in the replay sat between 7 and 21 seconds against a 15-second timeout, so a modest slowdown at event volume, about five times a normal hour, would do the same again.</p>
-  <p><strong>Governance.</strong> The pack states that a human must approve cards before the client sees them, and also that the client was sent a selection from a queue marked "before operator review". Someone chose that selection and no record says who or why. This is not an accusation; it is a gap the client update asks Priya to close by finding out which cards were sent.</p>
+  <p><strong>The duplicate is a processing fault.</strong> The request for the Game 2 recap was declared timed out at 15 seconds and a retry started one second later. Six seconds after that the original response arrived and was written to the queue. Six seconds after that the retry arrived and was written too. Both attempts share one operation id, so a key for preventing this already exists; it is not enforced at the point of writing. A prompt change cannot fix this. It is Marta's item 1, and it is the same mechanism that drove the cost spike. One caveat: whether this is what the client saw depends on which cards they received. If they saw the recap and the highlights video, the repetition they noticed is editorial, and Marta has said she has not established the link. The client update asks the question that settles it.</p>
+  <p><strong>The record claim shows the confidence score is not a safety signal.</strong> The source says Mensah tied the Waves' franchise record and that the league record is 17. The card says he set a new league record and broke it. Two errors, 0.94 confidence. The correct coach statement scored 0.89. The ranking logic uses this number. The revised card format replaces it with a list of claims for the approver to check, and ranking falls back to recency and category priority. That changes the card schema and the ranking, so it is a product and engineering change and sits with Lewis as decision 4.</p>
+  <p><strong>The two silent losses are the most dangerous.</strong> The Cole injury update failed validation and was never retried. The tipoff change was classified "routine" and dropped. Neither reached the queue, so Sam could not have seen either, and there is no routine comparison of sources against the queue. An approver reviewing cards alone would have approved a clean-looking set while the two most useful items of the morning were missing. The reconciliation in this pack is the first such comparison.</p>
+  <p><strong>The promotion card got three things wrong at once.</strong> It was ranked high as player news. It dropped the condition that entrants must request an insurance quote. And it changed "before Friday" to "before Game 3": the item was published on Thursday 3 September, so the deadline moved by a week. The automatic claim check caught the third one; I first overruled it as a fair paraphrase, and that overrule was wrong.</p>
+  <p><strong>The cost spike was retries.</strong> Items rose 2 percent on 2 September. Retry calls rose from 63 to 2,412. Cost per call stayed flat at about EUR 0.018, so retries are billed in full. At least 804 of 1,390 operations retried at least once. Generation latency in the replay sat between 7 and 21 seconds against a 15-second timeout; normal days show 4 to 5 percent retries, so timeouts are intermittent, as Marta said, but the margin is thin at event volume, about five times a normal hour.</p>
+  <p><strong>What the client was sent.</strong> The pack README says the client was sent a selection from a queue marked "before operator review". The capacity document says only approved cards have been shared. Both can be true if someone approved a selection by hand without logging it, which fits Sam's message that decisions have not been recorded. Either way there is no record of which cards went or who chose them. The client update asks Priya to find out.</p>
 </section>
 
 <section id="plan">
@@ -189,38 +193,38 @@ footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid 
   <p class="sub">The order matters because of the remit. The client cannot be offered a changed service before Lewis and Priya agree, and Marta cannot be promised to the client before she has seen the evidence.</p>
   <div class="tbl"><table>
     <tr><th>When (UTC)</th><th>To</th><th>What</th><th>Document</th></tr>
-    <tr><td>Thu 15:00</td><td>Client, via Priya</td><td>Faults confirmed, causes found, position on Monday. No new scope, no promises</td><td><a href="../ops/client_update_thursday_1500.md">client update</a></td></tr>
-    <tr><td>Thu evening</td><td>Marta</td><td>Ranked, evidence-backed list, right under any launch decision</td><td><a href="../ops/marta_friday_list.md">Marta's list</a></td></tr>
+    <tr><td>Thu 15:00</td><td>Priya, then the client</td><td>Note to Priya; message for Jordan confirming the faults, giving what we know about causes, committing to a Monday position</td><td><a href="../ops/client_update_thursday_1500.md">client update</a></td></tr>
+    <tr><td>Thu evening</td><td>Marta</td><td>Ranked, evidence-backed list, each item right whatever Lewis decides</td><td><a href="../ops/marta_friday_list.md">Marta's list</a></td></tr>
     <tr><td>Thu evening</td><td>Lewis</td><td>Heads-up: reduced-scope recommendation at 10:00 and the six decisions he owns</td><td></td></tr>
-    <tr><td>Thu evening</td><td>Amira</td><td>Cost analysis, EUR 100 allowance, observable trigger</td><td><a href="../ops/amira_event_allowance.md">cost note</a></td></tr>
+    <tr><td>Thu evening</td><td>Amira</td><td>Cost analysis, EUR 100 allowance, the observable trigger</td><td><a href="../ops/amira_event_allowance.md">cost note</a></td></tr>
     <tr><td>Fri 10:00</td><td>Lewis and Priya</td><td>Decision note, 30-minute call</td><td><a href="../ops/lewis_decision_note.md">decision note</a></td></tr>
-    <tr><td>Fri 13:00</td><td>Me</td><td>Record what Marta shipped; ask her to rerun the replay through the deployed path</td><td></td></tr>
+    <tr><td>Fri 13:00</td><td>Me</td><td>Record what Marta shipped; Marta reruns the replay through the deployed path and exports it</td><td></td></tr>
     <tr><td>Fri afternoon</td><td>Sam</td><td>Checklist, decision log, export access</td><td><a href="../ops/operator_review_checklist.md">checklist</a>, <a href="../ops/decision_log_template.csv">log</a></td></tr>
     <tr><td>Mon evening</td><td>Client, via Priya</td><td>Confirm or withdraw at reduced scope, against the criteria</td><td></td></tr>
     <tr><td>Tue evening</td><td>Client, via Priya, only if needed</td><td>Withdraw if the 20-card set fails</td><td></td></tr>
     <tr><td>Wed 13:00</td><td>Client editors</td><td>Training, with Priya</td><td></td></tr>
-    <tr><td>Thu 10 Sep 12:00</td><td>Everyone</td><td>Prompt and configuration freeze</td><td></td></tr>
+    <tr><td>Thu 10 Sep 12:00</td><td>Everyone</td><td>Instruction and configuration freeze</td><td></td></tr>
     <tr><td>Fri 11 Sep 17:00 to 23:00</td><td>Everyone</td><td>Event</td><td><a href="../ops/event_runbook.md">runbook</a></td></tr>
   </table></div>
   <h3>Day by day</h3>
   <div class="card">
-    <p><strong>Thursday 3 September, afternoon.</strong> Reconcile the evidence (this pack). Client update to Priya by 15:00. Marta's list, Lewis's heads-up and Amira's cost note by end of day. Ask Priya which cards the client received.</p>
-    <p><strong>Friday 4.</strong> 09:00 Marta starts items 1 and 2. 10:00 decision call with Lewis and Priya. Amira and Lewis review the allowance. Before 13:00, ask Marta to rerun the ten-item replay through what she deployed; I reconcile her export. 13:00 record what shipped. Afternoon, Sam gets the checklist, the decision log and export access.</p>
-    <p><strong>Monday 7.</strong> Sam's first logged session with the checklist, measuring time per card and the slow share. I reconcile Friday's rerun and Monday's queue. Criteria 1 to 4 checked. Client told, via Priya, by end of day.</p>
-    <p><strong>Tuesday 8.</strong> Sam's second logged session. I build the 20-card labelled set from Monday and Tuesday output, my own labels, marked as such. Fabricated fact or more than one duplicate withdraws the launch; client told Tuesday evening.</p>
-    <p><strong>Wednesday 9.</strong> 13:00 client training with Priya: the live lane, what a card looks like, how to report a bad one. Sam's third logged session.</p>
-    <p><strong>Thursday 10.</strong> Prompt and configuration freeze at 12:00. Runbook dry run with Sam inside Sam's hour. Stop message pre-written. My other two client workstreams have had their Friday items moved, agreed with those clients on Monday.</p>
+    <p><strong>Thursday 3 September, afternoon.</strong> Reconcile the evidence (this pack). Note to Priya and client message by 15:00. Marta's list, Lewis's heads-up and Amira's cost note by end of day. Ask Priya which cards the client received.</p>
+    <p><strong>Friday 4.</strong> 09:00 Marta starts items 1 and 2. 10:00 decision call with Lewis and Priya. Amira and Lewis review the allowance. Before 13:00, Marta reruns the ten-item replay through what she deployed and exports it; I reconcile the export. 13:00 record what shipped. Afternoon, Sam gets the checklist, the decision log and export access.</p>
+    <p><strong>Monday 7.</strong> Sam's first logged session with the checklist, measuring time per card and the live-lane share. I reconcile Friday's rerun and Monday's queue. Criteria 1 to 5 checked. Client told, via Priya, by end of day.</p>
+    <p><strong>Tuesday 8.</strong> Sam's second logged session. I build the 20-card labelled set from Monday and Tuesday output, my own labels, marked as such. A fabricated fact or more than one duplicate withdraws the launch; client told Tuesday evening.</p>
+    <p><strong>Wednesday 9.</strong> 13:00 client training with Priya: the live lane, what a card looks like, how to report a bad one, what arrives after the game in single-approver mode. Sam's third logged session.</p>
+    <p><strong>Thursday 10.</strong> Instruction and configuration freeze at 12:00. Runbook dry run with Sam inside Sam's hour. Stop message pre-written. My other two client workstreams have had their Friday items moved, agreed with those clients on Monday.</p>
     <p><strong>Friday 11.</strong> Runbook, 17:00 to 23:00.</p>
     <p><strong>The week after.</strong> Monday: reconcile the event queue, decision log and cost. Tuesday: review with Lewis and Priya, then the client. Decide the CourtsideWire evaluation, promotional policy, the confidence field, and whether the second approver becomes a staffing request. Turn the decision log into the first evaluation set.</p>
   </div>
   <h3>What I do personally</h3>
-  <p>The reconciliation and every document in this pack. The 15:00 client update. Marta's list tonight. The decision note for Friday. Two supervised sessions with Sam and the third unsupervised. The 20-card labelled set on Tuesday. The Thursday freeze. On the night, 17:00 to 23:00 as approver, reconciler and escalation point, or as reconciler and escalation point if a second approver is found. The post-event reconciliation and review the following week.</p>
+  <p>The reconciliation and every document in this pack. The 15:00 update. Marta's list tonight. The decision note for Friday. Two supervised sessions with Sam, Monday and Tuesday. The 20-card labelled set on Tuesday. The Thursday freeze. On the night, 17:00 to 23:00: second approver, reconciler and escalation point while Sam is on, then either reconciler and escalation point beside a second approver, or sole approver in single-approver mode. The post-event reconciliation and review the following week.</p>
   <h3>What I ask of others</h3>
   <ul>
-    <li><strong>Marta:</strong> items 1 and 2, export access for Sam, a view on the 15-second timeout, a rerun of the replay through the deployed path, and deploying the revised instructions if Product agrees. Her list is written so that every item is right whatever Lewis decides, because each one fixes a fault that exists whether or not we launch.</li>
-    <li><strong>Sam:</strong> use the checklist, log every decision with a reason code, record time per card, escalate rather than diagnose.</li>
-    <li><strong>Lewis:</strong> the six decisions in the note: scope and date, acceptance criteria, promotional and highlights policy, the confidence field, the second approver, the allowance.</li>
-    <li><strong>Priya:</strong> send the client update, find out which cards the client received, align Wednesday's training with the live lane, hold the stop message.</li>
+    <li><strong>Marta:</strong> items 1 and 2, export access for Sam, a view on the 15-second timeout, a rerun of the replay through the deployed path, and, if Product agrees, deploying the revised instructions, which need a validator and ranking change because the card format changes. Her list is written so that every item is right whatever Lewis decides, because each one fixes a fault that exists whether or not we launch.</li>
+    <li><strong>Sam:</strong> use the checklist, log every decision with a reason code and the card's generation time, record time per card, escalate rather than diagnose.</li>
+    <li><strong>Lewis:</strong> the six decisions in the note: scope and date, acceptance criteria, promotional and highlights policy, the confidence field, the second approver and who is reachable on the night, the allowance.</li>
+    <li><strong>Priya:</strong> send the update, find out which cards the client received, align Wednesday's training with the live lane, name who is reachable on the night to message the editors.</li>
     <li><strong>Amira:</strong> agree the allowance and the trigger with Lewis.</li>
   </ul>
   <p>My other two client workstreams move their Friday 11 September items to Thursday or the following Monday. Both clients are told on Monday 7 September. No backfill is assumed. The full plan and the RACI, which records who is responsible, accountable, consulted and informed for each task, are in <a href="../ops/plan_and_raci.md">plan_and_raci.md</a>.</p>
@@ -233,88 +237,94 @@ footer{margin-top:64px;color:var(--muted);font-size:13.5px;border-top:1px solid 
 python3 -I checks/reconcile.py data outputs
 <span class="c"># 2. Compute every number quoted in the documents</span>
 python3 -I checks/numbers.py data outputs
-<span class="c"># 3. Check both against hand-counted expectations</span>
+<span class="c"># 3. Check both against expected values read from the files</span>
 python3 -I checks/test_reconcile.py
-<span class="c"># 4. Run current and revised instructions over all ten items, live</span>
+<span class="c"># 4. Generic event check: duplicates, lost items, dwell, on any export in the pilot schema</span>
+python3 -I checks/event_checks.py data/01_source_content.json data/06_trial_run_log.csv data/02_trial_recommendations.json
+<span class="c"># 5. Run current and revised instructions over the ten items, and over my four test cases</span>
 python3 -I prompts/run_prompts.py data/01_source_content.json outputs/prompt_runs --model sonnet
+python3 -I prompts/run_prompts.py data_extra/candidate_test_cases.json outputs/prompt_runs_candidate_cases --model sonnet
 <span class="c">#    or, with an API key:  --backend api --model claude-sonnet-5-5</span>
-<span class="c"># 5. Build the before-and-after comparison with an automatic claim check</span>
+<span class="c"># 6. Build the before-and-after comparison with an automatic claim check</span>
 python3 -I prompts/compare_runs.py data/01_source_content.json data/02_trial_recommendations.json outputs/prompt_runs outputs/prompt_before_after.md</pre>
-  <p>Steps 1 to 3 need only Python. Step 4 needs either a logged-in Claude Code CLI or an Anthropic API key; each saved output records the exact model id and run time. The runs used here are committed in <code>outputs/prompt_runs/</code> and the comparison in <a href="../outputs/prompt_before_after.md">prompt_before_after.md</a>, so the result can be read without running anything.</p>
+  <p>Steps 1 to 4 need only Python. Step 5 needs either a logged-in Claude Code CLI or an Anthropic API key. Every saved run records the exact model id and time, and pins the scenario clock in the message so timeliness is judged against 3 September 2026 rather than the date the test happens to run. The runs used here are committed in <code>outputs/</code>, so the result can be read without running anything.</p>
   <h3>What it shows</h3>
   <ul>
-    <li>The reconciliation derives the duplicate, the lost item, the rejected item, the latency pattern and the cost pattern from the raw files, quoting the rows. It is the source-to-queue comparison the pilot does not have.</li>
-    <li>The automatic claim check flags the two faulty pilot cards. It also flags "before Game 3" against "before Friday" on the promotion card, which a person overrules because Game 3 is on Friday. That is what the check is for: narrowing what a person must read, not replacing them.</li>
-    <li>The revised instructions produce a correct Mensah card, reject the sponsor competition as promotional, classify the tipoff change as a high-priority schedule change, keep "questionable" and "sources say", and return a list of claims for the approver instead of a confidence score. For Mensah the list reads "the record is tied, not broken" and "franchise record, not a league record".</li>
+    <li>The reconciliation derives the duplicate, the lost item, the rejected item, the latency pattern and the cost pattern from the raw files, quoting the rows. Its findings text is written for this pack. The generic event check has no prose: it flags duplicates by source and by operation, lost items, and dwell, and exits non-zero when anything is flagged, so it can gate a 15-minute check on the night.</li>
+    <li>The automatic claim check flags both faulty pilot cards, including the "before Friday" change I had wrongly waved through.</li>
+    <li>With the scenario clock pinned, the current instructions still rejected the tipoff change as routine, exactly as the pilot did, and gave the Mensah record low priority. On my own test cases they dropped a closed-entrance notice as "operational", the same class of failure. The revised instructions produced a correct Mensah card, rejected the sponsor competition, made the tipoff change and the entrance closure high-priority changes, kept "questionable", "ruled out" and "sources say", put the highlights video and the coach statement in the held lane, and returned a list of claims for the approver instead of a confidence score. For Mensah the list reads "the record is tied, not broken" and "franchise record, not a league record". A genuine league record in my test cases was reported as one, so the wording rule does not suppress real records.</li>
   </ul>
   <h3>What it does not show</h3>
-  <p>The current instructions, on today's model, also get many things right, and they vary between runs: in one run the current relevance step accepted the Mensah record item, in another it rejected it as not relevant. So the pilot's errors are partly model and pipeline behaviour, and this test proves the revised instructions are better specified, not that production will behave the same. Only Marta's rerun through the deployed path proves that, which is why it is acceptance criterion 2. The revised instructions also have rough edges in the saved runs: one card calls the Waves "opponent" because the highlights source never names them, which is the rule working on a thin source; one coach statement came back high when the rule says medium, which the checklist's priority step catches.</p>
+  <p>The current instructions on today's model also get many things right, including Mensah's wording. So the pilot's errors are partly model and pipeline behaviour, and this test shows the revised instructions are better specified; it does not show that production will behave the same. Only Marta's rerun through the deployed path shows that, which is why it is acceptance criterion 2. Outputs also vary between runs, which is why each saved run records its model id and time, and why earlier runs are kept: a first set of revised runs before model ids were recorded, and a second set of both variants before the scenario clock was pinned, in which the model judged timeliness against November 2026.</p>
   <h3>What still needs human judgment</h3>
-  <p>Whether a highlights video is a second card. Whether promotions ever belong in the feed. How an unconfirmed report should look. Every approval. The story key the revised instruction emits is a hint for the approver and nothing more: the two Game 2 cards received different keys, and the official Cole update and the CourtsideWire report received the same one. Deduplication stays with engineering, on source and operation IDs.</p>
+  <p>Whether a highlights video is ever a separate card. Whether promotions belong in the feed. How an unconfirmed report should look. Every approval. The story key the revised instruction emits is a hint for the approver: the two Game 2 cards received different keys, and the official Cole update and the CourtsideWire report received the same one. Deduplication stays with engineering, on source and operation IDs.</p>
   <h3>Completed, unresolved, and what each changes</h3>
-  <p><strong>Completed:</strong> reconciliation, number checks, tests, revised instructions tested on ten items, operator checklist, decision log, Marta's list, Lewis's decision note, Amira's cost note, runbook, plan, client update.</p>
-  <p><strong>Unresolved:</strong> nothing has run through the production pipeline, so Monday depends on Marta's rerun, not mine. The production model is unknown, so the instruction gains are unproven in production. The slow-review share is assumed, so Monday's session decides whether one approver is enough. The 2 September queue is unreconciled, so the duplicate scale is a hypothesis. No labelled set exists yet, so Tuesday is a real checkpoint, not a formality.</p>
+  <p><strong>Completed:</strong> reconciliation, number checks, tests, generic event check, revised instructions tested on ten pack items and four of my own, operator checklist, decision log, Marta's list, Lewis's decision note, Amira's cost note, runbook, plan, client update.</p>
+  <p><strong>Unresolved:</strong> nothing has run through the production pipeline, so Monday depends on Marta's rerun. The production model is unknown, so the instruction gains are unproven there. The live-lane share and Sam's rate are indicative, so Monday's session decides whether one approver is enough. The 2 September queue is unreconciled, so the duplicate scale is a hypothesis. Which cards the client saw is unknown, so the duplicate's cause is a strong hypothesis. No labelled set exists yet, so Tuesday is a real checkpoint.</p>
 </section>
 
 <section id="client">
   <h2>First client update</h2>
-  <p class="sub">For Priya to send to Jordan Reed by 15:00 UTC on Thursday. Written before Product has decided, so it confirms the faults, gives the causes, and commits only to a date.</p>
+  <p class="sub">For Priya to send to Jordan Reed by 15:00 UTC on Thursday, with an internal note to Priya alongside it in the file. Written before Product has decided, so it confirms the faults, gives what we know about causes, and commits only to a date.</p>
   <div class="letter">
     <p>Hi Jordan,</p>
-    <p>Thank you for the detail on the Game 2 duplicate and the Mensah claim. Both are real, and we have found the causes.</p>
-    <p>The duplicate came from our processing, not from the content. A request to the AI timed out, we retried it, and both the original and the retry were then accepted. The Mensah card was wrong on two counts. Your stats team is right that it was a Waves record, not a league record, and the source also says he tied it rather than broke it.</p>
-    <p>Our delivery lead has the full picture from this morning's run and is working through it with engineering tomorrow. We will come back to you on Monday with a clear position on Game 3, including what we can stand behind for your editors and how that fits with your training session on Wednesday. Your usual monitoring of official feeds stays in place throughout, so nothing depends on us before then.</p>
+    <p>Thank you for the detail on the Game 2 duplicate and the Mensah claim. Both are real.</p>
+    <p>On the duplicate, the most likely cause is in our processing rather than the content: a request to the AI timed out, we retried it, and both the original and the retry appear to have been accepted. We are confirming that against the cards your team saw. On the Mensah card, your stats team is right that it was a Waves record, not a league record, and the source also says he tied it rather than broke it. We are changing how cards are checked before they reach you.</p>
+    <p>Looking at the same morning's run we also found two items that should have reached your team and did not: the Elias Cole medical update and the tipoff time change. We are working through why.</p>
+    <p>We will come back to you on Monday with a clear position on Game 3: what we can stand behind for your editors and how that fits with your training session on Wednesday. Your usual monitoring of official feeds stays in place throughout, so nothing depends on us before then.</p>
     <p>On CourtsideWire, you are right that they were ahead on the Cole story. We want to look at that properly rather than answer quickly, and we will include it in Monday's update.</p>
     <p>One question to help us: could you let us know which cards your team received in the sample, so we can trace each one?</p>
     <p>Best,<br>Priya</p>
   </div>
-  <p class="small" style="margin-top:12px">Why it reads this way: Lewis asked to be involved before any offer of a different service, and his decision is Friday. Priya has not confirmed readiness or promised the new source. Marta has not yet seen the work. The one commitment is Monday, because the training and the client's fallback both need notice. Jordan asked whether they can still count on the service; the honest answer today is "we will tell you Monday", and the message says so plainly.</p>
+  <p class="small" style="margin-top:12px">Why it reads this way: Lewis asked to be involved before any offer of a different service, and his decision is Friday, so the message names no scope. Priya has not confirmed readiness or promised the new source. Marta has not yet seen the work, so no fix dates are promised. The duplicate's cause is "most likely" because it has not been traced to the cards the client saw. The two silent losses are mentioned because the client will learn of them on Monday in any case. The one commitment is Monday, because the training and the client's fallback both need notice.</p>
 </section>
 
 <section id="ai">
   <h2>How I used AI and how I checked it</h2>
   <p class="sub">Full chronological log, with the representative prompt and output, in <a href="../ai_log/ai_use_log.md">ai_log/ai_use_log.md</a>.</p>
-  <p><strong>My tool of choice was Claude Code.</strong> It read the pack alongside me, wrote the scripts and tests, drafted the revised instructions, and produced the first draft of every document here. I read the pack myself, set the questions, and required it to prove each finding from the data rather than from its reading. I had every number computed by a script because language models misread numbers. I had the pack scanned for hidden text. I commissioned two separate AI review sessions with no access to our conclusions: a cold adversarial read of the pack, then a simulated hiring panel grading the finished draft. I decided what to accept, change and reject from each. The recommendation, the scope, the second-approver ask and the CourtsideWire position are my decisions.</p>
+  <p><strong>My tool of choice was Claude Code.</strong> It read the pack alongside me, wrote the scripts and tests, drafted the revised instructions, and produced the first draft of every document here. I read the pack myself, set the questions, and required each finding to be proven from the data rather than from the AI's reading. I had every number computed by a script because language models misread numbers. I had the pack scanned for hidden text. I commissioned three rounds of separate AI review sessions with no access to our conclusions: a cold adversarial read of the pack, a simulated hiring panel on the first full draft, and a second adversary and panel on the finished version. I decided what to accept, change and reject from each. The recommendation, the lanes, the single-approver mode and the CourtsideWire position are my decisions.</p>
   <h3>Checked</h3>
   <ul>
-    <li>Every finding cites a row in the files. Tests encode hand counts written before the script ran. Every figure in prose comes from the numbers script.</li>
-    <li>The cold read agreed with the first eight findings and added eleven, including that Sam leaves before tipoff and that Marta's window opens before Lewis decides.</li>
-    <li>The panel found a remit violation in the client update, an impossible Monday gate, unobservable stop conditions, two factual errors and eight contradictions between documents. All are fixed in this version and listed in the log.</li>
+    <li>Every finding cites a row in the files. The tests assert values read from the files before the script existed, so the script is checked against the files rather than against itself. Every figure in prose comes from the numbers script.</li>
+    <li>The first review agreed with the first eight findings and added eleven, including that Sam leaves before tipoff and that Marta's window opens before Lewis decides.</li>
+    <li>The second found a remit violation in the client update, an impossible Monday gate, unobservable stop conditions, two factual errors and eight contradictions between documents.</li>
+    <li>The third found a capacity figure that did not match the lanes in the checklist and the instruction, a prompt harness that judged timeliness against the real date, a finding labelled proven where the pack conflicts, a client update that stated an untraced cause as fact, a paraphrase I had wrongly accepted, and a placeholder left in the log. All are addressed in this version.</li>
     <li>A scan of the pack for hidden characters, direction overrides, embedded markup and unexpected fields. Clean.</li>
   </ul>
   <h3>Changed</h3>
   <ul>
-    <li>The client update, rewritten so it precedes Lewis's decision rather than pre-empting it.</li>
+    <li>The client update, twice: first so it precedes Lewis's decision rather than pre-empting it, then so it states the duplicate's cause as likely rather than certain and mentions the two silent losses.</li>
     <li>The Monday gate, rebuilt around Friday's rerun and Monday's session after the first version depended on Tuesday's data.</li>
-    <li>Stop conditions, rebuilt around what can be observed on the night.</li>
-    <li>The revised instruction's time-zone rule, moved out of headlines after it produced "(zone not stated)" in a title.</li>
-    <li>The prompt runner, changed to record the exact model id and time of each run and to accept an API key as well as the CLI.</li>
+    <li>Stop conditions, rebuilt around what can be observed on the night, including what "pause" means without an engineer.</li>
+    <li>The lane definitions, made identical across the checklist, the card instruction, the numbers script and this brief, with the instruction rerun to confirm.</li>
+    <li>The capacity arithmetic, moved from my per-card model to Sam's stated rate.</li>
+    <li>The prompt harness, to record the exact model id and time of each run, accept an API key as well as the CLI, and pin the scenario clock.</li>
   </ul>
   <h3>Rejected</h3>
   <ul>
-    <li>The AI's first framing of the duplicate as a prompt problem. The log shows a retry bug.</li>
-    <li>A hypothesis from the first review that the client's complaint referred to earlier output. The pack says the client was sent a selection from this trial. I had accepted it; the panel caught it.</li>
-    <li>The AI's capacity model of 50 cards an hour, in favour of Sam's observed 30 to 40.</li>
-    <li>The panel's view that a ten-minute dwell stop condition is too loose. Kept, because the target is a request rather than a measured service level, and a stop that fires on one slow card would pause the feed constantly.</li>
+    <li>The AI's first framing of the duplicate as a prompt problem. The log shows a retry fault.</li>
+    <li>A hypothesis from the first review that the client's complaint referred to earlier output. The pack says the client was sent a selection from this trial. I had accepted it; the second review caught it.</li>
+    <li>The AI's capacity model of 50 cards an hour, in favour of Sam's stated 30 to 40.</li>
+    <li>One reviewer's view that a ten-minute dwell stop condition is too loose. Kept, because the target is a request rather than a measured service level, and a stop that fires on one slow card would pause the feed constantly.</li>
   </ul>
   <h3>Limitations</h3>
-  <p>The prompt test proves instructions, not production. Outputs vary between runs, which is why each saved run records its model id and time. The story key is not a deduplication key. The AI wrote 8x where the figure is 5x and 45 percent where it is 44, and listed a pack fact as an assumption; the numbers script and the panel caught all three. The AI could not name the production model, see the 2 September queue, or measure the slow-review share. Those are labelled as assumptions or open questions throughout.</p>
+  <p>The prompt test proves instructions, not production. Outputs vary between runs. The story key is not a deduplication key. The AI wrote 8x where the figure is 5x and 45 percent where it is 44, listed a pack fact as an assumption, overruled a correct automatic flag, built a harness that leaked the real date, and left a placeholder in an earlier draft of the log. Each was caught by a script or a review round, which is the argument for running them. The AI could not name the production model, see the 2 September queue, or measure Sam's rate with the checklist. Those are labelled as assumptions or open questions throughout.</p>
 </section>
 
 <section id="time">
   <h2>Time, assumptions, and what I left unfinished</h2>
-  <p><strong>Time spent:</strong> about three and a half hours of my own time across two sittings on 1 and 2 November 2026, with Claude Code working alongside throughout.</p>
-  <p><strong>Assumptions:</strong> 20 percent of cards need a slow review. Cost per call is a flat average because the CSV has no token counts. Priya sends client messages. The Claude Code CLI stands in for whichever model production uses. Four of nine sample items as the live-lane share.</p>
-  <p><strong>Open questions, and what proceeds anyway:</strong> which cards the client received (Marta's fixes proceed). Whether a second approver exists (scope and stop conditions are set for one). The production model (Friday's rerun answers it). The slow-review share (Monday measures it).</p>
-  <p><strong>Deliberately unfinished:</strong> reconciliation of the full 2 September queue, which the pack does not contain. A labelled set beyond ten items, which needs Monday and Tuesday output. A CourtsideWire evaluation beyond the outline above. A dashboard.</p>
+  <p><strong>Time spent.</strong> About three and a half hours of my own focused time across two sittings on 1 and 2 November 2026. Claude Code sessions ran for roughly six hours of wall-clock time over the two days, including unattended prompt runs and the review sessions.</p>
+  <p><strong>Assumptions.</strong> Sam's 30 to 40 cards an hour holds with the checklist. Cost per call is a flat average because the CSV has no token counts. Priya sends client messages. The Claude Code CLI with claude-sonnet-5-5 stands in for whichever model production uses. Four of nine sample items as the live-lane share. The venue is UTC+1, inferred from one pair of times in the pack.</p>
+  <p><strong>Open questions, and what proceeds anyway.</strong> Which cards the client received (Marta's fixes proceed). Whether a second approver exists (single-approver mode is defined). The production model (Friday's rerun answers it). Sam's rate with the checklist (Monday measures it). Whether retries are billed (inferred from flat cost per call; Amira can confirm from the invoice).</p>
+  <p><strong>Deliberately unfinished.</strong> Reconciliation of the full 2 September queue, which the pack does not contain. A labelled set beyond ten pack items and four of my own. A CourtsideWire evaluation beyond the outline above. A dashboard.</p>
 </section>
 
 <section id="files">
   <h2>All files</h2>
   <p class="sub">Relative links open from a clone or download of the repository.</p>
   <div class="card files">
-    <a href="../README.md">README.md <span>main document, same content as this brief</span></a>
-    <a href="../ops/client_update_thursday_1500.md">ops/client_update_thursday_1500.md <span>for Priya, 15:00 Thursday</span></a>
+    <a href="../README.md">README.md <span>plain-text version of this brief</span></a>
+    <a href="../ops/client_update_thursday_1500.md">ops/client_update_thursday_1500.md <span>note to Priya and message for Jordan, 15:00 Thursday</span></a>
     <a href="../ops/marta_friday_list.md">ops/marta_friday_list.md <span>for Marta, before 09:00 Friday</span></a>
     <a href="../ops/lewis_decision_note.md">ops/lewis_decision_note.md <span>for Lewis and Priya, 10:00 Friday</span></a>
     <a href="../ops/amira_event_allowance.md">ops/amira_event_allowance.md <span>for Amira, Friday</span></a>
@@ -326,11 +336,13 @@ python3 -I prompts/compare_runs.py data/01_source_content.json data/02_trial_rec
     <a href="../outputs/fact_table.csv">outputs/fact_table.csv <span>what happened to each source item</span></a>
     <a href="../outputs/numbers.json">outputs/numbers.json <span>every figure used</span></a>
     <a href="../outputs/prompt_before_after.md">outputs/prompt_before_after.md <span>current vs revised instructions</span></a>
+    <a href="../data_extra/candidate_test_cases.json">data_extra/candidate_test_cases.json <span>four test cases I wrote</span></a>
     <a href="../prompts/revised_relevance.txt">prompts/revised_relevance.txt <span>revised relevance instruction</span></a>
     <a href="../prompts/revised_generation.txt">prompts/revised_generation.txt <span>revised card instruction</span></a>
-    <a href="../checks/reconcile.py">checks/reconcile.py <span>reconciliation</span></a>
+    <a href="../checks/reconcile.py">checks/reconcile.py <span>reconciliation for this pack</span></a>
+    <a href="../checks/event_checks.py">checks/event_checks.py <span>generic event check</span></a>
     <a href="../checks/numbers.py">checks/numbers.py <span>numbers</span></a>
-    <a href="../checks/test_reconcile.py">checks/test_reconcile.py <span>hand-count tests</span></a>
+    <a href="../checks/test_reconcile.py">checks/test_reconcile.py <span>tests</span></a>
     <a href="../ai_log/ai_use_log.md">ai_log/ai_use_log.md <span>AI use, chronological</span></a>
   </div>
 </section>

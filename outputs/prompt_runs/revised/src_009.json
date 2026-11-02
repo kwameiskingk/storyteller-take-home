@@ -4,7 +4,7 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:22:33Z",
+  "run_at_utc": "2026-11-02T08:34:15Z",
   "relevance": {
     "relevant": true,
     "category": "preview_analysis",
@@ -14,22 +14,22 @@
   },
   "relevance_raw": "{\"relevant\": true, \"category\": \"preview_analysis\", \"time_sensitive\": true, \"affects_attending_fans\": false, \"reason\": \"Approved broadcaster preview: \\\"The broadcast team reviews the defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\\\"\"}",
   "generation": {
-    "category": "Basketball preview",
+    "category": "Game preview",
     "priority": "medium",
     "headline": "Game 3 preview: how the Waves can slow Malik Grant",
-    "summary": "Broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.",
+    "summary": "The broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.",
     "source_url": "https://example.com/broadcast/game-3-tactical-preview",
-    "why_recommended": "Game 3 preview from ABL Broadcast Partner covering likely defensive adjustments against Malik Grant, who scored 28 points in Game 2.",
+    "why_recommended": "Preview and analysis ahead of Game 3, focused on Malik Grant's 28-point Game 2 and possible Harbour City defensive adjustments.",
     "media_type": "article",
     "story_key": "game 3 preview waves grant",
     "operator_checks": [
-      "Source says Malik Grant scored 28 points in Game 2",
-      "Source says Harbour City 'may' make defensive adjustments; this is a preview, not confirmed",
-      "Headline names the Waves while the body names Harbour City; confirm they are the same team",
-      "Source does not state the sport; category 'Basketball preview' is inferred, confirm or change",
-      "Source does not say whether it is an article or video; media_type 'article' is assumed from the text body, confirm",
-      "Published time 2026-09-03T09:04:00Z; no game time given in source"
+      "Malik Grant scored 28 points in Game 2 (stated in source body)",
+      "Defensive adjustments are what Harbour City 'may make' (conditional, not confirmed)",
+      "Source is a preview/analysis from ABL Broadcast Partner, not a team or league statement",
+      "Source does not state a Game 3 date, time or venue; none included",
+      "Source does not say whether the item is text or video; article assumed from the wording 'preview'",
+      "Headline matches the source title; Waves and Harbour City both named in the source"
     ]
   },
-  "generation_raw": "{\"category\": \"Basketball preview\", \"priority\": \"medium\", \"headline\": \"Game 3 preview: how the Waves can slow Malik Grant\", \"summary\": \"Broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\", \"source_url\": \"https://example.com/broadcast/game-3-tactical-preview\", \"why_recommended\": \"Game 3 preview from ABL Broadcast Partner covering likely defensive adjustments against Malik Grant, who scored 28 points in Game 2.\", \"media_type\": \"article\", \"story_key\": \"game 3 preview waves grant\", \"operator_checks\": [\"Source says Malik Grant scored 28 points in Game 2\", \"Source says Harbour City 'may' make defensive adjustments; this is a preview, not confirmed\", \"Headline names the Waves while the body names Harbour City; confirm they are the same team\", \"Source does not state the sport; category 'Basketball preview' is inferred, confirm or change\", \"Source does not say whether it is an article or video; media_type 'article' is assumed from the text body, confirm\", \"Published time 2026-09-03T09:04:00Z; no game time given in source\"]}"
+  "generation_raw": "{\"category\": \"Game preview\", \"priority\": \"medium\", \"headline\": \"Game 3 preview: how the Waves can slow Malik Grant\", \"summary\": \"The broadcast team reviews defensive adjustments Harbour City may make after Malik Grant scored 28 points in Game 2.\", \"source_url\": \"https://example.com/broadcast/game-3-tactical-preview\", \"why_recommended\": \"Preview and analysis ahead of Game 3, focused on Malik Grant's 28-point Game 2 and possible Harbour City defensive adjustments.\", \"media_type\": \"article\", \"story_key\": \"game 3 preview waves grant\", \"operator_checks\": [\"Malik Grant scored 28 points in Game 2 (stated in source body)\", \"Defensive adjustments are what Harbour City 'may make' (conditional, not confirmed)\", \"Source is a preview/analysis from ABL Broadcast Partner, not a team or league statement\", \"Source does not state a Game 3 date, time or venue; none included\", \"Source does not say whether the item is text or video; article assumed from the wording 'preview'\", \"Headline matches the source title; Waves and Harbour City both named in the source\"]}"
 }

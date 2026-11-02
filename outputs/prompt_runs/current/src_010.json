@@ -4,21 +4,21 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:21:49Z",
+  "run_at_utc": "2026-11-02T08:31:33Z",
   "relevance": {
     "relevant": true,
-    "category": "player_availability",
-    "reason": "Unconfirmed report from anonymous sources that Elias Cole is expected to miss Game 3 of the Finals. Player availability news is timely and high-interest for fans. Because the Waves have not confirmed it, an editor should frame it as unverified and watch for an official injury report."
+    "category": "player_injury_news",
+    "reason": "Unconfirmed report from CourtsideWire, citing two sources close to the team, that Elias Cole is expected to miss Game 3. Published about 90 minutes before the current time, so it is timely, and a player's availability for a Finals game is major news for fans. The Waves have not confirmed it, so an editor should treat it as unverified and look for team confirmation before publishing."
   },
-  "relevance_raw": "{\"relevant\": true, \"category\": \"player_availability\", \"reason\": \"Unconfirmed report from anonymous sources that Elias Cole is expected to miss Game 3 of the Finals. Player availability news is timely and high-interest for fans. Because the Waves have not confirmed it, an editor should frame it as unverified and watch for an official injury report.\"}",
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_injury_news\", \"reason\": \"Unconfirmed report from CourtsideWire, citing two sources close to the team, that Elias Cole is expected to miss Game 3. Published about 90 minutes before the current time, so it is timely, and a player's availability for a Finals game is major news for fans. The Waves have not confirmed it, so an editor should treat it as unverified and look for team confirmation before publishing.\"}",
   "generation": {
-    "category": "Injury/Availability",
-    "priority": "medium",
-    "headline": "Report: Elias Cole Likely Sidelined for Game 3",
-    "summary": "CourtsideWire, citing two people described as close to the team, reports Elias Cole is expected to miss Game 3. The Harbour City Waves have not confirmed his status.",
+    "category": "Injury/Player Availability",
+    "priority": "high",
+    "headline": "Elias Cole Reportedly Expected to Sit Out Game 3",
+    "summary": "CourtsideWire reports two people described as close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.",
     "source_url": "https://example.com/courtsidewire/cole-expected-out",
-    "why_fans_will_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3, but the report is unconfirmed, so fans should watch for official team word.",
-    "confidence": 0.6
+    "why_fans_care": "Cole's possible absence could affect the Waves' lineup and outlook for Game 3. The report is unconfirmed and based on anonymous sources, so his status could still change.",
+    "confidence": 0.55
   },
-  "generation_raw": "{\"category\":\"Injury/Availability\",\"priority\":\"medium\",\"headline\":\"Report: Elias Cole Likely Sidelined for Game 3\",\"summary\":\"CourtsideWire, citing two people described as close to the team, reports Elias Cole is expected to miss Game 3. The Harbour City Waves have not confirmed his status.\",\"source_url\":\"https://example.com/courtsidewire/cole-expected-out\",\"why_fans_will_care\":\"Cole's possible absence could affect the Waves' lineup and outlook for Game 3, but the report is unconfirmed, so fans should watch for official team word.\",\"confidence\":0.6}"
+  "generation_raw": "{\"category\":\"Injury/Player Availability\",\"priority\":\"high\",\"headline\":\"Elias Cole Reportedly Expected to Sit Out Game 3\",\"summary\":\"CourtsideWire reports two people described as close to the team expect Elias Cole to miss Game 3. The Harbour City Waves have not confirmed his status.\",\"source_url\":\"https://example.com/courtsidewire/cole-expected-out\",\"why_fans_care\":\"Cole's possible absence could affect the Waves' lineup and outlook for Game 3. The report is unconfirmed and based on anonymous sources, so his status could still change.\",\"confidence\":0.55}"
 }

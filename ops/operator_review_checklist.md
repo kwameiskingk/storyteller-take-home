@@ -16,8 +16,8 @@ Purpose: approve only cards an editor can trust without re-verifying, in under a
 4. **Conditions and uncertainty.** "Questionable", "expected", "sources say", entry conditions and "terms apply" must survive into the card. If dropped: edit, reason `COND`.
 5. **Times.** A time with no zone gets "local" added only if the source says local. Otherwise leave and flag `TIME`.
 6. **Promotions.** Sponsor competitions and commercial offers: hold, reason `PROMO`, until Product confirms the editorial policy. Do not approve.
-7. **Priority.** Results, player availability, schedule or venue changes and official records are high. Changes that affect fans attending (doors, fan zone, travel) are also high. Statements and previews are medium. If the card disagrees, change it, reason `PRIO`.
-8. Decide: approve, edit then approve, hold, reject. Write the row in the decision log before moving on.
+7. **Priority and lane.** Live lane, high: a result (the article or official statement), a player availability update from the team or league, a change to tipoff, doors, venue or travel, an official record or statistic. Held lane, medium: coach or team statements with no decision, previews and analysis, routine fan information such as the fan zone programme, and a video or highlights package of a result already reported. If the card disagrees, change it, reason `PRIO`. In single-approver mode (after 18:30 unless a second approver is confirmed) only results, availability and schedule or venue changes are live; records are held.
+8. Decide: approve, edit then approve, hold, reject. Write the row in the decision log before moving on, including the card's `generated_at` time so queue dwell can be measured.
 
 ## Escalate immediately (message the Delivery Lead, do not wait)
 - The same source produces two cards within a few minutes (possible retry duplicate).

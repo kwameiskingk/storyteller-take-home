@@ -1,0 +1,36 @@
+{
+  "content_id": "src_003",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:22:09Z",
+  "relevance": {
+    "relevant": true,
+    "category": "player_availability",
+    "time_sensitive": true,
+    "affects_attending_fans": false,
+    "reason": "Source states \"Guard Elias Cole is questionable for Game 3 after sustaining soreness in his left ankle\" and \"remains a game-time decision.\""
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_availability\", \"time_sensitive\": true, \"affects_attending_fans\": false, \"reason\": \"Source states \\\"Guard Elias Cole is questionable for Game 3 after sustaining soreness in his left ankle\\\" and \\\"remains a game-time decision.\\\"\"}",
+  "generation": {
+    "category": "Player availability",
+    "priority": "high",
+    "headline": "Elias Cole questionable for Game 3 with left ankle soreness",
+    "summary": "Guard Elias Cole is questionable for Game 3 after sustaining soreness in his left ankle. He will be assessed after the team's final practice and remains a game-time decision.",
+    "source_url": "https://example.com/waves/elias-cole-medical-update",
+    "why_recommended": "Official team medical update on a player's availability for Game 3, with the status still undecided pending assessment after the final practice.",
+    "media_type": "article",
+    "story_key": "elias cole game 3 availability",
+    "operator_checks": [
+      "Cole is listed as questionable, not out",
+      "Injury is soreness in his left ankle",
+      "Assessment follows the team's final practice",
+      "Cole remains a game-time decision",
+      "Source is Harbour City Waves; published_at 2026-09-03T08:10:00Z",
+      "Source names no opponent, game date or kickoff time",
+      "Source names no time zone for the assessment or game"
+    ]
+  },
+  "generation_raw": "{\"category\": \"Player availability\", \"priority\": \"high\", \"headline\": \"Elias Cole questionable for Game 3 with left ankle soreness\", \"summary\": \"Guard Elias Cole is questionable for Game 3 after sustaining soreness in his left ankle. He will be assessed after the team's final practice and remains a game-time decision.\", \"source_url\": \"https://example.com/waves/elias-cole-medical-update\", \"why_recommended\": \"Official team medical update on a player's availability for Game 3, with the status still undecided pending assessment after the final practice.\", \"media_type\": \"article\", \"story_key\": \"elias cole game 3 availability\", \"operator_checks\": [\"Cole is listed as questionable, not out\", \"Injury is soreness in his left ankle\", \"Assessment follows the team's final practice\", \"Cole remains a game-time decision\", \"Source is Harbour City Waves; published_at 2026-09-03T08:10:00Z\", \"Source names no opponent, game date or kickoff time\", \"Source names no time zone for the assessment or game\"]}"
+}

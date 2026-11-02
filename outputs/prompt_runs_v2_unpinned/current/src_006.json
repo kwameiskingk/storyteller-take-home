@@ -1,0 +1,14 @@
+{
+  "content_id": "src_006",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:39Z",
+  "relevance": {
+    "relevant": false,
+    "category": "promotional",
+    "reason": "Sponsor giveaway for a signed jersey tied to an insurance quote request. It's a promotional item with no news value, no Finals connection and no player performance or result."
+  },
+  "relevance_raw": "{\"relevant\": false, \"category\": \"promotional\", \"reason\": \"Sponsor giveaway for a signed jersey tied to an insurance quote request. It's a promotional item with no news value, no Finals connection and no player performance or result.\"}"
+}

@@ -1,0 +1,36 @@
+{
+  "content_id": "cand_003",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:35:06Z",
+  "relevance": {
+    "relevant": true,
+    "category": "fan_information",
+    "time_sensitive": true,
+    "affects_attending_fans": true,
+    "reason": "Fan logistics change: \"the north entrance to Harbour Arena will be closed for Game 3. Ticket holders should use the east and south gates. Doors still open at 17:30 local time.\""
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"fan_information\", \"time_sensitive\": true, \"affects_attending_fans\": true, \"reason\": \"Fan logistics change: \\\"the north entrance to Harbour Arena will be closed for Game 3. Ticket holders should use the east and south gates. Doors still open at 17:30 local time.\\\"\"}",
+  "generation": {
+    "category": "Venue and entry change",
+    "priority": "high",
+    "headline": "Harbour Arena north entrance closed for Game 3",
+    "summary": "Because of plaza works, the north entrance to Harbour Arena will be closed for Game 3. Ticket holders should use the east and south gates. Doors still open at 17:30 local time.",
+    "source_url": "https://example.com/abl/game-3-entry-change",
+    "why_recommended": "Aurora Basketball League Newsroom announces a change to venue entry for Game 3, affecting ticket holders' arrival. Doors time is unchanged.",
+    "media_type": "article",
+    "story_key": "game 3 north entrance closed",
+    "operator_checks": [
+      "North entrance to Harbour Arena closed for Game 3",
+      "Reason given: works on the plaza",
+      "Ticket holders to use east and south gates",
+      "Doors still open at 17:30 local time (source says 'local'; no time zone stated)",
+      "Time zone not stated in source",
+      "Source is Aurora Basketball League Newsroom, published 2026-09-03T09:10:00Z",
+      "Game 3 date is not stated in source"
+    ]
+  },
+  "generation_raw": "{\"category\": \"Venue and entry change\", \"priority\": \"high\", \"headline\": \"Harbour Arena north entrance closed for Game 3\", \"summary\": \"Because of plaza works, the north entrance to Harbour Arena will be closed for Game 3. Ticket holders should use the east and south gates. Doors still open at 17:30 local time.\", \"source_url\": \"https://example.com/abl/game-3-entry-change\", \"why_recommended\": \"Aurora Basketball League Newsroom announces a change to venue entry for Game 3, affecting ticket holders' arrival. Doors time is unchanged.\", \"media_type\": \"article\", \"story_key\": \"game 3 north entrance closed\", \"operator_checks\": [\"North entrance to Harbour Arena closed for Game 3\", \"Reason given: works on the plaza\", \"Ticket holders to use east and south gates\", \"Doors still open at 17:30 local time (source says 'local'; no time zone stated)\", \"Time zone not stated in source\", \"Source is Aurora Basketball League Newsroom, published 2026-09-03T09:10:00Z\", \"Game 3 date is not stated in source\"]}"
+}

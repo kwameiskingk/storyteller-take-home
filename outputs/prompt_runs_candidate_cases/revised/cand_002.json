@@ -1,0 +1,35 @@
+{
+  "content_id": "cand_002",
+  "variant": "revised",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:35:05Z",
+  "relevance": {
+    "relevant": true,
+    "category": "player_availability",
+    "time_sensitive": true,
+    "affects_attending_fans": false,
+    "reason": "Source states \"Guard Elias Cole has been ruled out of Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4.\""
+  },
+  "relevance_raw": "{\"relevant\": true, \"category\": \"player_availability\", \"time_sensitive\": true, \"affects_attending_fans\": false, \"reason\": \"Source states \\\"Guard Elias Cole has been ruled out of Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4.\\\"\"}",
+  "generation": {
+    "category": "Player availability",
+    "priority": "high",
+    "headline": "Harbour City Waves rule Elias Cole out of Game 3",
+    "summary": "Guard Elias Cole has been ruled out of Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4.",
+    "source_url": "https://example.com/waves/cole-ruled-out",
+    "why_recommended": "Player availability update from the team: Cole is ruled out of Game 3 and will be reassessed ahead of Game 4.",
+    "media_type": "article",
+    "story_key": "elias cole ruled out game 3",
+    "operator_checks": [
+      "Elias Cole is a guard",
+      "Ruled out of Game 3 (not 'questionable' or 'doubtful')",
+      "Injury is a left ankle sprain",
+      "He will be reassessed ahead of Game 4; no Game 4 status stated",
+      "Source is Harbour City Waves; published 2026-09-03T09:08:00Z",
+      "Source names the Waves only as publisher, not explicitly as Cole's team in body text"
+    ]
+  },
+  "generation_raw": "{\"category\": \"Player availability\", \"priority\": \"high\", \"headline\": \"Harbour City Waves rule Elias Cole out of Game 3\", \"summary\": \"Guard Elias Cole has been ruled out of Game 3 with a left ankle sprain. He will be reassessed ahead of Game 4.\", \"source_url\": \"https://example.com/waves/cole-ruled-out\", \"why_recommended\": \"Player availability update from the team: Cole is ruled out of Game 3 and will be reassessed ahead of Game 4.\", \"media_type\": \"article\", \"story_key\": \"elias cole ruled out game 3\", \"operator_checks\": [\"Elias Cole is a guard\", \"Ruled out of Game 3 (not 'questionable' or 'doubtful')\", \"Injury is a left ankle sprain\", \"He will be reassessed ahead of Game 4; no Game 4 status stated\", \"Source is Harbour City Waves; published 2026-09-03T09:08:00Z\", \"Source names the Waves only as publisher, not explicitly as Cole's team in body text\"]}"
+}

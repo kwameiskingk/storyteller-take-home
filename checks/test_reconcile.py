@@ -70,7 +70,9 @@ def test_courtsidewire_lead_time():
 
 
 def test_volume_and_capacity_hand_counts():
-    # high lane in the sample: src_001 result, src_003 availability, src_004 schedule, src_005 record = 4 of 9 approved
+    # live lane in the sample: src_001 result, src_003 availability, src_004 schedule, src_005 record = 4 of 9 approved
+    # at Sam's 30-40/hour: 35.6 cards need 53 to 71 minutes
+    assert (round(35.6 * 90 / 60), round(35.6 * 120 / 60)) == (53, 71)
     approved = [i for i in src if i["approved_for_pilot"]]
     assert len(approved) == 9 and round(4 / 9 * 100) == 44
     # peak 80 cards x 4/9 = 35.6; event hourly items 1500/6=250 vs normal (1120+1180+1205)/3/24 = 48.7 -> 5.1x

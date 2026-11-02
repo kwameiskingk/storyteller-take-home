@@ -1,0 +1,14 @@
+{
+  "content_id": "src_005",
+  "variant": "current",
+  "backend": "cli",
+  "model_requested": "sonnet",
+  "model_id": "claude-sonnet-5-5",
+  "run_at_utc": "2026-11-02T08:21:29Z",
+  "relevance": {
+    "relevant": false,
+    "category": "player_performance_record",
+    "reason": "Mensah only tied a franchise playoff assists mark, which is well short of the league record of 17. The item doesn't say whether Game 2 was in the Finals. It was published 2026-09-03, about two months before today (2026-11-02), so it's no longer timely. It's a minor stat note, not a content opportunity."
+  },
+  "relevance_raw": "{\"relevant\": false, \"category\": \"player_performance_record\", \"reason\": \"Mensah only tied a franchise playoff assists mark, which is well short of the league record of 17. The item doesn't say whether Game 2 was in the Finals. It was published 2026-09-03, about two months before today (2026-11-02), so it's no longer timely. It's a minor stat note, not a content opportunity.\"}"
+}

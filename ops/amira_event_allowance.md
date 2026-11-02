@@ -21,10 +21,10 @@ Volume did not change. Retries did. Cost per call stayed flat, so retries are bi
 | Normal retry rate (0.04) | about 1,820 | about EUR 32 |
 | 2 September retry rate (1.74) | about 4,760 | about EUR 84 |
 
-Infrastructure extra, roughly EUR 1 to 2 for the window at pilot rates. The CSV has no token counts, so per-call cost is an average and these are planning figures.
+Infrastructure is extra; pilot days ran EUR 4 to 6, so a six-hour window at up to five times the hourly volume is likely a few euros. The CSV has no token counts, so per-call cost is an average and these are planning figures.
 
 ## Proposal
 - Allowance: EUR 100 for the six-hour window. Covers the bad-day scenario with margin.
-- Trigger: we cannot see spend live. What we can see, if Marta's 15-minute export ships, is attempts per operation and duplicate cards. Pause the feed if retries per initial call exceed 0.25 over any 30 minutes, or if two duplicate cards appear. Without the export, the only observable signal is duplicate cards in the queue, and that becomes the trigger.
+- Trigger: we cannot see spend live. What we can see, if Marta's 15-minute export ships with attempt numbers, is retries per operation and duplicate cards. Pause if retries per initial call exceed 0.25 over any 30 minutes, or if two duplicate cards appear. Without the export, the only observable signal is duplicate cards in the queue, and that becomes the trigger. "Pause" means approvers stop approving and the editors are told to rely on manual monitoring; Delivery cannot stop processing itself, so AI calls may continue until Engineering is reached through the incident route.
 - Overspend: if the pause fires, the client is told to continue manual monitoring and the feed stays off for the night. Spend stops with it.
 - The real fix for cost is Marta's item 1 (discard late responses) and a review of the 15-second timeout, which cut retries at source.

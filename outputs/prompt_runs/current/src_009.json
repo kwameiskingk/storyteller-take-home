@@ -4,21 +4,21 @@
   "backend": "cli",
   "model_requested": "sonnet",
   "model_id": "claude-sonnet-5-5",
-  "run_at_utc": "2026-11-02T08:21:49Z",
+  "run_at_utc": "2026-11-02T08:31:30Z",
   "relevance": {
     "relevant": true,
-    "category": "tactical analysis",
-    "reason": "Timely Game 3 preview tied to the Finals, focusing on star player Malik Grant's 28-point Game 2 and the defensive adjustments Harbour City may make. It's of strong fan interest, though it's analysis rather than breaking news, so priority is moderate."
+    "category": "tactical analysis / game preview",
+    "reason": "Fresh (published 11 minutes ago) Game 3 preview tied directly to the Finals, built around Malik Grant's 28-point Game 2 performance and Harbour City's likely defensive adjustments. It is analysis from a broadcast partner and not a breaking result, so it is useful but not top priority."
   },
-  "relevance_raw": "{\"relevant\": true, \"category\": \"tactical analysis\", \"reason\": \"Timely Game 3 preview tied to the Finals, focusing on star player Malik Grant's 28-point Game 2 and the defensive adjustments Harbour City may make. It's of strong fan interest, though it's analysis rather than breaking news, so priority is moderate.\"}",
+  "relevance_raw": "{\"relevant\": true, \"category\": \"tactical analysis / game preview\", \"reason\": \"Fresh (published 11 minutes ago) Game 3 preview tied directly to the Finals, built around Malik Grant's 28-point Game 2 performance and Harbour City's likely defensive adjustments. It is analysis from a broadcast partner and not a breaking result, so it is useful but not top priority.\"}",
   "generation": {
     "category": "Game Preview / Tactical Analysis",
-    "priority": "medium",
-    "headline": "Can the Waves Cool Off Malik Grant? Game 3 Tactical Preview",
-    "summary": "Broadcast partner's team reviews defensive adjustments Harbour City may make in Game 3 after Malik Grant scored 28 points in Game 2. Specific tactics are not detailed in the supplied item.",
+    "priority": "high",
+    "headline": "Can the Waves Slow Malik Grant? Game 3 Preview Breaks Down Harbour City's Defensive Options",
+    "summary": "After Malik Grant scored 28 points in Game 2, a broadcast partner preview reviews the defensive adjustments Harbour City may make in Game 3. Specific tactics are not detailed in the supplied excerpt.",
     "source_url": "https://example.com/broadcast/game-3-tactical-preview",
-    "why_fans_care": "Fans following the series get a look at the key matchup and how Harbour City might respond to Grant's Game 2 scoring ahead of Game 3.",
-    "confidence": 0.7
+    "why_fans_care": "Fans heading into Game 3 get a tactical storyline to follow: whether Harbour City can contain Grant after his 28-point Game 2. It frames the key matchup and what to watch for.",
+    "confidence": 0.8
   },
-  "generation_raw": "{\"category\":\"Game Preview / Tactical Analysis\",\"priority\":\"medium\",\"headline\":\"Can the Waves Cool Off Malik Grant? Game 3 Tactical Preview\",\"summary\":\"Broadcast partner's team reviews defensive adjustments Harbour City may make in Game 3 after Malik Grant scored 28 points in Game 2. Specific tactics are not detailed in the supplied item.\",\"source_url\":\"https://example.com/broadcast/game-3-tactical-preview\",\"why_fans_care\":\"Fans following the series get a look at the key matchup and how Harbour City might respond to Grant's Game 2 scoring ahead of Game 3.\",\"confidence\":0.7}"
+  "generation_raw": "{\"category\":\"Game Preview / Tactical Analysis\",\"priority\":\"high\",\"headline\":\"Can the Waves Slow Malik Grant? Game 3 Preview Breaks Down Harbour City's Defensive Options\",\"summary\":\"After Malik Grant scored 28 points in Game 2, a broadcast partner preview reviews the defensive adjustments Harbour City may make in Game 3. Specific tactics are not detailed in the supplied excerpt.\",\"source_url\":\"https://example.com/broadcast/game-3-tactical-preview\",\"why_fans_care\":\"Fans heading into Game 3 get a tactical storyline to follow: whether Harbour City can contain Grant after his 28-point Game 2. It frames the key matchup and what to watch for.\",\"confidence\":0.8}"
 }
